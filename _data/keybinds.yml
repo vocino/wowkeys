@@ -168,8 +168,14 @@ classes:
       x:
         name: Ravager
         keybind: X
-        wowhead_id: 152277
+        wowhead_id: 228920
         notes: 'Talent: Ground-targeted whirlwind, generates rage and threat'
+        icon: https://render.worldofwarcraft.com/us/icons/56/warrior_talent_icon_ravager.jpg
+        tooltip: "Throws a whirling weapon at the target location that chases nearby
+          enemies, inflicting 3,737 Physical damage to all enemies over 10.9 sec.
+          Deals reduced damage beyond 8 targets.\r\n\r\nGenerates 10 Rage each time
+          it deals damage."
+        cached_name: Ravager
       c:
         name: Shield Wall
         keybind: C
@@ -321,8 +327,15 @@ classes:
       v:
         name: Holy Bulwark
         keybind: V
-        wowhead_id: 204150
+        wowhead_id: 432459
         notes: 'Talent: Absorb shield when casting Word of Glory on self'
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_ability_lightsmithpaladin_holybulwark.jpg
+        tooltip: "Will the Light to coalesce and become manifest as a Holy Armament,
+          wielded by your friendly target.\r\n\r\n Holy Bulwark:\r\n\r\nWhile wielding
+          a Holy Bulwark, gain an absorb shield for 15.0% of your max health and an
+          additional 2.0% every 2 sec. Lasts 20 sec.\r\n\r\nBecomes Sacred Weapon
+          after use."
+        cached_name: Holy Bulwark
       mouse4:
         name: Rebuke
         keybind: M4
@@ -358,9 +371,14 @@ classes:
       q:
         name: Death Strike
         keybind: Q
-        wowhead_id: 45470
+        wowhead_id: 49998
         notes: Primary self-heal and active mitigation, converts recent damage to
           healing
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_butcher2.jpg
+        tooltip: Focuses dark power into a strike that deals 296 Physical damage and
+          heals you for 25.00% of all damage taken in the last 5 sec, minimum 7.0%
+          of maximum health.
+        cached_name: Death Strike
       e:
         name: Heart Strike
         keybind: E
@@ -517,11 +535,6 @@ classes:
           Lesser Soul Fragments from them.\r\n\r\nGenerates 25 Fury."
         cached_name: Fracture
         notes: Soul Fragment generator, replaces Shear
-      r:
-        name: Felblade
-        keybind: R
-        wowhead_id: 213241
-        notes: 'Talent: Charge to target, generates Fury'
       f:
         name: Soul Cleave
         keybind: F
@@ -532,11 +545,6 @@ classes:
           Fragments."
         cached_name: Soul Cleave
         notes: Primary Fury spender with self-heal
-      '1':
-        name: Reaver's Glaive
-        keybind: '1'
-        wowhead_id: 395428
-        notes: 'Talent: Throw glaive that ricochets'
       '2':
         name: The Hunt
         keybind: '2'
@@ -657,8 +665,12 @@ classes:
       r:
         name: Swipe
         keybind: R
-        wowhead_id: 213771
+        wowhead_id: 213764
         notes: Basic AoE melee attack
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_misc_monsterclaw_03.jpg
+        tooltip: Swipe nearby enemies, inflicting Physical damage. Damage varies by
+          shapeshift form.
+        cached_name: Swipe
       f:
         name: Incarnation / Berserk
         keybind: F
@@ -789,8 +801,11 @@ classes:
       e:
         name: Blackout Kick
         keybind: E
-        wowhead_id: 205523
+        wowhead_id: 100784
         notes: Core rotation filler, shuffles Stagger damage
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_roundhousekick.jpg
+        tooltip: "Kick with a blast of Chi energy, dealing 452 Physical damage.\r\n"
+        cached_name: Blackout Kick
       r:
         name: Tiger Palm
         keybind: R

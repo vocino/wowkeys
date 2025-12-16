@@ -700,3 +700,46 @@
   wowhead_id: '109132'
   source: blizzard_api
   cached_at: '2025-12-16 12:17:47 -0800'
+'432459':
+  name: Holy Bulwark
+  icon: https://render.worldofwarcraft.com/us/icons/56/inv_ability_lightsmithpaladin_holybulwark.jpg
+  tooltip: "Will the Light to coalesce and become manifest as a Holy Armament, wielded
+    by your friendly target.\r\n\r\n Holy Bulwark:\r\n\r\nWhile wielding a Holy Bulwark,
+    gain an absorb shield for 15.0% of your max health and an additional 2.0% every
+    2 sec. Lasts 20 sec.\r\n\r\nBecomes Sacred Weapon after use."
+  wowhead_id: '432459'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:25:37 -0800'
+'49998':
+  name: Death Strike
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_butcher2.jpg
+  tooltip: Focuses dark power into a strike that deals 296 Physical damage and heals
+    you for 25.00% of all damage taken in the last 5 sec, minimum 7.0% of maximum
+    health.
+  wowhead_id: '49998'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:25:38 -0800'
+'213764':
+  name: Swipe
+  icon: https://render.worldofwarcraft.com/us/icons/56/inv_misc_monsterclaw_03.jpg
+  tooltip: Swipe nearby enemies, inflicting Physical damage. Damage varies by shapeshift
+    form.
+  wowhead_id: '213764'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:25:39 -0800'
+'100784':
+  name: Blackout Kick
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_roundhousekick.jpg
+  tooltip: "Kick with a blast of Chi energy, dealing 452 Physical damage.\r\n"
+  wowhead_id: '100784'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:25:39 -0800'
+'228920':
+  name: Ravager
+  icon: https://render.worldofwarcraft.com/us/icons/56/warrior_talent_icon_ravager.jpg
+  tooltip: "Throws a whirling weapon at the target location that chases nearby enemies,
+    inflicting 3,737 Physical damage to all enemies over 10.9 sec. Deals reduced damage
+    beyond 8 targets.\r\n\r\nGenerates 10 Rage each time it deals damage."
+  wowhead_id: '228920'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:30:15 -0800'
