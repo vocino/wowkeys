@@ -1,8 +1,8 @@
 # Jekyll Configuration for WoW Keybind Visualizer
 title: "World of Warcraft Tank Keybinds"
 description: "Universal tank keybind system visualization"
-baseurl: ""
-url: ""
+baseurl: "/wowkeys"  # GitHub Pages repository name
+url: "https://vocino.github.io"
 
 # Jekyll settings
 plugins:
