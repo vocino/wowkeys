@@ -22,18 +22,39 @@ title: Home
       
       {% comment %} S-Tier Keys {% endcomment %}
       {% for key in site.data.keybinds.keys.s_tier %}
+        {% assign key_philosophy = "" %}
+        {% case key.id %}
+          {% when 'q' %} {% assign key_philosophy = "Primary Active Mitigation (Shield Slam, SotR, Demon Spikes, Mangle, Keg Smash, Death Strike)" %}
+          {% when 'e' %} {% assign key_philosophy = "Secondary Attack/Generator (Revenge, Hammer, Heart Strike, Fracture, Thrash, Blackout Kick)" %}
+          {% when 'r' %} {% assign key_philosophy = "Basic Filler/Builder (Thunder Clap, Judgment, Blood Boil, Felblade, Swipe, Tiger Palm)" %}
+          {% when 'f' %} {% assign key_philosophy = "Major Offensive CD 20-30s (Avatar, Wings, DRW, Soul Cleave, Incarnation, Breath of Fire)" %}
+          {% when '1' %} {% assign key_philosophy = "Ranged/Pull OR Primary Utility (Demo Shout, Avenger's Shield, Marrowrend, Reaver's, Moonfire, SCK)" %}
+          {% when '2' %} {% assign key_philosophy = "Quick Mitigation/Utility (Ignore Pain, Eye of Tyr, AMS, The Hunt, Ironfur, RSK)" %}
+          {% when '3' %} {% assign key_philosophy = "Major Defensive/Utility (Shield Block, Divine Toll, Rune Tap, Fiery Brand, Frenzied Regen, Expel Harm)" %}
+          {% when '4' %} {% assign key_philosophy = "Heal/Utility/Alternate (Spell Reflect, WoG, AMZ, Spirit Bomb, Pulverize, Touch of Death)" %}
+        {% endcase %}
         <tr class="key-row priority-s">
-          <td class="key-cell">
+          <td class="key-cell keybind-tooltip-trigger" {% if key_philosophy != "" %}data-keybind-tooltip="true"{% endif %}>
             <div class="key-label-cell">{{ key.label }}</div>
+            {% if key_philosophy != "" %}
+              <div class="keybind-tooltip">
+                <div class="tooltip-title">Keybind Philosophy: {{ key.label }}</div>
+                <div class="tooltip-description">{{ key_philosophy }}</div>
+              </div>
+            {% endif %}
           </td>
           {% for class_slug in class_order %}
             {% assign class_data = site.data.keybinds.classes[class_slug] %}
             {% assign ability = class_data.abilities[key.id] %}
-            <td class="ability-cell">
-              {% if ability and ability.icon %}
+            <td class="ability-cell" {% if ability and ability.icon %}style="--ability-bg-icon: url('{{ ability.icon }}');"{% endif %}>
+              {% if ability %}
                 <div class="ability-display" 
                      {% if ability.tooltip %}data-tooltip="true"{% endif %}>
-                  <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  {% if ability.icon %}
+                    <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  {% else %}
+                    <div class="ability-icon-small ability-icon-placeholder"></div>
+                  {% endif %}
                   <div class="ability-name">{{ ability.cached_name | default: ability.name }}</div>
                   {% if ability.tooltip %}
                     <div class="ability-tooltip">
@@ -52,18 +73,34 @@ title: Home
       
       {% comment %} Mouse Keys {% endcomment %}
       {% for key in site.data.keybinds.keys.mouse %}
+        {% assign key_philosophy = "" %}
+        {% case key.id %}
+          {% when 'mouse4' %} {% assign key_philosophy = "Interrupt (Pummel, Rebuke, Mind Freeze, Disrupt, Skull Bash, Spear Hand Strike)" %}
+          {% when 'mouse5' %} {% assign key_philosophy = "Taunt (Taunt, Hand of Reckoning, Dark Command, Torment, Growl, Provoke)" %}
+          {% when 'middle' %} {% assign key_philosophy = "Movement (Charge, Divine Steed, Death's Advance, Infernal Strike, Wild Charge, Roll)" %}
+        {% endcase %}
         <tr class="key-row priority-s mouse-row">
-          <td class="key-cell">
+          <td class="key-cell keybind-tooltip-trigger" {% if key_philosophy != "" %}data-keybind-tooltip="true"{% endif %}>
             <div class="key-label-cell">{{ key.label }}</div>
+            {% if key_philosophy != "" %}
+              <div class="keybind-tooltip">
+                <div class="tooltip-title">Keybind Philosophy: {{ key.label }}</div>
+                <div class="tooltip-description">{{ key_philosophy }}</div>
+              </div>
+            {% endif %}
           </td>
           {% for class_slug in class_order %}
             {% assign class_data = site.data.keybinds.classes[class_slug] %}
             {% assign ability = class_data.abilities[key.id] %}
-            <td class="ability-cell">
-              {% if ability and ability.icon %}
+            <td class="ability-cell" {% if ability and ability.icon %}style="--ability-bg-icon: url('{{ ability.icon }}');"{% endif %}>
+              {% if ability %}
                 <div class="ability-display" 
                      {% if ability.tooltip %}data-tooltip="true"{% endif %}>
-                  <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  {% if ability.icon %}
+                    <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  {% else %}
+                    <div class="ability-icon-small ability-icon-placeholder"></div>
+                  {% endif %}
                   <div class="ability-name">{{ ability.cached_name | default: ability.name }}</div>
                   {% if ability.tooltip %}
                     <div class="ability-tooltip">
@@ -82,18 +119,37 @@ title: Home
       
       {% comment %} A-Tier Keys {% endcomment %}
       {% for key in site.data.keybinds.keys.a_tier %}
+        {% assign key_philosophy = "" %}
+        {% case key.id %}
+          {% when 'z' %} {% assign key_philosophy = "Emergency Button (Last Stand, GoAK, IBF, Meta, Survival Instincts, Fort Brew)" %}
+          {% when 'x' %} {% assign key_philosophy = "Ground-Targeted AoE (Ravager, Consecration, D&D, Sigil of Flame, Ursol's Vortex, RJW)" %}
+          {% when 'c' %} {% assign key_philosophy = "Major Defensive Wall (Shield Wall, Ardent Defender, Vampiric Blood, Fel Dev, Barkskin, Purifying Brew)" %}
+          {% when 'v' %} {% assign key_philosophy = "Group/Alternative Utility (Rallying Cry, Holy Bulwark, Consumption, Sigil Silence, RageOfSleeper, Celestial Brew)" %}
+          {% when '5' %} {% assign key_philosophy = "A-Tier utility key" %}
+          {% when 'tilde' %} {% assign key_philosophy = "A-Tier utility key" %}
+        {% endcase %}
         <tr class="key-row priority-a">
-          <td class="key-cell">
+          <td class="key-cell keybind-tooltip-trigger" {% if key_philosophy != "" %}data-keybind-tooltip="true"{% endif %}>
             <div class="key-label-cell">{{ key.label }}</div>
+            {% if key_philosophy != "" %}
+              <div class="keybind-tooltip">
+                <div class="tooltip-title">Keybind Philosophy: {{ key.label }}</div>
+                <div class="tooltip-description">{{ key_philosophy }}</div>
+              </div>
+            {% endif %}
           </td>
           {% for class_slug in class_order %}
             {% assign class_data = site.data.keybinds.classes[class_slug] %}
             {% assign ability = class_data.abilities[key.id] %}
-            <td class="ability-cell">
-              {% if ability and ability.icon %}
+            <td class="ability-cell" {% if ability and ability.icon %}style="--ability-bg-icon: url('{{ ability.icon }}');"{% endif %}>
+              {% if ability %}
                 <div class="ability-display" 
                      {% if ability.tooltip %}data-tooltip="true"{% endif %}>
-                  <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  {% if ability.icon %}
+                    <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  {% else %}
+                    <div class="ability-icon-small ability-icon-placeholder"></div>
+                  {% endif %}
                   <div class="ability-name">{{ ability.cached_name | default: ability.name }}</div>
                   {% if ability.tooltip %}
                     <div class="ability-tooltip">
@@ -112,18 +168,29 @@ title: Home
       
       {% comment %} B-Tier Keys {% endcomment %}
       {% for key in site.data.keybinds.keys.b_tier %}
+        {% assign key_philosophy = "B-Tier utility key" %}
         <tr class="key-row priority-b">
-          <td class="key-cell">
+          <td class="key-cell keybind-tooltip-trigger" {% if key_philosophy != "" %}data-keybind-tooltip="true"{% endif %}>
             <div class="key-label-cell">{{ key.label }}</div>
+            {% if key_philosophy != "" %}
+              <div class="keybind-tooltip">
+                <div class="tooltip-title">Keybind Philosophy: {{ key.label }}</div>
+                <div class="tooltip-description">{{ key_philosophy }}</div>
+              </div>
+            {% endif %}
           </td>
           {% for class_slug in class_order %}
             {% assign class_data = site.data.keybinds.classes[class_slug] %}
             {% assign ability = class_data.abilities[key.id] %}
-            <td class="ability-cell">
-              {% if ability and ability.icon %}
+            <td class="ability-cell" {% if ability and ability.icon %}style="--ability-bg-icon: url('{{ ability.icon }}');"{% endif %}>
+              {% if ability %}
                 <div class="ability-display" 
                      {% if ability.tooltip %}data-tooltip="true"{% endif %}>
-                  <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  {% if ability.icon %}
+                    <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  {% else %}
+                    <div class="ability-icon-small ability-icon-placeholder"></div>
+                  {% endif %}
                   <div class="ability-name">{{ ability.cached_name | default: ability.name }}</div>
                   {% if ability.tooltip %}
                     <div class="ability-tooltip">

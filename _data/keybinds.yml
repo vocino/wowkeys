@@ -67,12 +67,15 @@ keys:
   - id: mouse4
     priority: s
     label: M4
+    note: Interrupt (always off-GCD)
   - id: mouse5
     priority: s
     label: M5
+    note: Taunt (always instant, off-GCD)
   - id: middle
     priority: s
     label: MM
+    note: Primary movement ability
 classes:
   warrior:
     name: Protection Warrior
@@ -87,6 +90,7 @@ classes:
         tooltip: "Slams the target with your shield, causing 637 Physical damage.\r\n\r\nGenerates
           15 Rage."
         cached_name: Shield Slam
+        notes: Primary rage generator and active mitigation trigger
       e:
         name: Revenge
         keybind: E
@@ -96,6 +100,7 @@ classes:
           in front of you. Deals reduced damage beyond 5 targets.\r\n\r\nYour successful
           dodges and parries have a chance to make your next Revenge cost no Rage."
         cached_name: Revenge
+        notes: AoE frontal cone, rage spender
       r:
         name: Thunder Clap
         keybind: R
@@ -105,6 +110,7 @@ classes:
           their movement speed by 20% for 10 sec. Deals reduced damage beyond 5 targets.\r\n\r\nIf
           you have Rend, Thunder Clap affects 5 nearby targets with Rend.\r\n"
         cached_name: Thunder Clap
+        notes: AoE slow, applies Rend
       f:
         name: Avatar
         keybind: F
@@ -113,6 +119,7 @@ classes:
         tooltip: "Transform into a colossus for 20 sec, causing you to deal 20% increased
           damage and removing all roots and snares.\r\n\r\nGenerates 10 Rage."
         cached_name: Avatar
+        notes: Major offensive cooldown, 20s duration
       '1':
         name: Demoralizing Shout
         keybind: '1'
@@ -121,6 +128,7 @@ classes:
         tooltip: Demoralizes all enemies within 10 yards, reducing the damage they
           deal to you by 20% for 8 sec.
         cached_name: Demoralizing Shout
+        notes: Primary defensive cooldown, damage reduction
       '2':
         name: Ignore Pain
         keybind: '2'
@@ -130,6 +138,7 @@ classes:
           damage has been prevented.\r\n\r\nRepeated uses of Ignore Pain accumulate,
           up to 59,202 total damage prevented."
         cached_name: Ignore Pain
+        notes: Quick rage dump for absorption, off-GCD
       '3':
         name: Shield Block
         keybind: '3'
@@ -137,6 +146,7 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_defend.jpg
         tooltip: Raise your shield, blocking all melee attacks against you for 6 sec.
         cached_name: Shield Block
+        notes: Primary active mitigation vs physical, off-GCD
       '4':
         name: Spell Reflect
         keybind: '4'
@@ -145,6 +155,7 @@ classes:
         tooltip: Raise your weapon, reflecting the first spell cast on you and reducing
           magic damage you take by 20% for 5 sec.
         cached_name: Spell Reflection
+        notes: Magic mitigation utility
       z:
         name: Last Stand
         keybind: Z
@@ -153,10 +164,12 @@ classes:
         tooltip: Increases maximum health by 30% for 15 sec and instantly heals you
           for that amount.
         cached_name: Last Stand
+        notes: Emergency health increase, off-GCD
       x:
         name: Ravager
         keybind: X
         wowhead_id: 152277
+        notes: 'Talent: Ground-targeted whirlwind, generates rage and threat'
       c:
         name: Shield Wall
         keybind: C
@@ -164,6 +177,7 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_warrior_shieldwall.jpg
         tooltip: Reduces all damage you take by 40% for 8 sec.
         cached_name: Shield Wall
+        notes: Major defensive wall, off-GCD
       v:
         name: Rallying Cry
         keybind: V
@@ -172,6 +186,33 @@ classes:
         tooltip: Lets loose a rallying cry, granting all party or raid members within
           40 yards 10% temporary and maximum health for 10 sec.
         cached_name: Rallying Cry
+        notes: Group utility defensive
+      mouse4:
+        name: Pummel
+        keybind: M4
+        wowhead_id: 6552
+        notes: Interrupt - 15s cooldown, 4s lockout, always off-GCD
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_gauntlets_04.jpg
+        tooltip: Pummels the target, interrupting spellcasting and preventing any
+          spell in that school from being cast for 3 sec.
+        cached_name: Pummel
+      mouse5:
+        name: Taunt
+        keybind: M5
+        wowhead_id: 355
+        notes: Single-target taunt - 8s cooldown, instant, off-GCD
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_nature_reincarnation.jpg
+        tooltip: Taunts the target to attack you.
+        cached_name: Taunt
+      middle:
+        name: Charge / Heroic Leap
+        keybind: MM
+        wowhead_id: 100
+        notes: Charge to enemy OR Heroic Leap (6 talent option) - primary gap closer
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_warrior_charge.jpg
+        tooltip: "Charge to an enemy, dealing 112 Physical damage, rooting it for
+          1 sec.\r\n\r\nGenerates 20 Rage."
+        cached_name: Charge
   paladin:
     name: Protection Paladin
     slug: protection-paladin
@@ -185,6 +226,7 @@ classes:
         tooltip: "Slams enemies in front of you with your shield, causing 276 Holy
           damage, and increasing your Armor by 8,854 for 4.5 sec.\r\n"
         cached_name: Shield of the Righteous
+        notes: Holy Power spender, primary active mitigation
       e:
         name: Hammer of the Righteous / Blessed Hammer
         keybind: E
@@ -193,6 +235,7 @@ classes:
         tooltip: "Hammers the current target for 521 Physical damage.\r\n\r\nGenerates
           1 Holy Power."
         cached_name: Hammer of the Righteous
+        notes: Holy Power generator, AoE with Blessed Hammer talent
       r:
         name: Judgment
         keybind: R
@@ -200,6 +243,7 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_righteousfury.jpg
         tooltip: Judges the target, dealing 3,659 Holy damage.
         cached_name: Judgment
+        notes: Ranged Holy Power generator
       f:
         name: Avenging Wrath / Sentinel
         keybind: F
@@ -208,6 +252,7 @@ classes:
         tooltip: Call upon the Light to become an avatar of retribution, increasing
           your damage, healing, and critical strike chance by 20% for 20 sec.
         cached_name: Avenging Wrath
+        notes: Major offensive cooldown, 20s duration
       '1':
         name: Avenger's Shield
         keybind: '1'
@@ -217,6 +262,7 @@ classes:
           and silencing the non-Player target for 3 sec, and then jumping to 2 additional
           nearby enemies. \r\n"
         cached_name: Avenger's Shield
+        notes: Ranged Holy Power generator, interrupt for non-players
       '2':
         name: Eye of Tyr
         keybind: '2'
@@ -226,6 +272,7 @@ classes:
           to all nearby enemies within 8 yds and reducing all damage they deal to
           you by 25% for 9 sec.
         cached_name: Eye of Tyr
+        notes: AoE damage reduction debuff
       '3':
         name: Divine Toll
         keybind: '3'
@@ -234,6 +281,7 @@ classes:
         tooltip: Instantly cast Holy Shock, Avenger's Shield, or Judgment on up to
           5 targets within 30 yds (based on your current specialization).
         cached_name: Divine Toll
+        notes: Kyrian covenant ability, burst Holy Power generation
       '4':
         name: Word of Glory
         keybind: '4'
@@ -241,6 +289,7 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/inv_helmet_96.jpg
         tooltip: Calls down the Light to heal a friendly target for 19,170.
         cached_name: Word of Glory
+        notes: Holy Power heal, free with Shining Light procs
       z:
         name: Guardian of Ancient Kings
         keybind: Z
@@ -249,6 +298,7 @@ classes:
         tooltip: Empowers you with the spirit of ancient kings, reducing all damage
           you take by 50% for 8 sec.
         cached_name: Guardian of Ancient Kings
+        notes: Emergency 50% DR, off-GCD
       x:
         name: Consecration
         keybind: X
@@ -257,6 +307,7 @@ classes:
         tooltip: Consecrates the land beneath you, causing 393 Holy damage over 12
           sec to enemies who enter the area. Limit 1.
         cached_name: Consecration
+        notes: Ground-targeted AoE field, core maintenance buff
       c:
         name: Ardent Defender
         keybind: C
@@ -266,10 +317,39 @@ classes:
           Defender is active, the next attack that would otherwise kill you will instead
           bring you to 20% of your maximum health."
         cached_name: Ardent Defender
+        notes: Major defensive with cheat death
       v:
         name: Holy Bulwark
         keybind: V
         wowhead_id: 204150
+        notes: 'Talent: Absorb shield when casting Word of Glory on self'
+      mouse4:
+        name: Rebuke
+        keybind: M4
+        wowhead_id: 96231
+        notes: Interrupt - 15s cooldown, 4s lockout, always off-GCD
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_rebuke.jpg
+        tooltip: Interrupts spellcasting and prevents any spell in that school from
+          being cast for 3 sec.
+        cached_name: Rebuke
+      mouse5:
+        name: Hand of Reckoning
+        keybind: M5
+        wowhead_id: 62124
+        notes: Single-target taunt - 8s cooldown, instant, off-GCD
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_unyieldingfaith.jpg
+        tooltip: Commands the attention of an enemy target, forcing them to attack
+          you.
+        cached_name: Hand of Reckoning
+      middle:
+        name: Divine Steed
+        keybind: MM
+        wowhead_id: 190784
+        notes: Mount speed boost - 3s duration (Protection), 100% speed increase
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_paladin_divinesteed.jpg
+        tooltip: Leap atop your Charger for 3 sec, increasing movement speed by 100%.
+          Usable while indoors or in combat.
+        cached_name: Divine Steed
   deathknight:
     name: Blood Death Knight
     slug: blood-death-knight
@@ -279,6 +359,8 @@ classes:
         name: Death Strike
         keybind: Q
         wowhead_id: 45470
+        notes: Primary self-heal and active mitigation, converts recent damage to
+          healing
       e:
         name: Heart Strike
         keybind: E
@@ -287,6 +369,7 @@ classes:
         tooltip: Instantly strike the target and 1 other nearby enemy, causing 301
           Physical damage, and reducing enemies' movement speed by 20% for 8 sec.
         cached_name: Heart Strike
+        notes: Primary Runic Power generator, cleaves
       r:
         name: Blood Boil
         keybind: R
@@ -296,6 +379,7 @@ classes:
           Blood Plague.\r\n\r\n Blood Plague\r\nA shadowy disease that drains 412
           health from the target over 24 sec.  "
         cached_name: Blood Boil
+        notes: AoE disease application and damage
       f:
         name: Dancing Rune Weapon
         keybind: F
@@ -304,6 +388,7 @@ classes:
         tooltip: "Summons a rune weapon for 8 sec that mirrors your melee attacks
           and bolsters your defenses.\r\n\r\nWhile active, you gain 35% parry chance."
         cached_name: Dancing Rune Weapon
+        notes: Major offensive/defensive cooldown, 35% parry
       '1':
         name: Marrowrend
         keybind: '1'
@@ -314,6 +399,7 @@ classes:
           bones, increasing Armor by 1,154. Each melee attack against you consumes
           a charge. Lasts 30 sec or until all charges are consumed."
         cached_name: Marrowrend
+        notes: Bone Shield generator, primary defensive stack maintenance
       '2':
         name: Anti-Magic Shell
         keybind: '2'
@@ -323,6 +409,7 @@ classes:
           magic damage and preventing application of harmful magical effects. Damage
           absorbed generates Runic Power.
         cached_name: Anti-Magic Shell
+        notes: Magic absorption, generates RP, off-GCD
       '3':
         name: Rune Tap
         keybind: '3'
@@ -330,6 +417,7 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_runetap.jpg
         tooltip: Reduces all damage taken by 20% for 4 sec.
         cached_name: Rune Tap
+        notes: Quick damage reduction, off-GCD
       '4':
         name: Anti-Magic Zone
         keybind: '4'
@@ -338,6 +426,7 @@ classes:
         tooltip: Places an Anti-Magic Zone for 6 sec, reducing the magic damage taken
           by party or raid members by 15%.
         cached_name: Anti-Magic Zone
+        notes: Group magic damage reduction utility
       z:
         name: Icebound Fortitude
         keybind: Z
@@ -346,6 +435,7 @@ classes:
         tooltip: Your blood freezes, granting immunity to Stun effects and reducing
           all damage you take by 30% for 8 sec.
         cached_name: Icebound Fortitude
+        notes: Emergency defensive with stun immunity, off-GCD
       x:
         name: Death and Decay
         keybind: X
@@ -355,6 +445,7 @@ classes:
           sec to targets within the area.\r\n\r\nWhile you remain within the area,
           your Heart Strike will hit up to 0 additional targets."
         cached_name: Death and Decay
+        notes: Ground-targeted AoE, enables AoE Heart Strike cleave
       c:
         name: Vampiric Blood
         keybind: C
@@ -363,8 +454,9 @@ classes:
         tooltip: Embrace your undeath, increasing your maximum health by 30% and increasing
           all healing and absorbs received by 30% for 10 sec.
         cached_name: Vampiric Blood
+        notes: Major defensive, increases healing received
       v:
-        name: Consumption / Utility
+        name: Consumption
         keybind: V
         wowhead_id: 274156
         icon: https://render.worldofwarcraft.com/us/icons/56/inv_axe_2h_artifactmaw_d_01.jpg
@@ -373,6 +465,36 @@ classes:
           damage beyond 8 targets.\r\n\r\nCauses your Blood Plague damage to occur
           30% more quickly for 6 sec. \r\n\r\nGenerates 2 Runes."
         cached_name: Consumption
+        notes: AoE frontal cone with self-heal, talent option
+      mouse4:
+        name: Mind Freeze
+        keybind: M4
+        wowhead_id: 47528
+        notes: Interrupt - 15s cooldown, 4s lockout, always off-GCD
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_mindfreeze.jpg
+        tooltip: Smash the target's mind with cold, interrupting spellcasting and
+          preventing any spell in that school from being cast for 3 sec.
+        cached_name: Mind Freeze
+      mouse5:
+        name: Dark Command
+        keybind: M5
+        wowhead_id: 56222
+        notes: Single-target taunt - 8s cooldown, instant, off-GCD
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_nature_shamanrage.jpg
+        tooltip: Command the target to attack you.
+        cached_name: Dark Command
+      middle:
+        name: Death's Advance
+        keybind: MM
+        wowhead_id: 48265
+        notes: Speed boost + slow immunity - 10s duration, 35% speed increase, immune
+          to knockbacks
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_shadow_demonicempathy.jpg
+        tooltip: "For 10 sec, your movement speed is increased by 35%, you cannot
+          be slowed below 100% of normal speed, and you are immune to forced movement
+          effects and knockbacks.\r\n\r\nPassive: You cannot be slowed below 70% of
+          normal speed."
+        cached_name: Death's Advance
   demonhunter:
     name: Vengeance Demon Hunter
     slug: vengeance-demon-hunter
@@ -385,6 +507,7 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_demonspikes.jpg
         tooltip: Surge with fel power, increasing your Armor by 1,066.
         cached_name: Demon Spikes
+        notes: Primary active mitigation, charges system, off-GCD
       e:
         name: Fracture
         keybind: E
@@ -393,10 +516,12 @@ classes:
         tooltip: "Rapidly slash your target for 331 Physical damage, and shatter 2
           Lesser Soul Fragments from them.\r\n\r\nGenerates 25 Fury."
         cached_name: Fracture
+        notes: Soul Fragment generator, replaces Shear
       r:
         name: Felblade
         keybind: R
         wowhead_id: 213241
+        notes: 'Talent: Charge to target, generates Fury'
       f:
         name: Soul Cleave
         keybind: F
@@ -406,19 +531,23 @@ classes:
           damage and heal yourself for 210.\r\n\r\nConsumes up to 2 available Soul
           Fragments."
         cached_name: Soul Cleave
+        notes: Primary Fury spender with self-heal
       '1':
         name: Reaver's Glaive
         keybind: '1'
         wowhead_id: 395428
+        notes: 'Talent: Throw glaive that ricochets'
       '2':
-        name: Sigil of Flame (alt)
+        name: The Hunt
         keybind: '2'
-        wowhead_id: 204596
-        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_sigilofinquisition.jpg
-        tooltip: "Place a Sigil of Flame at the target location that activates after
-          2 sec.\r\n\r\nDeals 283 Fire damage, and an additional 708 Fire damage over
-          8 sec, to all enemies affected by the sigil.\r\n\r\nGenerates 30 Fury."
-        cached_name: Sigil of Flame
+        wowhead_id: 323639
+        notes: 'Night Fae covenant: Charge to target, heavy damage and healing'
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_ardenweald_demonhunter.jpg
+        tooltip: "Charge to your target, striking them for 2,419 Nature damage, rooting
+          them in place for 1.5 sec and inflicting 1,739 Nature damage over 6 sec
+          to up to 5 enemies in your path. \r\n\r\nThe pursuit invigorates your soul,
+          healing you for 25% of the damage you deal to your Hunt target for 30 sec."
+        cached_name: The Hunt
       '3':
         name: Fiery Brand
         keybind: '3'
@@ -427,16 +556,18 @@ classes:
         tooltip: Brand an enemy with a demonic symbol, instantly dealing 1,110 Fire
           damage. The enemy's damage done to you is reduced by 40% for 12 sec.
         cached_name: Fiery Brand
+        notes: Single-target 40% damage reduction debuff
       '4':
-        name: Soul Carver / Spirit Bomb
+        name: Spirit Bomb
         keybind: '4'
-        wowhead_id: 207407
-        icon: https://render.worldofwarcraft.com/us/icons/56/inv_glaive_1h_artifactaldrochi_d_01.jpg
-        tooltip: Carve into the soul of your target, dealing 1,097 Fire damage and
-          an additional 722 Fire damage over 3 sec.  Immediately shatters 3 Lesser
-          Soul Fragments from the target and 1 additional Lesser Soul Fragment every
-          1 sec.
-        cached_name: Soul Carver
+        wowhead_id: 247454
+        notes: 'Talent: AoE Soul Fragment consumer, applies Frailty debuff'
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_icon_shadowcouncilorb_purple.jpg
+        tooltip: Consume up to 5 available Soul Fragments then explode, damaging nearby
+          enemies for 190 Fire damage per fragment consumed, and afflicting them with
+          Frailty for 6 sec, causing you to heal for 8% of damage you deal to them.
+          Deals reduced damage beyond 8 targets.
+        cached_name: Spirit Bomb
       z:
         name: Metamorphosis
         keybind: Z
@@ -445,29 +576,61 @@ classes:
         tooltip: Transform to demon form for 15 sec, increasing current health by
           40%, healing for that amount, and increasing Armor by 200%.
         cached_name: Metamorphosis
+        notes: Emergency transformation, massive health/armor increase
       x:
-        name: Fiery Brand
+        name: Sigil of Flame
         keybind: X
-        wowhead_id: 204021
-        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_fierybrand.jpg
-        tooltip: Brand an enemy with a demonic symbol, instantly dealing 1,110 Fire
-          damage. The enemy's damage done to you is reduced by 40% for 12 sec.
-        cached_name: Fiery Brand
+        wowhead_id: 204596
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_sigilofinquisition.jpg
+        tooltip: "Place a Sigil of Flame at the target location that activates after
+          2 sec.\r\n\r\nDeals 283 Fire damage, and an additional 708 Fire damage over
+          8 sec, to all enemies affected by the sigil.\r\n\r\nGenerates 30 Fury."
+        cached_name: Sigil of Flame
+        notes: Ground-targeted AoE DoT, primary Fury generator
       c:
-        name: Demon Spikes
+        name: Fel Devastation
         keybind: C
-        wowhead_id: 203720
-        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_demonspikes.jpg
-        tooltip: Surge with fel power, increasing your Armor by 1,066.
-        cached_name: Demon Spikes
+        wowhead_id: 212084
+        notes: 'Talent: Channel AoE damage with massive self-healing'
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_feldevastation.jpg
+        tooltip: Unleash the fel within you, damaging enemies directly in front of
+          you for 1,374 Fire damage over 2 sec.
+        cached_name: Fel Devastation
       v:
-        name: Sigil of Spite
+        name: Sigil of Silence
         keybind: V
         wowhead_id: 202137
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_sigilofsilence.jpg
         tooltip: "Place a Sigil of Silence at the target location that activates after
           2 sec.\r\n\r\nSilences all enemies affected by the sigil for 2 sec."
         cached_name: Sigil of Silence
+        notes: Ground-targeted AoE interrupt utility
+      mouse4:
+        name: Disrupt
+        keybind: M4
+        wowhead_id: 183752
+        notes: Interrupt - 15s cooldown, 3s lockout, always off-GCD
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_consumemagic.jpg
+        tooltip: Interrupts the enemy's spellcasting and locks them from that school
+          of magic for 3 sec.
+        cached_name: Disrupt
+      mouse5:
+        name: Torment
+        keybind: M5
+        wowhead_id: 185245
+        notes: Single-target taunt - 8s cooldown, instant, off-GCD
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_torment.jpg
+        tooltip: Taunts the target to attack you.
+        cached_name: Torment
+      middle:
+        name: Infernal Strike
+        keybind: MM
+        wowhead_id: 189110
+        notes: Leap to location - 2 charges, AoE damage on landing, primary gap closer
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_infernalstrike1.jpg
+        tooltip: Leap through the air toward a targeted location, dealing 221 Fire
+          damage to all enemies within 6 yards.
+        cached_name: Infernal Strike
   druid:
     name: Guardian Druid
     slug: guardian-druid
@@ -480,6 +643,7 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_druid_mangle2.jpg
         tooltip: "Mangle the target for 371 Physical damage.\r\n\r\nGenerates 12 Rage."
         cached_name: Mangle
+        notes: Primary Rage generator
       e:
         name: Thrash
         keybind: E
@@ -489,12 +653,14 @@ classes:
           67 Bleed damage over 15 sec. When applied from Bear Form, this effect can
           stack up to 3 times.\r\n\r\nGenerates 5 Rage."
         cached_name: Thrash
+        notes: AoE bleed DoT, Rage generator, maintain 3 stacks
       r:
-        name: Swipe / Raze
+        name: Swipe
         keybind: R
         wowhead_id: 213771
+        notes: Basic AoE melee attack
       f:
-        name: Incarnation / Rage of the Sleeper
+        name: Incarnation / Berserk
         keybind: F
         wowhead_id: 102558
         icon: https://render.worldofwarcraft.com/us/icons/56/spell_druid_incarnation.jpg
@@ -503,6 +669,7 @@ classes:
           30 sec. You may freely shapeshift in and out of this improved Bear Form
           for its duration."
         cached_name: 'Incarnation: Guardian of Ursoc'
+        notes: Major offensive/defensive cooldown, 30s duration
       '1':
         name: Moonfire
         keybind: '1'
@@ -511,6 +678,7 @@ classes:
         tooltip: 'A quick beam of lunar light burns the enemy for 1,151 Arcane damage
           and then an additional 10,126 Arcane damage over 18 sec. '
         cached_name: Moonfire
+        notes: Ranged DoT, applies from range
       '2':
         name: Ironfur
         keybind: '2'
@@ -518,6 +686,7 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_druid_ironfur.jpg
         tooltip: Increases armor by 1,592 for 7 sec.
         cached_name: Ironfur
+        notes: Primary active mitigation, stacking armor buff, off-GCD
       '3':
         name: Frenzied Regeneration
         keybind: '3'
@@ -525,10 +694,17 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_bullrush.jpg
         tooltip: Heals you for 32% health over 3 sec.
         cached_name: Frenzied Regeneration
+        notes: Primary self-heal, charges system, off-GCD
       '4':
-        name: Heart of the Wild / Pulverize
+        name: Pulverize
         keybind: '4'
-        wowhead_id: 158298
+        wowhead_id: 80313
+        notes: 'Talent: Consumes Thrash stacks for damage reduction'
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_druid_malfurionstenacity.jpg
+        tooltip: A devastating blow that consumes 2 stacks of your Thrash on the target
+          to deal 714 Physical damage and reduce the damage they deal to you by 35%
+          for 8 sec.
+        cached_name: Pulverize
       z:
         name: Survival Instincts
         keybind: Z
@@ -536,10 +712,19 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_druid_tigersroar.jpg
         tooltip: Reduces all damage you take by 50% for 6 sec.
         cached_name: Survival Instincts
+        notes: Emergency 50% DR, charges system, off-GCD
       x:
-        name: Swipe / Raze (alt AoE)
+        name: Ursol's Vortex
         keybind: X
-        wowhead_id: 213771
+        wowhead_id: 102793
+        notes: 'Talent: Ground-targeted snare/pull utility - OPTIONAL, can leave empty
+          if not talented'
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_druid_ursolsvortex.jpg
+        tooltip: Conjures a vortex of wind for 10 sec at the destination, reducing
+          the movement speed of all enemies within 8 yards by 50%. The first time
+          an enemy attempts to leave the vortex, winds will pull that enemy back to
+          its center. Usable in all shapeshift forms.
+        cached_name: Ursol's Vortex
       c:
         name: Barkskin
         keybind: C
@@ -550,14 +735,42 @@ classes:
           while stunned, frozen, incapacitated, feared, or asleep, and in all shapeshift
           forms."
         cached_name: Barkskin
+        notes: Versatile 20% DR, usable while CC'd, off-GCD
       v:
-        name: Additional CD (Sleeper/Incarn alt)
+        name: Rage of the Sleeper
         keybind: V
-        wowhead_id: 124974
-        icon: https://render.worldofwarcraft.com/us/icons/56/achievement_zone_feralas.jpg
-        tooltip: For 15 sec, all single-target damage also heals a nearby friendly
-          target for 20% of the damage done.
-        cached_name: Nature's Vigil
+        wowhead_id: 200851
+        notes: 'Talent alternative to Incarnation: Reflect damage, increase Leech'
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_hand_1h_artifactursoc_d_01.jpg
+        tooltip: Unleashes the rage of Ursoc for 8 sec, preventing 20% of all damage
+          you take, increasing your damage done by 15%, granting you 20% leech, and
+          reflecting 250 Nature damage back at your attackers.
+        cached_name: Rage of the Sleeper
+      mouse4:
+        name: Skull Bash
+        keybind: M4
+        wowhead_id: 106839
+        notes: Interrupt - 15s cooldown, 4s lockout, 13yd range, always off-GCD
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_bone_skull_04.jpg
+        tooltip: You charge and bash the target's skull, interrupting spellcasting
+          and preventing any spell in that school from being cast for 3 sec.
+        cached_name: Skull Bash
+      mouse5:
+        name: Growl
+        keybind: M5
+        wowhead_id: 6795
+        notes: Single-target taunt - 8s cooldown, instant, off-GCD, Bear Form only
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_physical_taunt.jpg
+        tooltip: Taunts the target to attack you.
+        cached_name: Growl
+      middle:
+        name: Wild Charge
+        keybind: MM
+        wowhead_id: 102401
+        notes: 'Bear Form: Charge to enemy, immobilize 4s - Talent, primary gap closer'
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_druid_wildcharge.jpg
+        tooltip: Fly to a nearby ally's position.
+        cached_name: Wild Charge
   monk:
     name: Brewmaster Monk
     slug: brewmaster-monk
@@ -572,10 +785,12 @@ classes:
           all enemies within 8 yds and reducing their movement speed by 20% for 15
           sec. Deals reduced damage beyond 5 targets.
         cached_name: Keg Smash
+        notes: Primary damage ability, reduces brew cooldowns
       e:
         name: Blackout Kick
         keybind: E
         wowhead_id: 205523
+        notes: Core rotation filler, shuffles Stagger damage
       r:
         name: Tiger Palm
         keybind: R
@@ -583,6 +798,7 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_tigerpalm.jpg
         tooltip: Strike with the palm of your hand, dealing 143 Physical damage.
         cached_name: Tiger Palm
+        notes: Energy spender, reduces brew cooldowns
       f:
         name: Breath of Fire
         keybind: F
@@ -593,6 +809,7 @@ classes:
           Smash will also burn, taking 176 Fire damage and dealing 5% reduced damage
           to you for 12 sec."
         cached_name: Breath of Fire
+        notes: AoE frontal cone, applies damage reduction debuff
       '1':
         name: Spinning Crane Kick
         keybind: '1'
@@ -601,6 +818,7 @@ classes:
         tooltip: Spin while kicking in the air, dealing 213 Physical damage over 1.4
           sec to all enemies within 8 yds. Deals reduced damage beyond 5 targets.
         cached_name: Spinning Crane Kick
+        notes: Channeled AoE damage
       '2':
         name: Rising Sun Kick
         keybind: '2'
@@ -608,10 +826,16 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_risingsunkick.jpg
         tooltip: Kick upwards, dealing 766 Physical damage.
         cached_name: Rising Sun Kick
+        notes: High damage single-target ability
       '3':
-        name: Exploding Keg
+        name: Expel Harm
         keybind: '3'
-        wowhead_id: 214326
+        wowhead_id: 322101
+        notes: Instant self-heal, generates Chi
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_expelharm.jpg
+        tooltip: Expel negative chi from your body, healing for 6,554 and dealing
+          10% of the amount healed as Nature damage to an enemy within 20 yards.
+        cached_name: Expel Harm
       '4':
         name: Touch of Death
         keybind: '4'
@@ -621,6 +845,7 @@ classes:
           damage equal to 100% of your maximum health to them.\r\n\r\nOnly usable
           on creatures that have less health than you."
         cached_name: Touch of Death
+        notes: Execute ability, usable on low-health targets
       z:
         name: Fortifying Brew
         keybind: Z
@@ -628,6 +853,7 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_fortifyingale_new.jpg
         tooltip: Turns your skin to stone for 15 sec.
         cached_name: Fortifying Brew
+        notes: Emergency defensive, reduces damage and increases health
       x:
         name: Rushing Jade Wind
         keybind: X
@@ -637,6 +863,7 @@ classes:
           over 5.4 sec to all enemies within 8 yards. Deals reduced damage beyond
           5 targets.
         cached_name: Rushing Jade Wind
+        notes: Personal AoE field around player
       c:
         name: Purifying Brew
         keybind: C
@@ -644,13 +871,39 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/inv_misc_beer_06.jpg
         tooltip: Clears 50% of your damage delayed with Stagger.
         cached_name: Purifying Brew
+        notes: Stagger management, charges system, off-GCD
       v:
         name: Celestial Brew
         keybind: V
-        wowhead_id: 325153
-        icon: https://render.worldofwarcraft.com/us/icons/56/archaeology_5_0_emptykegofbrewfatherxinwoyin.jpg
-        tooltip: Hurls a flaming keg at the target location, dealing 1,520 Fire damage
-          to nearby enemies, causing your attacks against them to deal 117 additional
-          Fire damage, and causing their melee attacks to deal 100% reduced damage
-          for the next 3 sec.
-        cached_name: Exploding Keg
+        wowhead_id: 322507
+        notes: Large absorb shield based on recent Stagger damage
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_ironskinbrew.jpg
+        tooltip: "A swig of strong brew that coalesces purified chi escaping your
+          body into a celestial guard, absorbing 6,021 damage.\r\n\r\nPurifying Stagger
+          damage increases absorption by up to 200%."
+        cached_name: Celestial Brew
+      mouse4:
+        name: Spear Hand Strike
+        keybind: M4
+        wowhead_id: 116705
+        notes: Interrupt - 15s cooldown, 4s lockout, always off-GCD
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_spearhand.jpg
+        tooltip: Jabs the target in the throat, interrupting spellcasting and preventing
+          any spell from that school of magic from being cast for 3 sec.
+        cached_name: Spear Hand Strike
+      mouse5:
+        name: Provoke
+        keybind: M5
+        wowhead_id: 115546
+        notes: Single-target taunt - 8s cooldown, instant, 30yd range, off-GCD
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_provoke.jpg
+        tooltip: Taunts the target to attack you.
+        cached_name: Provoke
+      middle:
+        name: Roll / Chi Torpedo
+        keybind: MM
+        wowhead_id: 109132
+        notes: Roll forward 20yds OR Chi Torpedo (talent) - 2 charges, primary mobility
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_roll.jpg
+        tooltip: Roll a short distance.
+        cached_name: Roll

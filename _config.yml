@@ -1,7 +1,7 @@
 # Jekyll Configuration for WoW Keybind Visualizer
 title: "World of Warcraft Tank Keybinds"
 description: "Universal tank keybind system visualization"
-baseurl: "/wowkeys"  # GitHub Pages repository name
+baseurl: ""  # Empty for local dev, GitHub Pages will use /wowkeys if repo name is wowkeys
 url: "https://vocino.github.io"
 
 # Cache busting version (increment on major updates)

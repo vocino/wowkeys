@@ -490,3 +490,213 @@
   wowhead_id: '325153'
   source: blizzard_api
   cached_at: '2025-12-16 10:35:45 -0800'
+'6552':
+  name: Pummel
+  icon: https://render.worldofwarcraft.com/us/icons/56/inv_gauntlets_04.jpg
+  tooltip: Pummels the target, interrupting spellcasting and preventing any spell
+    in that school from being cast for 3 sec.
+  wowhead_id: '6552'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:34 -0800'
+'355':
+  name: Taunt
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_nature_reincarnation.jpg
+  tooltip: Taunts the target to attack you.
+  wowhead_id: '355'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:34 -0800'
+'100':
+  name: Charge
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_warrior_charge.jpg
+  tooltip: "Charge to an enemy, dealing 112 Physical damage, rooting it for 1 sec.\r\n\r\nGenerates
+    20 Rage."
+  wowhead_id: '100'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:35 -0800'
+'96231':
+  name: Rebuke
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_rebuke.jpg
+  tooltip: Interrupts spellcasting and prevents any spell in that school from being
+    cast for 3 sec.
+  wowhead_id: '96231'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:35 -0800'
+'62124':
+  name: Hand of Reckoning
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_unyieldingfaith.jpg
+  tooltip: Commands the attention of an enemy target, forcing them to attack you.
+  wowhead_id: '62124'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:36 -0800'
+'190784':
+  name: Divine Steed
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_paladin_divinesteed.jpg
+  tooltip: Leap atop your Charger for 3 sec, increasing movement speed by 100%. Usable
+    while indoors or in combat.
+  wowhead_id: '190784'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:36 -0800'
+'47528':
+  name: Mind Freeze
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_mindfreeze.jpg
+  tooltip: Smash the target's mind with cold, interrupting spellcasting and preventing
+    any spell in that school from being cast for 3 sec.
+  wowhead_id: '47528'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:37 -0800'
+'56222':
+  name: Dark Command
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_nature_shamanrage.jpg
+  tooltip: Command the target to attack you.
+  wowhead_id: '56222'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:38 -0800'
+'48265':
+  name: Death's Advance
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_shadow_demonicempathy.jpg
+  tooltip: "For 10 sec, your movement speed is increased by 35%, you cannot be slowed
+    below 100% of normal speed, and you are immune to forced movement effects and
+    knockbacks.\r\n\r\nPassive: You cannot be slowed below 70% of normal speed."
+  wowhead_id: '48265'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:38 -0800'
+'323639':
+  name: The Hunt
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_ardenweald_demonhunter.jpg
+  tooltip: "Charge to your target, striking them for 2,419 Nature damage, rooting
+    them in place for 1.5 sec and inflicting 1,739 Nature damage over 6 sec to up
+    to 5 enemies in your path. \r\n\r\nThe pursuit invigorates your soul, healing
+    you for 25% of the damage you deal to your Hunt target for 30 sec."
+  wowhead_id: '323639'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:39 -0800'
+'247454':
+  name: Spirit Bomb
+  icon: https://render.worldofwarcraft.com/us/icons/56/inv_icon_shadowcouncilorb_purple.jpg
+  tooltip: Consume up to 5 available Soul Fragments then explode, damaging nearby
+    enemies for 190 Fire damage per fragment consumed, and afflicting them with Frailty
+    for 6 sec, causing you to heal for 8% of damage you deal to them. Deals reduced
+    damage beyond 8 targets.
+  wowhead_id: '247454'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:39 -0800'
+'212084':
+  name: Fel Devastation
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_feldevastation.jpg
+  tooltip: Unleash the fel within you, damaging enemies directly in front of you for
+    1,374 Fire damage over 2 sec.
+  wowhead_id: '212084'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:40 -0800'
+'183752':
+  name: Disrupt
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_consumemagic.jpg
+  tooltip: Interrupts the enemy's spellcasting and locks them from that school of
+    magic for 3 sec.
+  wowhead_id: '183752'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:40 -0800'
+'185245':
+  name: Torment
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_torment.jpg
+  tooltip: Taunts the target to attack you.
+  wowhead_id: '185245'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:41 -0800'
+'189110':
+  name: Infernal Strike
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_infernalstrike1.jpg
+  tooltip: Leap through the air toward a targeted location, dealing 221 Fire damage
+    to all enemies within 6 yards.
+  wowhead_id: '189110'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:41 -0800'
+'80313':
+  name: Pulverize
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_druid_malfurionstenacity.jpg
+  tooltip: A devastating blow that consumes 2 stacks of your Thrash on the target
+    to deal 714 Physical damage and reduce the damage they deal to you by 35% for
+    8 sec.
+  wowhead_id: '80313'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:42 -0800'
+'102793':
+  name: Ursol's Vortex
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_druid_ursolsvortex.jpg
+  tooltip: Conjures a vortex of wind for 10 sec at the destination, reducing the movement
+    speed of all enemies within 8 yards by 50%. The first time an enemy attempts to
+    leave the vortex, winds will pull that enemy back to its center. Usable in all
+    shapeshift forms.
+  wowhead_id: '102793'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:43 -0800'
+'200851':
+  name: Rage of the Sleeper
+  icon: https://render.worldofwarcraft.com/us/icons/56/inv_hand_1h_artifactursoc_d_01.jpg
+  tooltip: Unleashes the rage of Ursoc for 8 sec, preventing 20% of all damage you
+    take, increasing your damage done by 15%, granting you 20% leech, and reflecting
+    250 Nature damage back at your attackers.
+  wowhead_id: '200851'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:43 -0800'
+'106839':
+  name: Skull Bash
+  icon: https://render.worldofwarcraft.com/us/icons/56/inv_bone_skull_04.jpg
+  tooltip: You charge and bash the target's skull, interrupting spellcasting and preventing
+    any spell in that school from being cast for 3 sec.
+  wowhead_id: '106839'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:44 -0800'
+'6795':
+  name: Growl
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_physical_taunt.jpg
+  tooltip: Taunts the target to attack you.
+  wowhead_id: '6795'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:44 -0800'
+'102401':
+  name: Wild Charge
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_druid_wildcharge.jpg
+  tooltip: Fly to a nearby ally's position.
+  wowhead_id: '102401'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:45 -0800'
+'322101':
+  name: Expel Harm
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_expelharm.jpg
+  tooltip: Expel negative chi from your body, healing for 6,554 and dealing 10% of
+    the amount healed as Nature damage to an enemy within 20 yards.
+  wowhead_id: '322101'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:45 -0800'
+'322507':
+  name: Celestial Brew
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_ironskinbrew.jpg
+  tooltip: "A swig of strong brew that coalesces purified chi escaping your body into
+    a celestial guard, absorbing 6,021 damage.\r\n\r\nPurifying Stagger damage increases
+    absorption by up to 200%."
+  wowhead_id: '322507'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:46 -0800'
+'116705':
+  name: Spear Hand Strike
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_spearhand.jpg
+  tooltip: Jabs the target in the throat, interrupting spellcasting and preventing
+    any spell from that school of magic from being cast for 3 sec.
+  wowhead_id: '116705'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:46 -0800'
+'115546':
+  name: Provoke
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_provoke.jpg
+  tooltip: Taunts the target to attack you.
+  wowhead_id: '115546'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:47 -0800'
+'109132':
+  name: Roll
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_roll.jpg
+  tooltip: Roll a short distance.
+  wowhead_id: '109132'
+  source: blizzard_api
+  cached_at: '2025-12-16 12:17:47 -0800'
