@@ -1,0 +1,351 @@
+/* Spreadsheet-style layout for keybinds */
+
+.spreadsheet-container {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  border: none;
+  background: #1a1a1a;
+  flex: 1;
+}
+
+.keybinds-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1a1a;
+  font-size: 0.9em;
+}
+
+/* Frozen header row */
+.keybinds-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #2a2a2a;
+}
+
+.keybinds-table thead th {
+  background: #2a2a2a;
+  color: #ffd700;
+  font-weight: bold;
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 2px solid #3a3a3a;
+  border-right: 1px solid #3a3a3a;
+  position: sticky;
+  top: 0;
+}
+
+.key-column-header {
+  background: #2a2a2a !important;
+  width: 70px;
+  min-width: 70px;
+  max-width: 70px;
+  left: 0;
+  z-index: 101;
+  border-right: 2px solid #4a4a4a !important;
+  padding: 0;
+}
+
+.class-header {
+  min-width: 200px;
+}
+
+/* WoW Class Colors */
+.class-warrior {
+  background: #C69B6D !important;
+  color: #fff !important;
+}
+
+.class-paladin {
+  background: #F48CBA !important;
+  color: #fff !important;
+}
+
+.class-deathknight {
+  background: #C41E3A !important;
+  color: #fff !important;
+}
+
+.class-demonhunter {
+  background: #A330C9 !important;
+  color: #fff !important;
+}
+
+.class-druid {
+  background: #FF7C0A !important;
+  color: #fff !important;
+}
+
+.class-monk {
+  background: #00FF98 !important;
+  color: #1a1a1a !important;
+}
+
+/* Subtle column background hints - alphabetical order: DK, DH, Druid, Monk, Paladin, Warrior */
+.keybinds-table tbody td:nth-child(2) { /* Death Knight column */
+  background: rgba(196, 30, 58, 0.05);
+}
+
+.keybinds-table tbody td:nth-child(3) { /* Demon Hunter column */
+  background: rgba(163, 48, 201, 0.05);
+}
+
+.keybinds-table tbody td:nth-child(4) { /* Druid column */
+  background: rgba(255, 124, 10, 0.05);
+}
+
+.keybinds-table tbody td:nth-child(5) { /* Monk column */
+  background: rgba(0, 255, 152, 0.05);
+}
+
+.keybinds-table tbody td:nth-child(6) { /* Paladin column */
+  background: rgba(244, 140, 186, 0.05);
+}
+
+.keybinds-table tbody td:nth-child(7) { /* Warrior column */
+  background: rgba(198, 155, 109, 0.05);
+}
+
+.keybinds-table tbody td:nth-child(n+2):hover { /* Class columns on hover */
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Key column (frozen left) */
+.key-cell {
+  position: sticky;
+  left: 0;
+  background: #1a1a1a;
+  z-index: 10;
+  padding: 0;
+  border-right: 2px solid #4a4a4a;
+  border-bottom: 1px solid #3a3a3a;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-label-cell {
+  font-weight: 500;
+  font-size: 1.15em;
+  color: #d0d0d0;
+  letter-spacing: 0.3px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1;
+}
+
+/* Priority tier colors for key rows - muted pastels */
+.key-row.priority-s .key-cell {
+  background: #252022;
+  border-left: 3px solid #c99a9a;
+}
+
+.key-row.priority-a .key-cell {
+  background: #252420;
+  border-left: 3px solid #c9b89a;
+}
+
+.key-row.priority-b .key-cell {
+  background: #222522;
+  border-left: 3px solid #9ac9a9;
+}
+
+.key-row.mouse-row .key-cell {
+  /* No italic styling */
+}
+
+/* Table rows - ensure consistent height */
+.keybinds-table tbody tr {
+  height: 70px;
+}
+
+.keybinds-table tbody td {
+  height: 70px;
+  vertical-align: middle;
+}
+
+/* Ability cells */
+.ability-cell {
+  padding: 8px;
+  border-right: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
+  background: #1a1a1a;
+  vertical-align: middle;
+  min-width: 200px;
+  height: 70px;
+}
+
+.ability-cell:hover {
+  background: #2a2a2a;
+}
+
+.ability-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s ease;
+  border-radius: 4px;
+}
+
+.ability-display:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.ability-icon-small {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.ability-name {
+  color: #e0e0e0;
+  font-size: 0.9em;
+  line-height: 1.3;
+  flex: 1;
+}
+
+.ability-empty {
+  color: #666;
+  text-align: center;
+  font-style: italic;
+  padding: 8px;
+}
+
+/* Tooltip for abilities */
+.ability-display[data-tooltip] {
+  position: relative;
+}
+
+.ability-display[data-tooltip]:hover .ability-tooltip {
+  display: block;
+}
+
+.ability-tooltip {
+  display: none;
+  position: fixed;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 2px solid #ffd700;
+  border-radius: 6px;
+  color: #e0e0e0;
+  font-size: 0.85em;
+  line-height: 1.5;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+}
+
+.ability-display[data-tooltip]:hover .ability-tooltip {
+  display: block;
+}
+
+.ability-tooltip::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+}
+
+.ability-tooltip.tooltip-above::after {
+  top: 100%;
+  border-top-color: #ffd700;
+}
+
+.ability-tooltip.tooltip-below::after {
+  bottom: 100%;
+  border-bottom-color: #ffd700;
+}
+
+.tooltip-title {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.tooltip-description {
+  color: #e0e0e0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .spreadsheet-container {
+    overflow-x: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .keybinds-table {
+    font-size: 0.85em;
+  }
+  
+  .key-column-header {
+    width: 60px !important;
+    min-width: 60px !important;
+    max-width: 60px !important;
+  }
+  
+  .key-cell {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .keybinds-table tbody tr {
+    height: 60px;
+  }
+  
+  .keybinds-table tbody td {
+    height: 60px;
+  }
+  
+  .ability-cell {
+    height: 60px;
+    min-width: calc(100vw - 80px);
+    width: calc(100vw - 80px);
+  }
+  
+  .class-header {
+    min-width: calc(100vw - 80px);
+    width: calc(100vw - 80px);
+  }
+  
+  .ability-icon-small {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .ability-name {
+    font-size: 0.9em;
+  }
+  
+  .key-label-cell {
+    font-size: 1em;
+  }
+  
+  .ability-tooltip {
+    min-width: 200px;
+    max-width: calc(100vw - 40px);
+    font-size: 0.8em;
+  }
+}
+

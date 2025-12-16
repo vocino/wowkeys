@@ -1,0 +1,656 @@
+---
+keys:
+  s_tier:
+  - id: '1'
+    priority: s
+    label: '1'
+  - id: '2'
+    priority: s
+    label: '2'
+  - id: '3'
+    priority: s
+    label: '3'
+  - id: '4'
+    priority: s
+    label: '4'
+  - id: q
+    priority: s
+    label: Q
+  - id: e
+    priority: s
+    label: E
+  - id: r
+    priority: s
+    label: R
+  - id: f
+    priority: s
+    label: F
+  a_tier:
+  - id: z
+    priority: a
+    label: Z
+  - id: x
+    priority: a
+    label: X
+  - id: c
+    priority: a
+    label: C
+  - id: v
+    priority: a
+    label: V
+  - id: '5'
+    priority: a
+    label: '5'
+  - id: tilde
+    priority: a
+    label: "`"
+  b_tier:
+  - id: '6'
+    priority: b
+    label: '6'
+  - id: t
+    priority: b
+    label: T
+  - id: g
+    priority: b
+    label: G
+  - id: "y"
+    priority: b
+    label: "Y"
+  - id: h
+    priority: b
+    label: H
+  - id: b
+    priority: b
+    label: B
+  mouse:
+  - id: mouse4
+    priority: s
+    label: M4
+  - id: mouse5
+    priority: s
+    label: M5
+  - id: middle
+    priority: s
+    label: MM
+classes:
+  warrior:
+    name: Protection Warrior
+    slug: protection-warrior
+    display_name: Warrior
+    abilities:
+      q:
+        name: Shield Slam
+        keybind: Q
+        wowhead_id: 23922
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_shield_05.jpg
+        tooltip: "Slams the target with your shield, causing 637 Physical damage.\r\n\r\nGenerates
+          15 Rage."
+        cached_name: Shield Slam
+      e:
+        name: Revenge
+        keybind: E
+        wowhead_id: 6572
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_warrior_revenge.jpg
+        tooltip: "Swing in a wide arc, dealing 347 Physical damage to all enemies
+          in front of you. Deals reduced damage beyond 5 targets.\r\n\r\nYour successful
+          dodges and parries have a chance to make your next Revenge cost no Rage."
+        cached_name: Revenge
+      r:
+        name: Thunder Clap
+        keybind: R
+        wowhead_id: 6343
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_nature_thunderclap.jpg
+        tooltip: "Blasts all enemies within 8 yards for 258 Physical damage and reduces
+          their movement speed by 20% for 10 sec. Deals reduced damage beyond 5 targets.\r\n\r\nIf
+          you have Rend, Thunder Clap affects 5 nearby targets with Rend.\r\n"
+        cached_name: Thunder Clap
+      f:
+        name: Avatar
+        keybind: F
+        wowhead_id: 107574
+        icon: https://render.worldofwarcraft.com/us/icons/56/warrior_talent_icon_avatar.jpg
+        tooltip: "Transform into a colossus for 20 sec, causing you to deal 20% increased
+          damage and removing all roots and snares.\r\n\r\nGenerates 10 Rage."
+        cached_name: Avatar
+      '1':
+        name: Demoralizing Shout
+        keybind: '1'
+        wowhead_id: 1160
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_warrior_warcry.jpg
+        tooltip: Demoralizes all enemies within 10 yards, reducing the damage they
+          deal to you by 20% for 8 sec.
+        cached_name: Demoralizing Shout
+      '2':
+        name: Ignore Pain
+        keybind: '2'
+        wowhead_id: 190456
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_warrior_renewedvigor.jpg
+        tooltip: "Fight through the pain, ignoring 50% of damage taken until 3,020
+          damage has been prevented.\r\n\r\nRepeated uses of Ignore Pain accumulate,
+          up to 59,202 total damage prevented."
+        cached_name: Ignore Pain
+      '3':
+        name: Shield Block
+        keybind: '3'
+        wowhead_id: 2565
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_defend.jpg
+        tooltip: Raise your shield, blocking all melee attacks against you for 6 sec.
+        cached_name: Shield Block
+      '4':
+        name: Spell Reflect
+        keybind: '4'
+        wowhead_id: 23920
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_warrior_shieldreflection.jpg
+        tooltip: Raise your weapon, reflecting the first spell cast on you and reducing
+          magic damage you take by 20% for 5 sec.
+        cached_name: Spell Reflection
+      z:
+        name: Last Stand
+        keybind: Z
+        wowhead_id: 12975
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_ashestoashes.jpg
+        tooltip: Increases maximum health by 30% for 15 sec and instantly heals you
+          for that amount.
+        cached_name: Last Stand
+      x:
+        name: Ravager
+        keybind: X
+        wowhead_id: 152277
+      c:
+        name: Shield Wall
+        keybind: C
+        wowhead_id: 871
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_warrior_shieldwall.jpg
+        tooltip: Reduces all damage you take by 40% for 8 sec.
+        cached_name: Shield Wall
+      v:
+        name: Rallying Cry
+        keybind: V
+        wowhead_id: 97462
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_warrior_rallyingcry.jpg
+        tooltip: Lets loose a rallying cry, granting all party or raid members within
+          40 yards 10% temporary and maximum health for 10 sec.
+        cached_name: Rallying Cry
+  paladin:
+    name: Protection Paladin
+    slug: protection-paladin
+    display_name: Paladin
+    abilities:
+      q:
+        name: Shield of the Righteous
+        keybind: Q
+        wowhead_id: 53600
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_paladin_shieldofvengeance.jpg
+        tooltip: "Slams enemies in front of you with your shield, causing 276 Holy
+          damage, and increasing your Armor by 8,854 for 4.5 sec.\r\n"
+        cached_name: Shield of the Righteous
+      e:
+        name: Hammer of the Righteous / Blessed Hammer
+        keybind: E
+        wowhead_id: 53595
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_paladin_hammeroftherighteous.jpg
+        tooltip: "Hammers the current target for 521 Physical damage.\r\n\r\nGenerates
+          1 Holy Power."
+        cached_name: Hammer of the Righteous
+      r:
+        name: Judgment
+        keybind: R
+        wowhead_id: 20271
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_righteousfury.jpg
+        tooltip: Judges the target, dealing 3,659 Holy damage.
+        cached_name: Judgment
+      f:
+        name: Avenging Wrath / Sentinel
+        keybind: F
+        wowhead_id: 31884
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_avenginewrath.jpg
+        tooltip: Call upon the Light to become an avatar of retribution, increasing
+          your damage, healing, and critical strike chance by 20% for 20 sec.
+        cached_name: Avenging Wrath
+      '1':
+        name: Avenger's Shield
+        keybind: '1'
+        wowhead_id: 31935
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_avengersshield.jpg
+        tooltip: "Hurls your shield at an enemy target, dealing 394 Holy damage, interrupting
+          and silencing the non-Player target for 3 sec, and then jumping to 2 additional
+          nearby enemies. \r\n"
+        cached_name: Avenger's Shield
+      '2':
+        name: Eye of Tyr
+        keybind: '2'
+        wowhead_id: 209202
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_shield_1h_artifactnorgannon_d_01.jpg
+        tooltip: Releases a blinding flash from Truthguard, causing 301 Holy damage
+          to all nearby enemies within 8 yds and reducing all damage they deal to
+          you by 25% for 9 sec.
+        cached_name: Eye of Tyr
+      '3':
+        name: Divine Toll
+        keybind: '3'
+        wowhead_id: 304971
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_bastion_paladin.jpg
+        tooltip: Instantly cast Holy Shock, Avenger's Shield, or Judgment on up to
+          5 targets within 30 yds (based on your current specialization).
+        cached_name: Divine Toll
+      '4':
+        name: Word of Glory
+        keybind: '4'
+        wowhead_id: 85673
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_helmet_96.jpg
+        tooltip: Calls down the Light to heal a friendly target for 19,170.
+        cached_name: Word of Glory
+      z:
+        name: Guardian of Ancient Kings
+        keybind: Z
+        wowhead_id: 86659
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_heroism.jpg
+        tooltip: Empowers you with the spirit of ancient kings, reducing all damage
+          you take by 50% for 8 sec.
+        cached_name: Guardian of Ancient Kings
+      x:
+        name: Consecration
+        keybind: X
+        wowhead_id: 26573
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_innerfire.jpg
+        tooltip: Consecrates the land beneath you, causing 393 Holy damage over 12
+          sec to enemies who enter the area. Limit 1.
+        cached_name: Consecration
+      c:
+        name: Ardent Defender
+        keybind: C
+        wowhead_id: 31850
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_holy_ardentdefender.jpg
+        tooltip: "Reduces all damage you take by 20% for 8 sec.\r\n\r\nWhile Ardent
+          Defender is active, the next attack that would otherwise kill you will instead
+          bring you to 20% of your maximum health."
+        cached_name: Ardent Defender
+      v:
+        name: Holy Bulwark
+        keybind: V
+        wowhead_id: 204150
+  deathknight:
+    name: Blood Death Knight
+    slug: blood-death-knight
+    display_name: Death Knight
+    abilities:
+      q:
+        name: Death Strike
+        keybind: Q
+        wowhead_id: 45470
+      e:
+        name: Heart Strike
+        keybind: E
+        wowhead_id: 206930
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_weapon_shortblade_40.jpg
+        tooltip: Instantly strike the target and 1 other nearby enemy, causing 301
+          Physical damage, and reducing enemies' movement speed by 20% for 8 sec.
+        cached_name: Heart Strike
+      r:
+        name: Blood Boil
+        keybind: R
+        wowhead_id: 50842
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_bloodboil.jpg
+        tooltip: "Deals 346 Shadow damage and infects all enemies within 10 yds with
+          Blood Plague.\r\n\r\n Blood Plague\r\nA shadowy disease that drains 412
+          health from the target over 24 sec.  "
+        cached_name: Blood Boil
+      f:
+        name: Dancing Rune Weapon
+        keybind: F
+        wowhead_id: 49028
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_sword_07.jpg
+        tooltip: "Summons a rune weapon for 8 sec that mirrors your melee attacks
+          and bolsters your defenses.\r\n\r\nWhile active, you gain 35% parry chance."
+        cached_name: Dancing Rune Weapon
+      '1':
+        name: Marrowrend
+        keybind: '1'
+        wowhead_id: 195182
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_deathknight_marrowrend.jpg
+        tooltip: "Smash the target, dealing 338 Physical damage and generating 3 charges
+          of Bone Shield.\r\n\r\n Bone Shield\r\nSurrounds you with a barrier of whirling
+          bones, increasing Armor by 1,154. Each melee attack against you consumes
+          a charge. Lasts 30 sec or until all charges are consumed."
+        cached_name: Marrowrend
+      '2':
+        name: Anti-Magic Shell
+        keybind: '2'
+        wowhead_id: 48707
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_shadow_antimagicshell.jpg
+        tooltip: Surrounds you in an Anti-Magic Shell for 5 sec, absorbing up to 59,202
+          magic damage and preventing application of harmful magical effects. Damage
+          absorbed generates Runic Power.
+        cached_name: Anti-Magic Shell
+      '3':
+        name: Rune Tap
+        keybind: '3'
+        wowhead_id: 194679
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_runetap.jpg
+        tooltip: Reduces all damage taken by 20% for 4 sec.
+        cached_name: Rune Tap
+      '4':
+        name: Anti-Magic Zone
+        keybind: '4'
+        wowhead_id: 51052
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_antimagiczone.jpg
+        tooltip: Places an Anti-Magic Zone for 6 sec, reducing the magic damage taken
+          by party or raid members by 15%.
+        cached_name: Anti-Magic Zone
+      z:
+        name: Icebound Fortitude
+        keybind: Z
+        wowhead_id: 48792
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_iceboundfortitude.jpg
+        tooltip: Your blood freezes, granting immunity to Stun effects and reducing
+          all damage you take by 30% for 8 sec.
+        cached_name: Icebound Fortitude
+      x:
+        name: Death and Decay
+        keybind: X
+        wowhead_id: 43265
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_shadow_deathanddecay.jpg
+        tooltip: "Corrupts the targeted ground, causing 208 Shadow damage over 10
+          sec to targets within the area.\r\n\r\nWhile you remain within the area,
+          your Heart Strike will hit up to 0 additional targets."
+        cached_name: Death and Decay
+      c:
+        name: Vampiric Blood
+        keybind: C
+        wowhead_id: 55233
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_shadow_lifedrain.jpg
+        tooltip: Embrace your undeath, increasing your maximum health by 30% and increasing
+          all healing and absorbs received by 30% for 10 sec.
+        cached_name: Vampiric Blood
+      v:
+        name: Consumption / Utility
+        keybind: V
+        wowhead_id: 274156
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_axe_2h_artifactmaw_d_01.jpg
+        tooltip: "Strikes all enemies in front of you with a hungering attack that
+          deals 417 Physical damage and heals you for 150% of that damage. Deals reduced
+          damage beyond 8 targets.\r\n\r\nCauses your Blood Plague damage to occur
+          30% more quickly for 6 sec. \r\n\r\nGenerates 2 Runes."
+        cached_name: Consumption
+  demonhunter:
+    name: Vengeance Demon Hunter
+    slug: vengeance-demon-hunter
+    display_name: Demon Hunter
+    abilities:
+      q:
+        name: Demon Spikes
+        keybind: Q
+        wowhead_id: 203720
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_demonspikes.jpg
+        tooltip: Surge with fel power, increasing your Armor by 1,066.
+        cached_name: Demon Spikes
+      e:
+        name: Fracture
+        keybind: E
+        wowhead_id: 263642
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_creature_felsunder.jpg
+        tooltip: "Rapidly slash your target for 331 Physical damage, and shatter 2
+          Lesser Soul Fragments from them.\r\n\r\nGenerates 25 Fury."
+        cached_name: Fracture
+      r:
+        name: Felblade
+        keybind: R
+        wowhead_id: 213241
+      f:
+        name: Soul Cleave
+        keybind: F
+        wowhead_id: 228477
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_soulcleave.jpg
+        tooltip: "Viciously strike up to 5 enemies in front of you for 806 Physical
+          damage and heal yourself for 210.\r\n\r\nConsumes up to 2 available Soul
+          Fragments."
+        cached_name: Soul Cleave
+      '1':
+        name: Reaver's Glaive
+        keybind: '1'
+        wowhead_id: 395428
+      '2':
+        name: Sigil of Flame (alt)
+        keybind: '2'
+        wowhead_id: 204596
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_sigilofinquisition.jpg
+        tooltip: "Place a Sigil of Flame at the target location that activates after
+          2 sec.\r\n\r\nDeals 283 Fire damage, and an additional 708 Fire damage over
+          8 sec, to all enemies affected by the sigil.\r\n\r\nGenerates 30 Fury."
+        cached_name: Sigil of Flame
+      '3':
+        name: Fiery Brand
+        keybind: '3'
+        wowhead_id: 204021
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_fierybrand.jpg
+        tooltip: Brand an enemy with a demonic symbol, instantly dealing 1,110 Fire
+          damage. The enemy's damage done to you is reduced by 40% for 12 sec.
+        cached_name: Fiery Brand
+      '4':
+        name: Soul Carver / Spirit Bomb
+        keybind: '4'
+        wowhead_id: 207407
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_glaive_1h_artifactaldrochi_d_01.jpg
+        tooltip: Carve into the soul of your target, dealing 1,097 Fire damage and
+          an additional 722 Fire damage over 3 sec.  Immediately shatters 3 Lesser
+          Soul Fragments from the target and 1 additional Lesser Soul Fragment every
+          1 sec.
+        cached_name: Soul Carver
+      z:
+        name: Metamorphosis
+        keybind: Z
+        wowhead_id: 187827
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_metamorphasistank.jpg
+        tooltip: Transform to demon form for 15 sec, increasing current health by
+          40%, healing for that amount, and increasing Armor by 200%.
+        cached_name: Metamorphosis
+      x:
+        name: Fiery Brand
+        keybind: X
+        wowhead_id: 204021
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_fierybrand.jpg
+        tooltip: Brand an enemy with a demonic symbol, instantly dealing 1,110 Fire
+          damage. The enemy's damage done to you is reduced by 40% for 12 sec.
+        cached_name: Fiery Brand
+      c:
+        name: Demon Spikes
+        keybind: C
+        wowhead_id: 203720
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_demonspikes.jpg
+        tooltip: Surge with fel power, increasing your Armor by 1,066.
+        cached_name: Demon Spikes
+      v:
+        name: Sigil of Spite
+        keybind: V
+        wowhead_id: 202137
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_sigilofsilence.jpg
+        tooltip: "Place a Sigil of Silence at the target location that activates after
+          2 sec.\r\n\r\nSilences all enemies affected by the sigil for 2 sec."
+        cached_name: Sigil of Silence
+  druid:
+    name: Guardian Druid
+    slug: guardian-druid
+    display_name: Druid
+    abilities:
+      q:
+        name: Mangle
+        keybind: Q
+        wowhead_id: 33917
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_druid_mangle2.jpg
+        tooltip: "Mangle the target for 371 Physical damage.\r\n\r\nGenerates 12 Rage."
+        cached_name: Mangle
+      e:
+        name: Thrash
+        keybind: E
+        wowhead_id: 77758
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_druid_thrash.jpg
+        tooltip: "Strikes all nearby enemies, dealing 49 Bleed damage and an additional
+          67 Bleed damage over 15 sec. When applied from Bear Form, this effect can
+          stack up to 3 times.\r\n\r\nGenerates 5 Rage."
+        cached_name: Thrash
+      r:
+        name: Swipe / Raze
+        keybind: R
+        wowhead_id: 213771
+      f:
+        name: Incarnation / Rage of the Sleeper
+        keybind: F
+        wowhead_id: 102558
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_druid_incarnation.jpg
+        tooltip: "An improved Bear Form that grants the benefits of Berserk, causes
+          Mangle to hit up to 3 targets, and increases maximum health by 30%.\r\n\r\nLasts
+          30 sec. You may freely shapeshift in and out of this improved Bear Form
+          for its duration."
+        cached_name: 'Incarnation: Guardian of Ursoc'
+      '1':
+        name: Moonfire
+        keybind: '1'
+        wowhead_id: 8921
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_nature_starfall.jpg
+        tooltip: 'A quick beam of lunar light burns the enemy for 1,151 Arcane damage
+          and then an additional 10,126 Arcane damage over 18 sec. '
+        cached_name: Moonfire
+      '2':
+        name: Ironfur
+        keybind: '2'
+        wowhead_id: 192081
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_druid_ironfur.jpg
+        tooltip: Increases armor by 1,592 for 7 sec.
+        cached_name: Ironfur
+      '3':
+        name: Frenzied Regeneration
+        keybind: '3'
+        wowhead_id: 22842
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_bullrush.jpg
+        tooltip: Heals you for 32% health over 3 sec.
+        cached_name: Frenzied Regeneration
+      '4':
+        name: Heart of the Wild / Pulverize
+        keybind: '4'
+        wowhead_id: 158298
+      z:
+        name: Survival Instincts
+        keybind: Z
+        wowhead_id: 61336
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_druid_tigersroar.jpg
+        tooltip: Reduces all damage you take by 50% for 6 sec.
+        cached_name: Survival Instincts
+      x:
+        name: Swipe / Raze (alt AoE)
+        keybind: X
+        wowhead_id: 213771
+      c:
+        name: Barkskin
+        keybind: C
+        wowhead_id: 22812
+        icon: https://render.worldofwarcraft.com/us/icons/56/spell_nature_stoneclawtotem.jpg
+        tooltip: "Your skin becomes as tough as bark, reducing all damage you take
+          by 20% and preventing damage from delaying your spellcasts. Lasts 8 sec.\r\n\r\nUsable
+          while stunned, frozen, incapacitated, feared, or asleep, and in all shapeshift
+          forms."
+        cached_name: Barkskin
+      v:
+        name: Additional CD (Sleeper/Incarn alt)
+        keybind: V
+        wowhead_id: 124974
+        icon: https://render.worldofwarcraft.com/us/icons/56/achievement_zone_feralas.jpg
+        tooltip: For 15 sec, all single-target damage also heals a nearby friendly
+          target for 20% of the damage done.
+        cached_name: Nature's Vigil
+  monk:
+    name: Brewmaster Monk
+    slug: brewmaster-monk
+    display_name: Monk
+    abilities:
+      q:
+        name: Keg Smash
+        keybind: Q
+        wowhead_id: 121253
+        icon: https://render.worldofwarcraft.com/us/icons/56/achievement_brewery_2.jpg
+        tooltip: Smash a keg of brew on the target, dealing 534 Physical damage to
+          all enemies within 8 yds and reducing their movement speed by 20% for 15
+          sec. Deals reduced damage beyond 5 targets.
+        cached_name: Keg Smash
+      e:
+        name: Blackout Kick
+        keybind: E
+        wowhead_id: 205523
+      r:
+        name: Tiger Palm
+        keybind: R
+        wowhead_id: 100780
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_tigerpalm.jpg
+        tooltip: Strike with the palm of your hand, dealing 143 Physical damage.
+        cached_name: Tiger Palm
+      f:
+        name: Breath of Fire
+        keybind: F
+        wowhead_id: 115181
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_breathoffire.jpg
+        tooltip: "Breathe fire on targets in front of you, causing 277 Fire damage.
+          Deals reduced damage to secondary targets.\r\n\r\nTargets affected by Keg
+          Smash will also burn, taking 176 Fire damage and dealing 5% reduced damage
+          to you for 12 sec."
+        cached_name: Breath of Fire
+      '1':
+        name: Spinning Crane Kick
+        keybind: '1'
+        wowhead_id: 101546
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_cranekick_new.jpg
+        tooltip: Spin while kicking in the air, dealing 213 Physical damage over 1.4
+          sec to all enemies within 8 yds. Deals reduced damage beyond 5 targets.
+        cached_name: Spinning Crane Kick
+      '2':
+        name: Rising Sun Kick
+        keybind: '2'
+        wowhead_id: 107428
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_risingsunkick.jpg
+        tooltip: Kick upwards, dealing 766 Physical damage.
+        cached_name: Rising Sun Kick
+      '3':
+        name: Exploding Keg
+        keybind: '3'
+        wowhead_id: 214326
+      '4':
+        name: Touch of Death
+        keybind: '4'
+        wowhead_id: 322109
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_touchofdeath.jpg
+        tooltip: "You exploit the enemy target's weakest point, instantly dealing
+          damage equal to 100% of your maximum health to them.\r\n\r\nOnly usable
+          on creatures that have less health than you."
+        cached_name: Touch of Death
+      z:
+        name: Fortifying Brew
+        keybind: Z
+        wowhead_id: 115203
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_fortifyingale_new.jpg
+        tooltip: Turns your skin to stone for 15 sec.
+        cached_name: Fortifying Brew
+      x:
+        name: Rushing Jade Wind
+        keybind: X
+        wowhead_id: 116847
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_rushingjadewind.jpg
+        tooltip: Summons a whirling tornado around you, causing 649 Physical damage
+          over 5.4 sec to all enemies within 8 yards. Deals reduced damage beyond
+          5 targets.
+        cached_name: Rushing Jade Wind
+      c:
+        name: Purifying Brew
+        keybind: C
+        wowhead_id: 119582
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_misc_beer_06.jpg
+        tooltip: Clears 50% of your damage delayed with Stagger.
+        cached_name: Purifying Brew
+      v:
+        name: Celestial Brew
+        keybind: V
+        wowhead_id: 325153
+        icon: https://render.worldofwarcraft.com/us/icons/56/archaeology_5_0_emptykegofbrewfatherxinwoyin.jpg
+        tooltip: Hurls a flaming keg at the target location, dealing 1,520 Fire damage
+          to nearby enemies, causing your attacks against them to deal 117 additional
+          Fire damage, and causing their melee attacks to deal 100% reduced damage
+          for the next 3 sec.
+        cached_name: Exploding Keg

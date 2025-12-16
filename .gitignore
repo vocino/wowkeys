@@ -1,0 +1,14 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+bundle/
+Gemfile.lock
+*.gem
+.DS_Store
+
+# Blizzard API credentials
+.env
+_data/.blizzard_token
+

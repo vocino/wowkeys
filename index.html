@@ -1,0 +1,144 @@
+---
+layout: default
+title: Home
+---
+
+<div class="spreadsheet-container">
+  <table class="keybinds-table">
+    <thead>
+      <tr>
+        <th class="key-column-header"></th>
+        {% assign class_order = "deathknight|demonhunter|druid|monk|paladin|warrior" | split: "|" %}
+        {% for class_slug in class_order %}
+          {% assign class_data = site.data.keybinds.classes[class_slug] %}
+          <th class="class-header class-{{ class_slug }}">
+            {{ class_data.display_name }}
+          </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% assign class_order = "deathknight|demonhunter|druid|monk|paladin|warrior" | split: "|" %}
+      
+      {% comment %} S-Tier Keys {% endcomment %}
+      {% for key in site.data.keybinds.keys.s_tier %}
+        <tr class="key-row priority-s">
+          <td class="key-cell">
+            <div class="key-label-cell">{{ key.label }}</div>
+          </td>
+          {% for class_slug in class_order %}
+            {% assign class_data = site.data.keybinds.classes[class_slug] %}
+            {% assign ability = class_data.abilities[key.id] %}
+            <td class="ability-cell">
+              {% if ability and ability.icon %}
+                <div class="ability-display" 
+                     {% if ability.tooltip %}data-tooltip="true"{% endif %}>
+                  <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  <div class="ability-name">{{ ability.cached_name | default: ability.name }}</div>
+                  {% if ability.tooltip %}
+                    <div class="ability-tooltip">
+                      <div class="tooltip-title">{{ ability.cached_name | default: ability.name }}</div>
+                      <div class="tooltip-description">{{ ability.tooltip }}</div>
+                    </div>
+                  {% endif %}
+                </div>
+              {% else %}
+                <div class="ability-empty">—</div>
+              {% endif %}
+            </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+      
+      {% comment %} Mouse Keys {% endcomment %}
+      {% for key in site.data.keybinds.keys.mouse %}
+        <tr class="key-row priority-s mouse-row">
+          <td class="key-cell">
+            <div class="key-label-cell">{{ key.label }}</div>
+          </td>
+          {% for class_slug in class_order %}
+            {% assign class_data = site.data.keybinds.classes[class_slug] %}
+            {% assign ability = class_data.abilities[key.id] %}
+            <td class="ability-cell">
+              {% if ability and ability.icon %}
+                <div class="ability-display" 
+                     {% if ability.tooltip %}data-tooltip="true"{% endif %}>
+                  <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  <div class="ability-name">{{ ability.cached_name | default: ability.name }}</div>
+                  {% if ability.tooltip %}
+                    <div class="ability-tooltip">
+                      <div class="tooltip-title">{{ ability.cached_name | default: ability.name }}</div>
+                      <div class="tooltip-description">{{ ability.tooltip }}</div>
+                    </div>
+                  {% endif %}
+                </div>
+              {% else %}
+                <div class="ability-empty">—</div>
+              {% endif %}
+            </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+      
+      {% comment %} A-Tier Keys {% endcomment %}
+      {% for key in site.data.keybinds.keys.a_tier %}
+        <tr class="key-row priority-a">
+          <td class="key-cell">
+            <div class="key-label-cell">{{ key.label }}</div>
+          </td>
+          {% for class_slug in class_order %}
+            {% assign class_data = site.data.keybinds.classes[class_slug] %}
+            {% assign ability = class_data.abilities[key.id] %}
+            <td class="ability-cell">
+              {% if ability and ability.icon %}
+                <div class="ability-display" 
+                     {% if ability.tooltip %}data-tooltip="true"{% endif %}>
+                  <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  <div class="ability-name">{{ ability.cached_name | default: ability.name }}</div>
+                  {% if ability.tooltip %}
+                    <div class="ability-tooltip">
+                      <div class="tooltip-title">{{ ability.cached_name | default: ability.name }}</div>
+                      <div class="tooltip-description">{{ ability.tooltip }}</div>
+                    </div>
+                  {% endif %}
+                </div>
+              {% else %}
+                <div class="ability-empty">—</div>
+              {% endif %}
+            </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+      
+      {% comment %} B-Tier Keys {% endcomment %}
+      {% for key in site.data.keybinds.keys.b_tier %}
+        <tr class="key-row priority-b">
+          <td class="key-cell">
+            <div class="key-label-cell">{{ key.label }}</div>
+          </td>
+          {% for class_slug in class_order %}
+            {% assign class_data = site.data.keybinds.classes[class_slug] %}
+            {% assign ability = class_data.abilities[key.id] %}
+            <td class="ability-cell">
+              {% if ability and ability.icon %}
+                <div class="ability-display" 
+                     {% if ability.tooltip %}data-tooltip="true"{% endif %}>
+                  <div class="ability-icon-small" style="background-image: url('{{ ability.icon }}');"></div>
+                  <div class="ability-name">{{ ability.cached_name | default: ability.name }}</div>
+                  {% if ability.tooltip %}
+                    <div class="ability-tooltip">
+                      <div class="tooltip-title">{{ ability.cached_name | default: ability.name }}</div>
+                      <div class="tooltip-description">{{ ability.tooltip }}</div>
+                    </div>
+                  {% endif %}
+                </div>
+              {% else %}
+                <div class="ability-empty">—</div>
+              {% endif %}
+            </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

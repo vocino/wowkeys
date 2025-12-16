@@ -1,0 +1,47 @@
+{% comment %}
+  Individual Key Component
+  Renders a single key with optional ability data
+{% endcomment %}
+
+{% assign key_id = include.key.id %}
+{% assign ability = nil %}
+{% if include.class_data and include.class_data.abilities[key_id] %}
+  {% assign ability = include.class_data.abilities[key_id] %}
+{% endif %}
+
+{% comment %} Ability data is pre-merged into keybinds.yml by preprocess script {% endcomment %}
+
+<div class="key key-{{ include.key.priority }}-tier {% if ability %}has-ability{% endif %}" 
+     data-key-id="{{ key_id }}"
+     {% if ability and ability.wowhead_id %}data-ability-id="{{ ability.wowhead_id }}"{% endif %}>
+  
+  {% if ability and ability.icon %}
+    <div class="ability-icon" style="background-image: url('{{ ability.icon }}');"></div>
+  {% endif %}
+  
+  <div class="key-label">{{ include.key.label }}</div>
+  
+  {% if ability and ability.keybind %}
+    <div class="keybind-text">{{ ability.keybind }}</div>
+  {% endif %}
+  
+  {% if ability %}
+    <div class="tooltip" style="display: none;">
+      <div class="tooltip-title">
+        {% if ability.cached_name %}
+          {{ ability.cached_name }}
+        {% elsif ability.name %}
+          {{ ability.name }}
+        {% else %}
+          Ability
+        {% endif %}
+      </div>
+      {% if ability.tooltip %}
+        <div class="tooltip-content">{{ ability.tooltip }}</div>
+      {% elsif ability.name %}
+        <div class="tooltip-content">{{ ability.name }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+

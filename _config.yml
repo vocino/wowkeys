@@ -1,0 +1,29 @@
+# Jekyll Configuration for WoW Keybind Visualizer
+title: "World of Warcraft Tank Keybinds"
+description: "Universal tank keybind system visualization"
+baseurl: ""
+url: ""
+
+# Jekyll settings
+plugins:
+  - jekyll-feed
+
+# Enable plugins directory
+plugins_dir: _plugins
+
+# Data files
+data_dir: _data
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - _scripts
+  - README.md
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
