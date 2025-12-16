@@ -11,8 +11,7 @@ version: "1.0.0"
 plugins:
   - jekyll-feed
 
-# Enable plugins directory
-plugins_dir: _plugins
+# Plugins directory disabled for GitHub Pages compatibility
 
 # Data files
 data_dir: _data
