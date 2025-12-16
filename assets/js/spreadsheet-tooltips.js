@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!tooltip) return;
     
     display.addEventListener('mouseenter', function() {
+      // Move tooltip to body to escape parent overflow clipping
+      if (tooltip.parentNode !== document.body) {
+        document.body.appendChild(tooltip);
+      }
       positionTooltip(display, tooltip);
     });
     
@@ -41,6 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!tooltip) return;
     
     trigger.addEventListener('mouseenter', function() {
+      // Move tooltip to body to escape parent overflow clipping
+      if (tooltip.parentNode !== document.body) {
+        document.body.appendChild(tooltip);
+      }
       positionKeybindTooltip(trigger, tooltip);
     });
     

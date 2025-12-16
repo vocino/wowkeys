@@ -396,7 +396,7 @@ a:active {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
-  z-index: 1000;
+  z-index: 99999;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
 }
 
@@ -457,7 +457,7 @@ a:active {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
-  z-index: 1001;
+  z-index: 99999;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
 }
 
