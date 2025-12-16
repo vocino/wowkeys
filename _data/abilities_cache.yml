@@ -743,3 +743,53 @@
   wowhead_id: '228920'
   source: blizzard_api
   cached_at: '2025-12-16 12:30:15 -0800'
+'202168':
+  name: Impending Victory
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_impending_victory.jpg
+  tooltip: "Instantly attack the target, causing 313 damage and healing you for 30%
+    of your maximum health.\r\n\r\nKilling an enemy that yields experience or honor
+    resets the cooldown of Impending Victory and makes it cost no Rage."
+  wowhead_id: '202168'
+  source: blizzard_api
+  cached_at: '2025-12-16 15:23:51 -0800'
+'48743':
+  name: Death Pact
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_shadow_deathpact.jpg
+  tooltip: Create a death pact that heals you for 50% of your maximum health, but
+    absorbs incoming healing equal to 30% of your max health for 15 sec.
+  wowhead_id: '48743'
+  source: blizzard_api
+  cached_at: '2025-12-16 15:23:51 -0800'
+'258920':
+  name: Immolation Aura
+  icon: https://render.worldofwarcraft.com/us/icons/56/spell_fire_felfire.jpg
+  tooltip: Engulf yourself in flames, radiating 391 Fire damage over 6 sec.
+  wowhead_id: '258920'
+  source: blizzard_api
+  cached_at: '2025-12-16 15:23:52 -0800'
+'196718':
+  name: Darkness
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_darkness.jpg
+  tooltip: "Summons darkness around you in an 8 yd radius, granting friendly targets
+    a 15% chance to avoid all damage from an attack. Lasts 8 sec.\r\n\r\nChance to
+    avoid damage increased by 100% when not in a raid."
+  wowhead_id: '196718'
+  source: blizzard_api
+  cached_at: '2025-12-16 15:23:52 -0800'
+'202138':
+  name: Sigil of Chains
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_sigilofchains.jpg
+  tooltip: "Place a Sigil of Chains at the target location that activates after 2
+    sec.\r\n\r\nAll enemies affected by the sigil are pulled to its center and are
+    snared, reducing movement speed by 70% for 6 sec."
+  wowhead_id: '202138'
+  source: blizzard_api
+  cached_at: '2025-12-16 15:23:53 -0800'
+'122278':
+  name: Dampen Harm
+  icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_dampenharm.jpg
+  tooltip: Reduces all damage you take by 20% to 50% for 10 sec, with larger attacks
+    being reduced by more.
+  wowhead_id: '122278'
+  source: blizzard_api
+  cached_at: '2025-12-16 15:23:53 -0800'
