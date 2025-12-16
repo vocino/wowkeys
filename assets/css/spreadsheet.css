@@ -1,3 +1,109 @@
+/* Full-screen application layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #0a0a0a;
+  color: #e0e0e0;
+}
+
+.fullscreen-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header */
+.app-header {
+  background: #1a1a1a;
+  border-bottom: 2px solid #3a3a3a;
+  padding: 16px 24px;
+  flex-shrink: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffd700;
+  margin: 0 0 4px 0;
+}
+
+.header-subtitle {
+  font-size: 0.9em;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+/* Main content area */
+.app-main {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #0a0a0a;
+}
+
+/* Footer */
+.app-footer {
+  background: #1a1a1a;
+  border-top: 2px solid #3a3a3a;
+  padding: 12px 24px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+  color: #888;
+  font-size: 0.85em;
+}
+
+/* Link styles */
+a {
+  color: #4a9eff;
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover {
+  color: #6bb3ff;
+  opacity: 0.9;
+}
+
+a:active {
+  opacity: 0.8;
+}
+
+/* Links in header/footer */
+.app-header a,
+.app-footer a {
+  color: #4a9eff;
+}
+
+.app-header a:hover,
+.app-footer a:hover {
+  color: #6bb3ff;
+}
+
 /* Spreadsheet-style layout for keybinds */
 
 .spreadsheet-container {

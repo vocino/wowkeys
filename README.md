@@ -1,6 +1,6 @@
 # World of Warcraft Tank Keybind Visualizer
 
-A static site generator for visualizing universal tank keybinds across all 6 World of Warcraft tank classes. This project treats tanking as a role-based system, mapping equivalent abilities to the same keys across all classes. It's based on [Quazii's keybind guide video](https://youtu.be/4bCzBstqlF0?si=Okeaoi9JyCeBl7zl), so special thanks to him!
+A static site generator for visualizing universal tank keybinds across all 6 World of Warcraft tank classes. This project treats tanking as a role-based system, mapping equivalent abilities to the same keys across all classes. It's based on [Quazii's keybind guide video](https://youtu.be/4bCzBstqlF0?si=Okeaoi9JyCeBl7zl), so special thanks to him! Also a lot of discussion about this in the [StratsCo Discord server](https://discord.gg/stratsco).
 
 ## Quick Start
 
