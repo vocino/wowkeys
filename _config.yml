@@ -4,6 +4,9 @@ description: "Universal tank keybind system visualization"
 baseurl: "/wowkeys"  # GitHub Pages repository name
 url: "https://vocino.github.io"
 
+# Cache busting version (increment on major updates)
+version: "1.0.0"
+
 # Jekyll settings
 plugins:
   - jekyll-feed
