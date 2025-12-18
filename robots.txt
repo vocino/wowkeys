@@ -1,0 +1,12 @@
+# robots.txt for wowkeys.vocino.com
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://wowkeys.vocino.com/sitemap.xml
+
+# Crawl-delay (optional, be nice to crawlers)
+Crawl-delay: 1
+

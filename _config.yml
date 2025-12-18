@@ -1,8 +1,26 @@
 # Jekyll Configuration for WoW Keybind Visualizer
-title: "World of Warcraft Tank Keybinds"
-description: "Universal tank keybind system visualization"
+title: "WoW Tank Keybinds - Universal Keybind Guide"
+tagline: "World of Warcraft Tank Keybinds"
+description: "A comprehensive universal tank keybind system for World of Warcraft. Optimize your keybinds across Death Knight, Demon Hunter, Druid, Monk, Paladin, and Warrior tank specs with this interactive guide inspired by Quazii's keybind philosophy."
 baseurl: ""  # Empty for local dev, GitHub Pages will use /wowkeys if repo name is wowkeys
-url: "https://vocino.github.io"
+url: "https://wowkeys.vocino.com"
+
+# SEO and Social
+author: "Vocino"
+twitter:
+  username: vocino
+social:
+  name: Vocino
+  links:
+    - https://github.com/vocino
+    - https://vocino.com
+
+# Default image for social sharing (create an og-image.png in assets/images/)
+og_image: "/assets/images/og-image.png"
+
+# Language and locale
+lang: en
+locale: en_US
 
 # Cache busting version (increment on major updates)
 version: "1.0.0"
@@ -10,6 +28,8 @@ version: "1.0.0"
 # Jekyll settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Plugins directory disabled for GitHub Pages compatibility
 

@@ -393,41 +393,41 @@ a:active {
   transform: scale(1.02);
 }
 
-/* WoW Class Colors - Enhanced with subtle shine */
+/* WoW Class Colors - Enhanced with darkened gradients for text readability */
 .class-warrior {
-  background: linear-gradient(135deg, #D4A87A 0%, #C69B6D 50%, #B88D5F 100%) !important;
-  color: var(--bg) !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #8B6914 0%, #7A5C12 50%, #695010 100%) !important;
+  color: var(--text-primary) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .class-paladin {
-  background: linear-gradient(135deg, #FF9FD1 0%, #F48CBA 50%, #E679A3 100%) !important;
-  color: var(--bg) !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #B5467A 0%, #A33D6D 50%, #8F3560 100%) !important;
+  color: var(--text-primary) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .class-deathknight {
-  background: linear-gradient(135deg, #D42E48 0%, #C41E3A 50%, #B01A32 100%) !important;
-  color: var(--bg) !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #9A1F30 0%, #8A1A2A 50%, #7A1524 100%) !important;
+  color: var(--text-primary) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .class-demonhunter {
-  background: linear-gradient(135deg, #B844E1 0%, #A330C9 50%, #922CB1 100%) !important;
-  color: var(--bg) !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #7A2D96 0%, #6A2583 50%, #5A1D70 100%) !important;
+  color: var(--text-primary) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .class-druid {
-  background: linear-gradient(135deg, #FF9224 0%, #FF7C0A 50%, #E66D08 100%) !important;
-  color: var(--bg) !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #B85A08 0%, #A35007 50%, #8E4606 100%) !important;
+  color: var(--text-primary) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .class-monk {
-  background: linear-gradient(135deg, #1AFFB0 0%, #00FF98 50%, #00E088 100%) !important;
-  color: var(--bg) !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #0D8050 0%, #0B7046 50%, #09603C 100%) !important;
+  color: var(--text-primary) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Subtle column background hints - alphabetical order: DK, DH, Druid, Monk, Paladin, Warrior */
@@ -499,24 +499,25 @@ a:active {
   transform: scale(1.1);
 }
 
-/* Priority tier colors for key rows - using Vocino semantic colors */
+/* Priority tier colors for key rows - Cool Monochrome scheme */
 .key-row.priority-s .key-cell {
-  background: linear-gradient(90deg, rgba(255, 92, 92, 0.15) 0%, rgba(22, 27, 34, 1) 100%) !important;
-  border-left: 3px solid var(--danger);
+  background: linear-gradient(90deg, rgba(0, 204, 255, 0.12) 0%, rgba(22, 27, 34, 1) 100%) !important;
+  border-left: 3px solid var(--brand);
 }
 
 .key-row.priority-a .key-cell {
-  background: linear-gradient(90deg, rgba(255, 184, 107, 0.15) 0%, rgba(22, 27, 34, 1) 100%) !important;
-  border-left: 3px solid var(--attention);
+  background: linear-gradient(90deg, rgba(77, 163, 255, 0.12) 0%, rgba(22, 27, 34, 1) 100%) !important;
+  border-left: 3px solid var(--accent-blue);
 }
 
 .key-row.priority-b .key-cell {
-  background: linear-gradient(90deg, rgba(61, 250, 154, 0.15) 0%, rgba(22, 27, 34, 1) 100%) !important;
-  border-left: 3px solid var(--success);
+  background: linear-gradient(90deg, rgba(107, 119, 133, 0.12) 0%, rgba(22, 27, 34, 1) 100%) !important;
+  border-left: 3px solid var(--text-muted);
 }
 
 .key-row.mouse-row .key-cell {
-  background: var(--surface-1) !important;
+  background: linear-gradient(90deg, rgba(157, 124, 255, 0.12) 0%, rgba(22, 27, 34, 1) 100%) !important;
+  border-left: 3px solid var(--accent-purple) !important;
 }
 
 /* Row animations - staggered reveal */

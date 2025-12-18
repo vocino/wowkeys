@@ -1,17 +1,19 @@
 ---
 layout: default
 title: Home
+description: "Interactive WoW tank keybind reference chart for Death Knight, Demon Hunter, Druid, Monk, Paladin, and Warrior. Optimize your tanking with this universal keybind philosophy guide."
+keywords: "WoW keybinds, World of Warcraft tank, tank keybinds, WoW tanking guide, Death Knight keybinds, Demon Hunter keybinds, Druid tank, Monk tank, Paladin tank, Warrior tank, Quazii keybinds"
 ---
 
-<div class="spreadsheet-container">
-  <table class="keybinds-table">
+<div class="spreadsheet-container" role="region" aria-label="Tank Keybind Reference Chart">
+  <table class="keybinds-table" role="grid" aria-label="World of Warcraft tank class keybinds comparison">
     <thead>
       <tr>
-        <th class="key-column-header"></th>
+        <th class="key-column-header" scope="col" aria-label="Keybind">Key</th>
         {% assign class_order = "deathknight|demonhunter|druid|monk|paladin|warrior" | split: "|" %}
         {% for class_slug in class_order %}
           {% assign class_data = site.data.keybinds.classes[class_slug] %}
-          <th class="class-header class-{{ class_slug }}">
+          <th class="class-header class-{{ class_slug }}" scope="col">
             {{ class_data.display_name }}
           </th>
         {% endfor %}
