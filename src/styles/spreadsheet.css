@@ -343,6 +343,21 @@ a:focus-visible {
   min-height: 0;
   overflow: auto;
   background: var(--panel);
+  /* Snap row-by-row (block) and column-by-column (inline) */
+  scroll-snap-type: both mandatory;
+  scroll-padding-top: 34px;           /* sticky header height */
+  scroll-padding-left: var(--key-w);  /* keep key column clear of sticky cell */
+}
+
+/* Vertical snap areas: one per table row, block-axis only */
+.keybinds-table tbody tr {
+  scroll-snap-align: block start;
+}
+
+/* Horizontal snap areas: one per class column, inline-axis only */
+.class-header,
+.ability-cell {
+  scroll-snap-align: inline start;
 }
 
 .keybinds-table {
