@@ -1,6 +1,6 @@
 ---
 import '../styles/spreadsheet.css';
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR, TWITTER_USERNAME, SITE_LOCALE } from '../consts.ts';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR, TWITTER_USERNAME, SITE_LOCALE, WOW_LAYOUT_IMPORT } from '../consts.ts';
 
 interface Props {
 	title?: string;
@@ -97,6 +97,7 @@ const jsonLd = {
 				<a href="https://youtu.be/4bCzBstqlF0?si=Okeaoi9JyCeBl7zl">[guide]</a>
 				<a href="https://discord.gg/stratsco">[discord]</a>
 				<a href="https://github.com/vocino/wowkeys">[src]</a>
+				<button type="button" id="copy-layout-btn" data-layout={WOW_LAYOUT_IMPORT} title="Copy my WoW Edit Mode UI layout import string">[layout]</button>
 			</nav>
 		</div>
 		<div class="header-meta">
@@ -121,5 +122,25 @@ const jsonLd = {
 	</footer>
 
 	<script src="../scripts/tooltips.js"></script>
+	<script>
+		const copyLayoutBtn = document.getElementById('copy-layout-btn');
+
+		if (copyLayoutBtn) {
+			const layoutCode = copyLayoutBtn.dataset.layout ?? '';
+			const originalText = copyLayoutBtn.textContent;
+
+			copyLayoutBtn.addEventListener('click', async () => {
+				try {
+					await navigator.clipboard.writeText(layoutCode);
+					copyLayoutBtn.textContent = '[copied]';
+				} catch {
+					window.prompt('Copy this UI layout string:', layoutCode);
+				}
+				setTimeout(() => {
+					copyLayoutBtn.textContent = originalText;
+				}, 1500);
+			});
+		}
+	</script>
 </body>
 </html>
