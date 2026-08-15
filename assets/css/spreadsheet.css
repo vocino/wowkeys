@@ -1,144 +1,61 @@
-/* Vocino Brand Style Guide - CSS Variables */
+/* ============================================================
+   wowkeys — terminal style
+   Monospace, dense, flat. Hierarchy comes from weight and color,
+   not from size, shadow, or gradient.
+   ============================================================ */
+
 :root {
-  /* Foundations (Surfaces) */
-  --bg: #0F1419;
-  --surface-1: #161B22;
-  --surface-2: #1E242C;
-  --selection: #263040;
-  --border: #2B3440;
+  /* Surfaces */
+  --bg: #0D1117;
+  --panel: #161A21;
+  --panel-2: #1E232B;
+  --border: #21262D;
+  --border-dim: #181C22;
 
   /* Text */
-  --text-primary: #E6EDF3;
-  --text-secondary: #9BA7B4;
-  --text-muted: #6B7785;
-  --text-disabled: #4B5563;
+  --text: #E6EDF3;
+  --muted: #747D88;
+  --dim: #4A525C;
 
-  /* Brand + Accents */
-  --brand: #00CCFF;
-  --accent-blue: #4DA3FF;
-  --accent-purple: #9D7CFF;
+  /* Terminal accents */
+  --accent: #34C48A;
+  --accent-dim: #1F6E51;
+  --headers: #58A6FF;
+  --warn: #D29922;
+  --cyan: #56D4DD;
+  --magenta: #BC8CFF;
 
-  /* Semantic States */
-  --success: #3DFA9A;
-  --warning: #E6E87A;
-  --attention: #FFB86B;
-  --danger: #FF5C5C;
-
-  /* Gradients */
-  --gradient-primary: linear-gradient(90deg, #00CCFF 0%, #4DA3FF 100%);
+  /* WoW class colors, brightened for text on a dark ground */
+  --c-deathknight: #FF5C72;
+  --c-demonhunter: #C58FFF;
+  --c-druid: #FF9C3D;
+  --c-monk: #2ECC93;
+  --c-paladin: #F58CBA;
+  --c-warrior: #D4A96A;
 
   /* Spacing */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
   --space-4: 16px;
-  --space-5: 24px;
-  --space-6: 32px;
-  --space-7: 48px;
+  --space-5: 20px;
 
-  /* Radii */
-  --radius-sm: 12px;
-  --radius-md: 16px;
-  --radius-lg: 18px;
+  /* Radii — small enough to read as a terminal box */
+  --radius-sm: 3px;
+  --radius-md: 6px;
 
-  /* Shadows */
-  --shadow-1: 0 6px 18px rgba(0, 0, 0, 0.35);
-  --shadow-2: 0 12px 32px rgba(0, 0, 0, 0.45);
+  /* Type */
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
-  /* Typography */
-  --font-sans: "Source Sans 3", sans-serif;
-  --font-serif: "Source Serif 4", serif;
-  --font-mono: "Source Code Pro", monospace;
+  /* Metrics */
+  --row-h: 44px;
+  --key-w: 64px;
+  --col-w: 236px;
 }
 
 /* ========================================
-   1. PAGE LOAD ANIMATIONS
+   1. RESET + BASE
    ======================================== */
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes glowPulse {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(0, 204, 255, 0.15);
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(0, 204, 255, 0.25);
-  }
-}
-
-/* ========================================
-   2. CUSTOM SCROLLBARS
-   ======================================== */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--surface-2) var(--bg);
-}
-
-*::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
-}
-
-*::-webkit-scrollbar-track {
-  background: var(--bg);
-  border-radius: 6px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: var(--surface-2);
-  border-radius: 6px;
-  border: 3px solid var(--bg);
-  transition: background 0.2s ease;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background: var(--brand);
-}
-
-*::-webkit-scrollbar-corner {
-  background: var(--bg);
-}
-
-/* Full-screen application layout */
 * {
   margin: 0;
   padding: 0;
@@ -147,345 +64,425 @@
 
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-sans);
-  background: var(--bg);
-  color: var(--text-primary);
+}
+
+body {
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.6;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant-ligatures: none;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Terminal text idioms */
+.comment::before {
+  content: "// ";
+}
+
+.comment {
+  color: var(--muted);
 }
 
 /* ========================================
-   3. ATMOSPHERIC BACKGROUND
+   2. ANIMATIONS — sparse, on purpose
+   ======================================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes bootIn {
+  from { opacity: 0; transform: translateY(-3px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+  0%, 49%   { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* ========================================
+   3. SCROLLBARS
+   ======================================== */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--panel-2) var(--bg);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--panel-2);
+  border: 2px solid var(--bg);
+  border-radius: 0;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dim);
+}
+
+*::-webkit-scrollbar-corner {
+  background: var(--bg);
+}
+
+/* ========================================
+   4. APP SHELL
    ======================================== */
 .fullscreen-app {
   display: flex;
   flex-direction: column;
   height: 100vh;
   overflow: hidden;
-  position: relative;
-  background: 
-    /* Cyan glow top-left */
-    radial-gradient(ellipse 80% 50% at 10% 0%, rgba(0, 204, 255, 0.08) 0%, transparent 50%),
-    /* Purple atmosphere bottom-right */
-    radial-gradient(ellipse 60% 40% at 90% 100%, rgba(157, 124, 255, 0.06) 0%, transparent 50%),
-    /* Subtle grid pattern */
-    linear-gradient(rgba(43, 52, 64, 0.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(43, 52, 64, 0.3) 1px, transparent 1px),
-    /* Base background */
-    var(--bg);
-  background-size: 
-    100% 100%,
-    100% 100%,
-    40px 40px,
-    40px 40px,
-    100% 100%;
-  animation: fadeIn 0.5s ease-out;
+  background: var(--bg);
 }
 
 /* ========================================
-   4. HEADER WITH ACCENT LINE
+   5. HEADER — topbar + boot lines
    ======================================== */
 .app-header {
-  background: var(--surface-1);
-  border-bottom: none;
-  padding: var(--space-5) var(--space-5) var(--space-4);
   flex-shrink: 0;
-  z-index: 1000;
-  position: relative;
-  animation: fadeInDown 0.6s ease-out;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
 }
 
-/* Gradient accent line under header */
-.app-header::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--gradient-primary);
-  opacity: 0.9;
-}
-
-/* Subtle glow effect behind header */
-.app-header::before {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  right: 0;
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
   height: 40px;
-  background: linear-gradient(to bottom, rgba(0, 204, 255, 0.1) 0%, transparent 100%);
-  pointer-events: none;
-  z-index: -1;
+  padding: 0 var(--space-5);
+  border-bottom: 1px solid var(--border-dim);
+  animation: bootIn 0.3s ease-out both;
 }
 
-.header-content {
-  max-width: 100%;
-  margin: 0 auto;
+.brand {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.brand:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.cursor {
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  margin-left: 3px;
+  vertical-align: -2px;
+  background: var(--accent);
+  animation: blink 1s step-end infinite;
+}
+
+.topbar-sep {
+  width: 1px;
+  height: 14px;
+  background: var(--border);
+  flex-shrink: 0;
 }
 
 .header-title {
-  font-size: 2em;
-  font-weight: 700;
-  color: var(--brand);
-  margin: 0 0 var(--space-2) 0;
-  font-family: var(--font-sans);
-  letter-spacing: -0.02em;
-  text-shadow: 0 0 30px rgba(0, 204, 255, 0.3);
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--muted);
+  text-transform: lowercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-title::before {
+  content: "$ ";
+  color: var(--accent);
+}
+
+.topnav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+
+.topnav a {
+  color: var(--muted);
+  text-transform: lowercase;
+}
+
+.topnav a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.header-meta {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  padding: var(--space-3) var(--space-5);
+  animation: bootIn 0.3s ease-out 0.08s both;
 }
 
 .header-subtitle {
-  font-size: 0.95em;
-  color: var(--text-secondary);
-  margin: 0;
-  font-weight: 400;
-  font-family: var(--font-sans);
+  font-size: 12.5px;
+  color: var(--muted);
+  text-transform: lowercase;
+  flex: 1 1 420px;
+  min-width: 0;
 }
 
-/* Main content area */
-.app-main {
-  flex: 1;
-  overflow: hidden;
+.header-subtitle a {
+  color: var(--headers);
+}
+
+/* Tier legend */
+.tier-legend {
   display: flex;
-  flex-direction: column;
-  padding: var(--space-5);
-  animation: fadeInUp 0.6s ease-out 0.2s both;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: lowercase;
+  white-space: nowrap;
 }
 
-/* Footer */
-.app-footer {
-  background: var(--surface-1);
-  border-top: 1px solid var(--border);
-  padding: var(--space-3) var(--space-5);
-  flex-shrink: 0;
-  text-align: center;
-  animation: fadeIn 0.6s ease-out 0.4s both;
+.tier-legend .legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
 }
 
-.footer-content {
-  max-width: 100%;
-  margin: 0 auto;
+.tier-legend .tier-mark {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid currentColor;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
 }
 
-.footer-content p {
-  margin: 0;
-  color: var(--text-muted);
-  font-size: 0.875em;
-  font-weight: 400;
-  font-family: var(--font-sans);
-}
+.legend-item.tier-s { color: var(--accent); }
+.legend-item.tier-a { color: var(--headers); }
+.legend-item.tier-b { color: var(--dim); }
+.legend-item.tier-m { color: var(--magenta); }
 
-/* Link styles */
-a {
-  color: var(--brand);
-  text-decoration: none;
-  transition: color 0.2s ease, opacity 0.2s ease;
-}
-
-a:hover {
-  color: var(--accent-blue);
-  text-decoration: underline;
-}
-
-a:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 204, 255, 0.35);
-  border-radius: 4px;
-}
-
-a:active {
-  opacity: 0.85;
-}
-
-/* Links in header/footer */
-.app-header a,
-.app-footer a {
-  color: var(--brand);
-}
-
-.app-header a:hover,
-.app-footer a:hover {
-  color: var(--accent-blue);
+.tier-legend .legend-item span:last-child {
+  color: var(--muted);
 }
 
 /* ========================================
-   5. ROUNDED TABLE CONTAINER WITH SHADOW
+   6. MAIN
+   ======================================== */
+.app-main {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-5) var(--space-5) var(--space-4);
+  animation: fadeIn 0.3s ease-out 0.12s both;
+}
+
+/* Bordered box with an overlapping label, terminal-fieldset style */
+.box {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.box-label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  z-index: 200;
+  padding: 0 7px;
+  background: var(--bg);
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.box-label::before {
+  content: "$ ";
+}
+
+/* ========================================
+   7. FOOTER
+   ======================================== */
+.app-footer {
+  flex-shrink: 0;
+  padding: var(--space-3) var(--space-5);
+  border-top: 1px solid var(--border);
+}
+
+.footer-content p {
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: lowercase;
+}
+
+.footer-content a {
+  color: var(--headers);
+}
+
+/* ========================================
+   8. TABLE SHELL
    ======================================== */
 .spreadsheet-container {
   width: 100%;
-  height: 100%;
-  overflow-x: auto;
-  overflow-y: auto;
-  background: var(--surface-1);
   flex: 1;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-1);
-  animation: glowPulse 4s ease-in-out infinite;
+  min-height: 0;
+  overflow: auto;
+  background: var(--panel);
+  border-radius: calc(var(--radius-md) - 1px);
 }
 
 .keybinds-table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  background: var(--surface-1);
-  font-size: 0.9em;
+  background: var(--panel);
+  font-size: 12.5px;
 }
 
-/* Frozen header row */
-.keybinds-table thead {
+/* --- Header row --- */
+.keybinds-table thead th {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--surface-2);
-}
-
-.keybinds-table thead th {
-  background: var(--surface-2);
-  color: var(--text-primary);
+  height: 34px;
+  padding: 0 var(--space-3);
+  background: var(--panel-2);
+  color: var(--text);
+  font-size: 12.5px;
   font-weight: 600;
-  padding: var(--space-3) var(--space-2);
-  text-align: center;
+  text-align: left;
+  text-transform: lowercase;
   border-bottom: 1px solid var(--border);
-  border-right: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  font-family: var(--font-sans);
-}
-
-/* First header cell - rounded top-left */
-.keybinds-table thead th:first-child {
-  border-top-left-radius: calc(var(--radius-md) - 1px);
-}
-
-/* Last header cell - rounded top-right */
-.keybinds-table thead th:last-child {
-  border-top-right-radius: calc(var(--radius-md) - 1px);
-  border-right: none;
+  border-right: 1px solid var(--border-dim);
+  white-space: nowrap;
 }
 
 .key-column-header {
-  background: var(--surface-2) !important;
-  width: 70px;
-  min-width: 70px;
-  max-width: 70px;
   left: 0;
   z-index: 102;
-  border-right: 2px solid var(--border) !important;
+  width: var(--key-w);
+  min-width: var(--key-w);
+  max-width: var(--key-w);
+  text-align: center;
   padding: 0;
-  /* Ensure sticky works on mobile */
+  color: var(--muted) !important;
+  border-right: 1px solid var(--border) !important;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 
 .class-header {
-  width: 250px;
-  min-width: 250px;
-  max-width: 250px;
-  transition: transform 0.2s ease;
+  width: var(--col-w);
+  min-width: var(--col-w);
+  max-width: var(--col-w);
+  box-shadow: inset 0 -2px 0 0 currentColor;
 }
 
-.class-header:hover {
-  transform: scale(1.02);
+.class-header:last-child {
+  border-right: none;
 }
 
-/* WoW Class Colors - Enhanced with darkened gradients for text readability */
-.class-warrior {
-  background: linear-gradient(135deg, #8B6914 0%, #7A5C12 50%, #695010 100%) !important;
-  color: var(--text-primary) !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+/* Class identity lives in the text color, not a filled block */
+.class-deathknight { color: var(--c-deathknight) !important; }
+.class-demonhunter { color: var(--c-demonhunter) !important; }
+.class-druid       { color: var(--c-druid) !important; }
+.class-monk        { color: var(--c-monk) !important; }
+.class-paladin     { color: var(--c-paladin) !important; }
+.class-warrior     { color: var(--c-warrior) !important; }
+
+/* Column tints — just enough to track a column across 20 rows */
+.keybinds-table tbody td:nth-child(2) { background: rgba(255, 92, 114, 0.03); }
+.keybinds-table tbody td:nth-child(3) { background: rgba(197, 143, 255, 0.03); }
+.keybinds-table tbody td:nth-child(4) { background: rgba(255, 156, 61, 0.03); }
+.keybinds-table tbody td:nth-child(5) { background: rgba(46, 204, 147, 0.03); }
+.keybinds-table tbody td:nth-child(6) { background: rgba(245, 140, 186, 0.03); }
+.keybinds-table tbody td:nth-child(7) { background: rgba(212, 169, 106, 0.03); }
+
+/* ========================================
+   9. KEY COLUMN
+   ======================================== */
+.keybinds-table tbody tr,
+.keybinds-table tbody td {
+  height: var(--row-h);
 }
 
-.class-paladin {
-  background: linear-gradient(135deg, #B5467A 0%, #A33D6D 50%, #8F3560 100%) !important;
-  color: var(--text-primary) !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.class-deathknight {
-  background: linear-gradient(135deg, #9A1F30 0%, #8A1A2A 50%, #7A1524 100%) !important;
-  color: var(--text-primary) !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.class-demonhunter {
-  background: linear-gradient(135deg, #7A2D96 0%, #6A2583 50%, #5A1D70 100%) !important;
-  color: var(--text-primary) !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.class-druid {
-  background: linear-gradient(135deg, #B85A08 0%, #A35007 50%, #8E4606 100%) !important;
-  color: var(--text-primary) !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.class-monk {
-  background: linear-gradient(135deg, #0D8050 0%, #0B7046 50%, #09603C 100%) !important;
-  color: var(--text-primary) !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-/* Subtle column background hints - alphabetical order: DK, DH, Druid, Monk, Paladin, Warrior */
-.keybinds-table tbody td:nth-child(2) { /* Death Knight column */
-  background: rgba(196, 30, 58, 0.06);
-}
-
-.keybinds-table tbody td:nth-child(3) { /* Demon Hunter column */
-  background: rgba(163, 48, 201, 0.06);
-}
-
-.keybinds-table tbody td:nth-child(4) { /* Druid column */
-  background: rgba(255, 124, 10, 0.06);
-}
-
-.keybinds-table tbody td:nth-child(5) { /* Monk column */
-  background: rgba(0, 255, 152, 0.06);
-}
-
-.keybinds-table tbody td:nth-child(6) { /* Paladin column */
-  background: rgba(244, 140, 186, 0.06);
-}
-
-.keybinds-table tbody td:nth-child(7) { /* Warrior column */
-  background: rgba(198, 155, 109, 0.06);
-}
-
-.keybinds-table tbody td:nth-child(n+2):hover { /* Class columns on hover */
-  background: var(--selection) !important;
-}
-
-/* Key column (frozen left) */
 .key-cell {
   position: sticky !important;
   left: 0 !important;
-  background: var(--surface-1);
   z-index: 50;
+  width: var(--key-w);
+  min-width: var(--key-w);
+  max-width: var(--key-w);
+  height: var(--row-h);
   padding: 0;
-  border-right: 2px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  width: 70px;
-  min-width: 70px;
-  max-width: 70px;
-  height: 70px;
   text-align: center;
   vertical-align: middle;
-  transition: background 0.2s ease;
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-dim);
 }
 
 .key-label-cell {
   display: inline-block;
-  font-weight: 600;
-  font-size: 1.15em;
-  color: var(--text-secondary);
-  letter-spacing: 0.3px;
-  font-family: var(--font-mono);
-  line-height: 70px;
-  transition: color 0.2s ease, text-shadow 0.2s ease, transform 0.2s ease;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: var(--row-h);
+  text-transform: lowercase;
+  transition: color 0.15s ease;
+}
+
+/* Keys render as terminal tokens: [q] */
+.key-label-cell::before {
+  content: "[";
+  color: var(--dim);
+}
+
+.key-label-cell::after {
+  content: "]";
+  color: var(--dim);
 }
 
 .keybind-tooltip-trigger {
@@ -494,397 +491,233 @@ a:active {
 }
 
 .keybind-tooltip-trigger:hover .key-label-cell {
-  color: var(--brand);
-  text-shadow: 0 0 12px rgba(0, 204, 255, 0.5);
-  transform: scale(1.1);
+  color: var(--accent);
 }
 
-/* Priority tier colors for key rows - Cool Monochrome scheme */
-.key-row.priority-s .key-cell {
-  background: linear-gradient(90deg, rgba(0, 204, 255, 0.12) 0%, rgba(22, 27, 34, 1) 100%) !important;
-  border-left: 3px solid var(--brand);
+.keybind-tooltip-trigger:hover .key-label-cell::before,
+.keybind-tooltip-trigger:hover .key-label-cell::after {
+  color: var(--accent-dim);
 }
 
-.key-row.priority-a .key-cell {
-  background: linear-gradient(90deg, rgba(77, 163, 255, 0.12) 0%, rgba(22, 27, 34, 1) 100%) !important;
-  border-left: 3px solid var(--accent-blue);
-}
+/* Tier is a colored left rule, nothing more */
+.key-row.priority-s .key-cell { border-left: 2px solid var(--accent); }
+.key-row.priority-a .key-cell { border-left: 2px solid var(--headers); }
+.key-row.priority-b .key-cell { border-left: 2px solid var(--dim); }
+.key-row.mouse-row  .key-cell { border-left: 2px solid var(--magenta) !important; }
 
-.key-row.priority-b .key-cell {
-  background: linear-gradient(90deg, rgba(107, 119, 133, 0.12) 0%, rgba(22, 27, 34, 1) 100%) !important;
-  border-left: 3px solid var(--text-muted);
-}
+.key-row.priority-b .key-label-cell { color: var(--muted); }
 
-.key-row.mouse-row .key-cell {
-  background: linear-gradient(90deg, rgba(157, 124, 255, 0.12) 0%, rgba(22, 27, 34, 1) 100%) !important;
-  border-left: 3px solid var(--accent-purple) !important;
-}
-
-/* Row animations - staggered reveal */
-.keybinds-table tbody tr {
-  height: 70px;
-  animation: fadeIn 0.4s ease-out both;
-}
-
-/* Stagger the row animations */
-.keybinds-table tbody tr:nth-child(1) { animation-delay: 0.3s; }
-.keybinds-table tbody tr:nth-child(2) { animation-delay: 0.35s; }
-.keybinds-table tbody tr:nth-child(3) { animation-delay: 0.4s; }
-.keybinds-table tbody tr:nth-child(4) { animation-delay: 0.45s; }
-.keybinds-table tbody tr:nth-child(5) { animation-delay: 0.5s; }
-.keybinds-table tbody tr:nth-child(6) { animation-delay: 0.55s; }
-.keybinds-table tbody tr:nth-child(7) { animation-delay: 0.6s; }
-.keybinds-table tbody tr:nth-child(8) { animation-delay: 0.65s; }
-.keybinds-table tbody tr:nth-child(9) { animation-delay: 0.7s; }
-.keybinds-table tbody tr:nth-child(10) { animation-delay: 0.75s; }
-.keybinds-table tbody tr:nth-child(11) { animation-delay: 0.8s; }
-.keybinds-table tbody tr:nth-child(12) { animation-delay: 0.85s; }
-.keybinds-table tbody tr:nth-child(13) { animation-delay: 0.9s; }
-.keybinds-table tbody tr:nth-child(14) { animation-delay: 0.95s; }
-.keybinds-table tbody tr:nth-child(15) { animation-delay: 1s; }
-.keybinds-table tbody tr:nth-child(n+16) { animation-delay: 1.05s; }
-
-.keybinds-table tbody td {
-  height: 70px;
-  vertical-align: middle;
-}
-
-/* Last row - rounded bottom corners */
-.keybinds-table tbody tr:last-child .key-cell {
-  border-bottom-left-radius: calc(var(--radius-md) - 1px);
-}
-
-.keybinds-table tbody tr:last-child td:last-child {
-  border-bottom-right-radius: calc(var(--radius-md) - 1px);
-}
-
-/* Ability cells */
+/* ========================================
+   10. ABILITY CELLS
+   ======================================== */
 .ability-cell {
-  padding: var(--space-2);
-  border-right: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  background: var(--surface-1);
+  width: var(--col-w);
+  min-width: var(--col-w);
+  max-width: var(--col-w);
+  height: var(--row-h);
+  padding: 0 var(--space-2);
   vertical-align: middle;
-  width: 250px;
-  min-width: 250px;
-  max-width: 250px;
-  height: 70px;
-  position: relative;
-  overflow: hidden;
-  transition: background 0.2s ease;
+  border-right: 1px solid var(--border-dim);
+  border-bottom: 1px solid var(--border-dim);
+  transition: background 0.15s ease;
 }
 
-/* Remove right border from last column */
 .ability-cell:last-child {
   border-right: none;
-}
-
-.ability-cell[style*="--ability-bg-icon"]::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: var(--ability-bg-icon);
-  background-size: auto 105%;
-  background-position: left center;
-  background-repeat: no-repeat;
-  opacity: 0.12;
-  filter: grayscale(100%) brightness(0.7) blur(3px);
-  pointer-events: none;
-  z-index: 0;
-  transition: opacity 0.2s ease;
-}
-
-.ability-cell[style*="--ability-bg-icon"]::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to right, transparent 0%, transparent 25%, rgba(22, 27, 34, 0.2) 40%, rgba(22, 27, 34, 0.5) 55%, rgba(22, 27, 34, 0.8) 70%, var(--surface-1) 90%, var(--surface-1) 100%);
-  pointer-events: none;
-  z-index: 1;
-  transition: background 0.2s ease;
-}
-
-.ability-cell:hover {
-  background: var(--surface-2);
-}
-
-.ability-cell:hover::before {
-  opacity: 0.18;
-}
-
-.ability-cell:hover::after {
-  background: linear-gradient(to right, transparent 0%, transparent 25%, rgba(30, 36, 44, 0.2) 40%, rgba(30, 36, 44, 0.5) 55%, rgba(30, 36, 44, 0.8) 70%, var(--surface-2) 90%, var(--surface-2) 100%);
 }
 
 .ability-display {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-1);
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
   cursor: pointer;
-  position: relative;
-  z-index: 1;
-  transition: background 0.2s ease, transform 0.2s ease;
-  border-radius: var(--space-2);
+  transition: background 0.15s ease;
 }
 
 .ability-display:hover {
-  background: rgba(0, 204, 255, 0.08);
-  transform: translateX(4px);
+  background: var(--panel-2);
 }
 
 .ability-icon-small {
-  width: 40px;
-  height: 40px;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
   background-size: cover;
   background-position: center;
-  border: 2px solid rgba(230, 237, 243, 0.25);
-  border-radius: var(--space-2);
-  flex-shrink: 0;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.15s ease;
 }
 
 .ability-display:hover .ability-icon-small {
-  border-color: var(--brand);
-  box-shadow: 0 0 12px rgba(0, 204, 255, 0.4);
-  transform: scale(1.05);
+  border-color: var(--accent-dim);
 }
 
 .ability-icon-placeholder {
-  background: rgba(230, 237, 243, 0.08);
-  border: 2px dashed rgba(230, 237, 243, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-muted);
-  font-size: 0.7em;
+  background: var(--border-dim);
+  border: 1px dashed var(--border);
 }
 
 .ability-name {
-  color: var(--text-primary);
-  font-size: 0.9em;
-  line-height: 1.3;
   flex: 1;
+  min-width: 0;
+  font-size: 12.5px;
   font-weight: 400;
-  font-family: var(--font-sans);
-  transition: color 0.2s ease;
+  line-height: 1.35;
+  color: var(--text);
+  text-transform: lowercase;
+  transition: color 0.15s ease;
 }
 
 .ability-display:hover .ability-name {
-  color: var(--brand);
+  color: var(--accent);
 }
 
 .ability-empty {
-  color: var(--text-disabled);
-  text-align: center;
-  font-style: italic;
-  padding: var(--space-2);
+  padding-left: var(--space-2);
+  color: var(--dim);
 }
 
-/* Tooltip for abilities */
-.ability-display[data-tooltip] {
-  position: relative;
-}
-
-.ability-display[data-tooltip]:hover .ability-tooltip {
-  display: block;
-}
-
-.ability-tooltip {
+/* ========================================
+   11. TOOLTIPS
+   ======================================== */
+.ability-tooltip,
+.keybind-tooltip {
   display: none;
   position: fixed;
-  min-width: 250px;
-  max-width: 350px;
+  z-index: 99999;
+  min-width: 240px;
+  max-width: 360px;
   padding: var(--space-3);
-  background: var(--surface-1);
-  border: 2px solid var(--brand);
-  border-radius: var(--radius-sm);
-  color: var(--text-primary);
-  font-size: 0.85em;
-  line-height: 1.5;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  border-radius: var(--radius-md);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.6;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease;
-  z-index: 99999;
-  box-shadow: var(--shadow-2), 0 0 20px rgba(0, 204, 255, 0.15);
+  transition: opacity 0.12s ease;
 }
 
 .ability-display[data-tooltip]:hover .ability-tooltip {
   display: block;
-}
-
-.ability-tooltip::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 8px solid transparent;
-}
-
-.ability-tooltip.tooltip-above::after {
-  top: 100%;
-  border-top-color: var(--brand);
-}
-
-.ability-tooltip.tooltip-below::after {
-  bottom: 100%;
-  border-bottom-color: var(--brand);
 }
 
 .tooltip-title {
-  color: var(--brand);
-  font-weight: 600;
-  font-size: 1.1em;
   margin-bottom: var(--space-2);
   padding-bottom: var(--space-2);
   border-bottom: 1px solid var(--border);
-  font-family: var(--font-sans);
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.tooltip-title::before {
+  content: "$ ";
+  color: var(--accent-dim);
 }
 
 .tooltip-description {
-  color: var(--text-secondary);
+  color: var(--muted);
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* Tooltip for keybinds */
-.keybind-tooltip-trigger[data-keybind-tooltip] {
-  position: relative;
+.tooltip-description::before {
+  content: "// ";
+  color: var(--dim);
 }
 
-.keybind-tooltip {
-  display: none;
-  position: fixed;
-  min-width: 250px;
-  max-width: 350px;
-  padding: var(--space-3);
-  background: var(--surface-1);
-  border: 2px solid var(--brand);
+/* Focus states */
+.keybind-tooltip-trigger:focus-visible,
+.ability-display:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: -1px;
   border-radius: var(--radius-sm);
-  color: var(--text-primary);
-  font-size: 0.85em;
-  line-height: 1.5;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-  z-index: 99999;
-  box-shadow: var(--shadow-2), 0 0 20px rgba(0, 204, 255, 0.15);
-}
-
-.keybind-tooltip::after {
-  content: '';
-  position: absolute;
-  left: -16px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 8px solid transparent;
-  border-right-color: var(--brand);
-}
-
-/* Focus states for accessibility */
-.keybind-tooltip-trigger:focus,
-.ability-display:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 204, 255, 0.35);
-  border-radius: var(--space-1);
 }
 
 /* ========================================
-   RESPONSIVE ADJUSTMENTS
+   12. RESPONSIVE
    ======================================== */
-@media (max-width: 768px) {
-  .app-main {
-    padding: var(--space-3);
+@media (max-width: 900px) {
+  .header-meta {
+    gap: var(--space-2);
   }
 
-  .spreadsheet-container {
-    overflow-x: auto;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    border-radius: var(--radius-sm);
-  }
-  
-  .keybinds-table {
-    font-size: 0.85em;
-  }
-  
-  .key-column-header {
-    width: 60px !important;
-    min-width: 60px !important;
-    max-width: 60px !important;
-  }
-  
-  .key-cell {
-    width: 60px;
-    min-width: 60px;
-    max-width: 60px;
-    height: 60px;
-  }
-  
-  .key-label-cell {
-    line-height: 60px;
-  }
-  
-  .keybinds-table tbody tr {
-    height: 60px;
-  }
-  
-  .keybinds-table tbody td {
-    height: 60px;
-  }
-  
-  .ability-cell {
-    height: 60px;
-    min-width: calc(100vw - 80px);
-    width: calc(100vw - 80px);
-  }
-  
-  .class-header {
-    min-width: calc(100vw - 80px);
-    width: calc(100vw - 80px);
-  }
-  
-  .ability-icon-small {
-    width: 36px;
-    height: 36px;
-  }
-  
-  .ability-name {
-    font-size: 0.9em;
-  }
-  
-  .key-label-cell {
-    font-size: 1em;
-  }
-  
-  .ability-tooltip,
-  .keybind-tooltip {
-    min-width: 200px;
-    max-width: calc(100vw - 40px);
-    font-size: 0.8em;
-  }
-
-  .header-title {
-    font-size: 1.35em;
-  }
-
-  .header-subtitle {
-    font-size: 0.85em;
-  }
-
-  /* Disable row stagger animations on mobile for performance */
-  .keybinds-table tbody tr {
-    animation-delay: 0s !important;
+  .tier-legend {
+    flex-wrap: wrap;
+    white-space: normal;
   }
 }
 
-/* Reduce motion for users who prefer it */
+@media (max-width: 768px) {
+  :root {
+    --row-h: 40px;
+    --key-w: 52px;
+  }
+
+  body {
+    font-size: 12.5px;
+  }
+
+  .topbar,
+  .header-meta,
+  .app-main,
+  .app-footer {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+
+  .app-main {
+    padding-top: var(--space-4);
+  }
+
+  .header-title {
+    display: none;
+  }
+
+  .topbar-sep {
+    display: none;
+  }
+
+  .spreadsheet-container {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .keybinds-table {
+    font-size: 12px;
+  }
+
+  .key-column-header {
+    width: var(--key-w) !important;
+    min-width: var(--key-w) !important;
+    max-width: var(--key-w) !important;
+  }
+
+  .ability-cell,
+  .class-header {
+    width: calc(100vw - 100px);
+    min-width: calc(100vw - 100px);
+  }
+
+  .ability-icon-small {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ability-tooltip,
+  .keybind-tooltip {
+    min-width: 200px;
+    max-width: calc(100vw - 32px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -893,8 +726,8 @@ a:active {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-  
-  .spreadsheet-container {
+
+  .cursor {
     animation: none;
   }
 }
