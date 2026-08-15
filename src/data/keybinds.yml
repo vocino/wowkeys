@@ -248,6 +248,14 @@ classes:
 
           Generates 20 Rage."
         cached_name: Charge
+      h:
+        name: Battlelord's Bloodthirsty War Wyrm
+        keybind: H
+        wowhead_id: 229388
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_warriormount.jpg
+        tooltip: Summons and dismisses your Battlelord's Bloodthirsty War Wyrm. This is
+          a flying mount.
+        cached_name: Battlelord's Bloodthirsty War Wyrm
   paladin:
     name: Protection Paladin
     slug: protection-paladin
@@ -401,6 +409,14 @@ classes:
         tooltip: Leap atop your Charger for 3 sec, increasing movement speed by 100%.
           Usable while indoors or in combat.
         cached_name: Divine Steed
+      h:
+        name: Highlord's Golden Charger
+        keybind: H
+        wowhead_id: 231435
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_paladinmount_blue.jpg
+        tooltip: Summons and dismisses your Highlord's Golden Charger. This is a flying
+          mount.
+        cached_name: Highlord's Golden Charger
   deathknight:
     name: Blood Death Knight
     slug: blood-death-knight
@@ -562,6 +578,14 @@ classes:
 
           Passive: You cannot be slowed below 70% of normal speed."
         cached_name: Death's Advance
+      h:
+        name: Deathlord's Vilebrood Vanquisher
+        keybind: H
+        wowhead_id: 229387
+        icon: https://render.worldofwarcraft.com/us/icons/56/ability_mount_dkmount.jpg
+        tooltip: Summons and dismisses your Deathlord's Vilebrood Vanquisher. This is a
+          flying mount.
+        cached_name: Deathlord's Vilebrood Vanquisher
   demonhunter:
     name: Vengeance Demon Hunter
     slug: vengeance-demon-hunter
@@ -720,6 +744,14 @@ classes:
         tooltip: Leap through the air toward a targeted location, dealing 21 Fire damage
           to all enemies within 6 yards.
         cached_name: Infernal Strike
+      h:
+        name: Slayer's Felbroken Shrieker
+        keybind: H
+        wowhead_id: 241856
+        icon: https://render.worldofwarcraft.com/us/icons/56/1307351.jpg
+        tooltip: Summons and dismisses your Slayer's Felbroken Shrieker. This is a
+          flying mount.
+        cached_name: Slayer's Felbroken Shrieker
   druid:
     name: Guardian Druid
     slug: guardian-druid
@@ -868,6 +900,13 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/538771.jpg
         tooltip: Fly to a nearby ally's position.
         cached_name: Wild Charge
+      h:
+        name: Archdruid's Lunarwing Form
+        keybind: H
+        wowhead_id: 231437
+        icon: https://render.worldofwarcraft.com/us/icons/56/1509801.jpg
+        tooltip: Allows your Travel Form to take on the form of a Lunarwing Owl.
+        cached_name: Archdruid's Lunarwing Form
   monk:
     name: Brewmaster Monk
     slug: brewmaster-monk
@@ -1006,3 +1045,10 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/574574.jpg
         tooltip: Roll a short distance.
         cached_name: Roll
+      h:
+        name: Ban-Lu, Grandmaster's Companion
+        keybind: H
+        wowhead_id: 229385
+        icon: https://render.worldofwarcraft.com/us/icons/56/inv_monkmount.jpg
+        tooltip: Summons and dismisses your companion Ban-Lu. This is a flying mount.
+        cached_name: Ban-Lu, Grandmaster's Companion

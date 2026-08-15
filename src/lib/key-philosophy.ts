@@ -24,7 +24,7 @@ const KEY_PHILOSOPHY: Record<string, string> = {
 	'6': 'B-Tier utility key (Warrior: Demoralizing Shout)',
 	t: 'B-Tier utility key',
 	y: 'B-Tier utility key',
-	h: 'B-Tier utility key',
+	h: "Legion Class Mount (Deathlord's Vilebrood Vanquisher, Slayer's Felbroken Shrieker, Archdruid's Lunarwing Form, Ban-Lu Grandmaster's Companion, Highlord's Golden Charger, Battlelord's Bloodthirsty War Wyrm)",
 	b: 'B-Tier utility key',
 };
 

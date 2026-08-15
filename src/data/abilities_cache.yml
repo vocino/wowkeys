@@ -756,6 +756,21 @@
   wowhead_id: "228920"
   source: blizzard_api
   cached_at: 2026-08-14 21:24:23 -0700
+"231437":
+  name: Archdruid's Lunarwing Form
+  icon: https://render.worldofwarcraft.com/us/icons/56/1509801.jpg
+  tooltip: Allows your Travel Form to take on the form of a Lunarwing Owl.
+  wowhead_id: "231437"
+  source: blizzard_api
+  cached_at: Fri Aug 14 2026 22:50:14 GMT-0700 (Pacific Daylight Time)
+"241856":
+  name: Slayer's Felbroken Shrieker
+  icon: https://render.worldofwarcraft.com/us/icons/56/1307351.jpg
+  tooltip: Summons and dismisses your Slayer's Felbroken Shrieker. This is a
+    flying mount.
+  wowhead_id: "241856"
+  source: blizzard_api
+  cached_at: Fri Aug 14 2026 22:50:14 GMT-0700 (Pacific Daylight Time)
 "247454":
   name: Spirit Bomb
   icon: https://render.worldofwarcraft.com/us/icons/56/1097742.jpg
