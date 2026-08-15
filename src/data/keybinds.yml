@@ -238,16 +238,14 @@ classes:
           against them by 800% for 6 sec.
         cached_name: Taunt
       g:
-        name: Charge
+        name: Heroic Leap
         keybind: G
-        wowhead_id: 100
-        icon: https://render.worldofwarcraft.com/us/icons/56/132337.jpg
-        tooltip: "Charge to an enemy, dealing 7 Physical damage, rooting it for 1 sec.\r
-
-          \r
-
-          Generates 20 Rage."
-        cached_name: Charge
+        wowhead_id: 6544
+        icon: https://render.worldofwarcraft.com/us/icons/56/236171.jpg
+        tooltip: Leap through the air toward a target location, slamming down with
+          destructive force to deal 8 Physical damage to all enemies within 8
+          yards.
+        cached_name: Heroic Leap
       h:
         name: Battlelord's Bloodthirsty War Wyrm
         keybind: H

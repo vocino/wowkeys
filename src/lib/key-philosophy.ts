@@ -17,7 +17,7 @@ const KEY_PHILOSOPHY: Record<string, string> = {
 	x: "Ground-Targeted AoE (Death and Decay, Sigil of Flame, Ursol's Vortex, Rushing Jade Wind, Consecration, Ravager)",
 	c: 'Major Defensive Wall (Vampiric Blood, Darkness, Barkskin, Celestial Brew, Guardian of Ancient Kings, Shield Wall)',
 	v: 'Group/Alternative Utility (Anti-Magic Zone, Sigil of Chains, Stampeding Roar, Summon Black Ox Statue, Holy Bulwark, Rallying Cry)',
-	g: "Movement (Death's Advance, Infernal Strike, Wild Charge, Roll, Divine Steed, Charge)",
+	g: "Movement (Death's Advance, Infernal Strike, Wild Charge, Roll, Divine Steed, Heroic Leap)",
 	'5': 'A-Tier utility key (Warrior: Shield Charge)',
 	tilde: 'A-Tier utility key',
 
