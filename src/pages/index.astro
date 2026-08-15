@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import KeybindTable from '../components/KeybindTable.astro';
+import { parseKeybinds } from '../lib/keybinds-io.ts';
+import keybindsRaw from '../data/keybinds.yml?raw';
+
+const keybinds = parseKeybinds(keybindsRaw);
+
+const pageDescription =
+	'Interactive WoW tank keybind reference chart for Death Knight, Demon Hunter, Druid, Monk, Paladin, and Warrior. Optimize your tanking with this universal keybind philosophy guide.';
+const pageKeywords =
+	'WoW keybinds, World of Warcraft tank, tank keybinds, WoW tanking guide, Death Knight keybinds, Demon Hunter keybinds, Druid tank, Monk tank, Paladin tank, Warrior tank, Quazii keybinds';
+---
+<BaseLayout title="Home" description={pageDescription} keywords={pageKeywords}>
+	<KeybindTable data={keybinds} />
+</BaseLayout>

@@ -1,0 +1,895 @@
+"100":
+  name: Charge
+  icon: https://render.worldofwarcraft.com/us/icons/56/132337.jpg
+  tooltip: "Charge to an enemy, dealing 7 Physical damage, rooting it for 1 sec.\r
+
+    \r
+
+    Generates 20 Rage."
+  wowhead_id: "100"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:25 -0700
+"355":
+  name: Taunt
+  icon: https://render.worldofwarcraft.com/us/icons/56/136080.jpg
+  tooltip: Taunts the target to attack you, and increases the threat you generate
+    against them by 800% for 6 sec.
+  wowhead_id: "355"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:24 -0700
+"642":
+  name: Divine Shield
+  icon: https://render.worldofwarcraft.com/us/icons/56/524354.jpg
+  tooltip: "Grants immunity to all damage, harmful effects, knockbacks and forced
+    movement effects for 8 sec. \r
+
+    \r
+
+    Cannot be used if you have Forbearance. Causes Forbearance for 30 sec."
+  wowhead_id: "642"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:29 -0700
+"871":
+  name: Shield Wall
+  icon: https://render.worldofwarcraft.com/us/icons/56/132362.jpg
+  tooltip: Reduces all damage you take by 40% for 8 sec.
+  wowhead_id: "871"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:22 -0700
+"1160":
+  name: Demoralizing Shout
+  icon: https://render.worldofwarcraft.com/us/icons/56/132366.jpg
+  tooltip: Demoralizes all enemies within 10 yards, reducing the damage they deal
+    to you by 20% for 8 sec.
+  wowhead_id: "1160"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:23 -0700
+"2565":
+  name: Shield Block
+  icon: https://render.worldofwarcraft.com/us/icons/56/132110.jpg
+  tooltip: Raise your shield, blocking all melee attacks against you for 6 sec.
+  wowhead_id: "2565"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:20 -0700
+"6343":
+  name: Thunder Clap
+  icon: https://render.worldofwarcraft.com/us/icons/56/136105.jpg
+  tooltip: Blasts all enemies within 8 yards for 82 Physical damage and reduces
+    their movement speed by 20% for 10 sec. Deals reduced damage beyond 5
+    targets.
+  wowhead_id: "6343"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:18 -0700
+"6552":
+  name: Pummel
+  icon: https://render.worldofwarcraft.com/us/icons/56/132938.jpg
+  tooltip: Pummels the target, interrupting spellcasting and preventing any spell
+    in that school from being cast for 5 sec.
+  wowhead_id: "6552"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:24 -0700
+"6572":
+  name: Revenge
+  icon: https://render.worldofwarcraft.com/us/icons/56/132353.jpg
+  tooltip: "Swing in a wide arc, dealing 97 Physical damage to all enemies in
+    front of you. Deals reduced damage beyond 5 targets.\r
+
+    \r
+
+    Your successful dodges, parries, and auto-attacks have a chance to make your
+    next Revenge cost no Rage."
+  wowhead_id: "6572"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:18 -0700
+"6795":
+  name: Growl
+  icon: https://render.worldofwarcraft.com/us/icons/56/132270.jpg
+  tooltip: Taunts the target to attack you, and increases the threat you generate
+    against them by 800% for 6 sec.
+  wowhead_id: "6795"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:57 -0700
+"8921":
+  name: Moonfire
+  icon: https://render.worldofwarcraft.com/us/icons/56/136096.jpg
+  tooltip: "A quick beam of lunar light burns the enemy for 81 Arcane damage and
+    then an additional 705 Arcane damage over 18 sec. "
+  wowhead_id: "8921"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:52 -0700
+"12975":
+  name: Last Stand
+  icon: https://render.worldofwarcraft.com/us/icons/56/135871.jpg
+  tooltip: Increases maximum health by 30% for 8 sec and instantly heals you for
+    that amount.
+  wowhead_id: "12975"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:21 -0700
+"20271":
+  name: Judgment
+  icon: https://render.worldofwarcraft.com/us/icons/56/135959.jpg
+  tooltip: Judges the target, dealing 382 Holy damage.
+  wowhead_id: "20271"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:26 -0700
+"22812":
+  name: Barkskin
+  icon: https://render.worldofwarcraft.com/us/icons/56/136097.jpg
+  tooltip: "Your skin becomes as tough as bark, reducing all damage you take by
+    20% and preventing damage from delaying your spellcasts. Lasts 8 sec.\r
+
+    \r
+
+    Usable while stunned, frozen, incapacitated, feared, or asleep, and in all
+    shapeshift forms."
+  wowhead_id: "22812"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:56 -0700
+"22842":
+  name: Frenzied Regeneration
+  icon: https://render.worldofwarcraft.com/us/icons/56/132091.jpg
+  tooltip: Heals you for 32% health over 3 sec.
+  wowhead_id: "22842"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:52 -0700
+"23920":
+  name: Spell Reflection
+  icon: https://render.worldofwarcraft.com/us/icons/56/132361.jpg
+  tooltip: Raise your weapon, reflecting the first spell cast on you and reducing
+    magic damage you take by 20% for 5 sec.
+  wowhead_id: "23920"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:21 -0700
+"23922":
+  name: Shield Slam
+  icon: https://render.worldofwarcraft.com/us/icons/56/134951.jpg
+  tooltip: "Slams the target with your shield, causing 81 Physical damage.\r
+
+    \r
+
+    Generates 15 Rage."
+  wowhead_id: "23922"
+  source: blizzard_api
+  cached_at: Fri Aug 14 2026 22:10:19 GMT-0700 (Pacific Daylight Time)
+"26573":
+  name: Consecration
+  icon: https://render.worldofwarcraft.com/us/icons/56/135926.jpg
+  tooltip: Consecrates the land beneath you, causing 26 Holy damage over 12 sec to
+    enemies who enter the area. Limit 1.
+  wowhead_id: "26573"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:31 -0700
+"31850":
+  name: Ardent Defender
+  icon: https://render.worldofwarcraft.com/us/icons/56/135870.jpg
+  tooltip: "Reduces all damage you take by 30% for 12 sec.\r
+
+    \r
+
+    While Ardent Defender is active, the next attack that would otherwise kill
+    you will instead bring you to 20% of your maximum health."
+  wowhead_id: "31850"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:30 -0700
+"31884":
+  name: Avenging Wrath
+  icon: https://render.worldofwarcraft.com/us/icons/56/135875.jpg
+  tooltip: Call upon the Light to become an avatar of retribution, increasing your
+    damage, healing, and critical strike chance by 20% for 20 sec.
+  wowhead_id: "31884"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:28 -0700
+"31935":
+  name: Avenger's Shield
+  icon: https://render.worldofwarcraft.com/us/icons/56/135874.jpg
+  tooltip: "Hurls your shield at an enemy target, dealing 70 Holy damage,
+    interrupting and silencing the non-Player target for 3 sec, and then jumping
+    to 2 additional nearby enemies. \r\n"
+  wowhead_id: "31935"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:27 -0700
+"33917":
+  name: Mangle
+  icon: https://render.worldofwarcraft.com/us/icons/56/132135.jpg
+  tooltip: "Mangle the target for 70 Physical damage.\r
+
+    \r
+
+    Generates 12 Rage."
+  wowhead_id: "33917"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:50 -0700
+"43265":
+  name: Death and Decay
+  icon: https://render.worldofwarcraft.com/us/icons/56/136144.jpg
+  tooltip: Corrupts the targeted ground, causing 32 Shadow damage over 10 sec to
+    targets within the area.
+  wowhead_id: "43265"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:40 -0700
+"47528":
+  name: Mind Freeze
+  icon: https://render.worldofwarcraft.com/us/icons/56/237527.jpg
+  tooltip: Smash the target's mind with cold, interrupting spellcasting and
+    preventing any spell in that school from being cast for 5 sec.
+  wowhead_id: "47528"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:40 -0700
+"48265":
+  name: Death's Advance
+  icon: https://render.worldofwarcraft.com/us/icons/56/237561.jpg
+  tooltip: "For 10 sec, your movement speed is increased by 35%, you cannot be
+    slowed below 100% of normal speed, and you are immune to forced movement
+    effects and knockbacks.\r
+
+    \r
+
+    Passive: You cannot be slowed below 70% of normal speed."
+  wowhead_id: "48265"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:41 -0700
+"48707":
+  name: Anti-Magic Shell
+  icon: https://render.worldofwarcraft.com/us/icons/56/136120.jpg
+  tooltip: Surrounds you in an Anti-Magic Shell for 5 sec, absorbing up to 9,165
+    magic damage and preventing application of harmful magical effects. Damage
+    absorbed generates Runic Power.
+  wowhead_id: "48707"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:37 -0700
+"48743":
+  name: Death Pact
+  icon: https://render.worldofwarcraft.com/us/icons/56/136146.jpg
+  tooltip: Create a death pact that heals you for 50% of your maximum health, but
+    absorbs incoming healing equal to 30% of your max health for 15 sec.
+  wowhead_id: "48743"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:36 -0700
+"48792":
+  name: Icebound Fortitude
+  icon: https://render.worldofwarcraft.com/us/icons/56/237525.jpg
+  tooltip: Your blood freezes, granting immunity to Stun effects and reducing all
+    damage you take by 30% for 8 sec.
+  wowhead_id: "48792"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:38 -0700
+"49028":
+  name: Dancing Rune Weapon
+  icon: https://render.worldofwarcraft.com/us/icons/56/135277.jpg
+  tooltip: "Summons a rune weapon for 8 sec that mirrors your melee attacks and
+    bolsters your defenses.\r
+
+    \r
+
+    While active, you gain 30% parry chance."
+  wowhead_id: "49028"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:36 -0700
+"49998":
+  name: Death Strike
+  icon: https://render.worldofwarcraft.com/us/icons/56/237517.jpg
+  tooltip: Focuses dark power into a strike that deals 53 Physical damage and
+    heals you for 20.00% of all damage taken in the last 5 sec, minimum 7.0% of
+    maximum health.
+  wowhead_id: "49998"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:35 -0700
+"50842":
+  name: Blood Boil
+  icon: https://render.worldofwarcraft.com/us/icons/56/237513.jpg
+  tooltip: "Deals 58 Shadow damage and infects all enemies within 10 yds with
+    Blood Plague.\r
+
+    \r
+
+    \ Blood Plague\r
+
+    A shadowy disease that drains 93 health from the target over 24 sec. "
+  wowhead_id: "50842"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:35 -0700
+"51052":
+  name: Anti-Magic Zone
+  icon: https://render.worldofwarcraft.com/us/icons/56/237510.jpg
+  tooltip: Places an Anti-Magic Zone for 6 sec, reducing the magic damage taken by
+    party or raid members by 15%.
+  wowhead_id: "51052"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:39 -0700
+"53595":
+  name: Hammer of the Righteous
+  icon: https://render.worldofwarcraft.com/us/icons/56/236253.jpg
+  tooltip: "Hammers the current target for 70 Physical damage.\r
+
+    \r
+
+    Generates 1 Holy Power."
+  wowhead_id: "53595"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:27 -0700
+"53600":
+  name: Shield of the Righteous
+  icon: https://render.worldofwarcraft.com/us/icons/56/236265.jpg
+  tooltip: "Slams enemies in front of you with your shield, causing 33 Holy
+    damage, and increasing your Armor by 608 for 4.5 sec.\r\n"
+  wowhead_id: "53600"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:29 -0700
+"55233":
+  name: Vampiric Blood
+  icon: https://render.worldofwarcraft.com/us/icons/56/136168.jpg
+  tooltip: Embrace your undeath, increasing your maximum health by 30% and
+    increasing all healing and absorbs received by 30% for 10 sec.
+  wowhead_id: "55233"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:39 -0700
+"56222":
+  name: Dark Command
+  icon: https://render.worldofwarcraft.com/us/icons/56/136088.jpg
+  tooltip: Command the target to attack you, and increases the threat you generate
+    against them by 800% for 6 sec.
+  wowhead_id: "56222"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:41 -0700
+"61336":
+  name: Survival Instincts
+  icon: https://render.worldofwarcraft.com/us/icons/56/236169.jpg
+  tooltip: Reduces all damage you take by 50% for 6 sec.
+  wowhead_id: "61336"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:55 -0700
+"62124":
+  name: Hand of Reckoning
+  icon: https://render.worldofwarcraft.com/us/icons/56/135984.jpg
+  tooltip: Commands the attention of an enemy target, forcing them to attack you
+    and increasing the threat you generate against them by 800% for 6 sec.
+  wowhead_id: "62124"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:33 -0700
+"77758":
+  name: Thrash
+  icon: https://render.worldofwarcraft.com/us/icons/56/451161.jpg
+  tooltip: "Strikes all nearby enemies, dealing 33 Bleed damage and an additional
+    12 Bleed damage over 15 sec. When applied from Bear Form, this effect can
+    stack up to 3 times.\r
+
+    \r
+
+    Generates 5 Rage."
+  wowhead_id: "77758"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:50 -0700
+"85673":
+  name: Word of Glory
+  icon: https://render.worldofwarcraft.com/us/icons/56/133192.jpg
+  tooltip: Calls down the Light to heal a friendly target for 1,569.
+  wowhead_id: "85673"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:28 -0700
+"86659":
+  name: Guardian of Ancient Kings
+  icon: https://render.worldofwarcraft.com/us/icons/56/135919.jpg
+  tooltip: Empowers you with the spirit of ancient kings, reducing all damage you
+    take by 50% for 8 sec.
+  wowhead_id: "86659"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:31 -0700
+"96231":
+  name: Rebuke
+  icon: https://render.worldofwarcraft.com/us/icons/56/523893.jpg
+  tooltip: Interrupts spellcasting and prevents any spell in that school from
+    being cast for 5 sec.
+  wowhead_id: "96231"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:32 -0700
+"97462":
+  name: Rallying Cry
+  icon: https://render.worldofwarcraft.com/us/icons/56/132351.jpg
+  tooltip: "Lets loose a rallying cry, granting all party or raid members within
+    40 yards 10% temporary and maximum health for 10 sec.\r
+
+    \r
+
+    Health granted increased by 50% when not in a raid."
+  wowhead_id: "97462"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:22 -0700
+"100780":
+  name: Tiger Palm
+  icon: https://render.worldofwarcraft.com/us/icons/56/606551.jpg
+  tooltip: Strike with the palm of your hand, dealing 31 Physical damage.
+  wowhead_id: "100780"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:00 -0700
+"100784":
+  name: Blackout Kick
+  icon: https://render.worldofwarcraft.com/us/icons/56/574575.jpg
+  tooltip: "Kick with a blast of Chi energy, dealing 30 Physical damage.\r\n"
+  wowhead_id: "100784"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:59 -0700
+"101546":
+  name: Spinning Crane Kick
+  icon: https://render.worldofwarcraft.com/us/icons/56/606543.jpg
+  tooltip: Spin while kicking in the air, dealing 14 Physical damage over 1.3 sec
+    to all enemies within 8 yds. Deals reduced damage beyond 5 targets.
+  wowhead_id: "101546"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:01 -0700
+"102401":
+  name: Wild Charge
+  icon: https://render.worldofwarcraft.com/us/icons/56/538771.jpg
+  tooltip: Fly to a nearby ally's position.
+  wowhead_id: "102401"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:58 -0700
+"102558":
+  name: "Incarnation: Guardian of Ursoc"
+  icon: https://render.worldofwarcraft.com/us/icons/56/571586.jpg
+  tooltip: "An improved Bear Form that grants the benefits of Berserk, causes
+    Mangle to hit up to 3 targets, and increases maximum health by 30%.\r
+
+    \r
+
+    Lasts 30 sec. You may freely shapeshift in and out of this improved Bear
+    Form for its duration."
+  wowhead_id: "102558"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:51 -0700
+"102793":
+  name: Ursol's Vortex
+  icon: https://render.worldofwarcraft.com/us/icons/56/571588.jpg
+  tooltip: Conjures a vortex of wind for 10 sec at the destination, reducing the
+    movement speed of all enemies within 8 yards by 50%. The first time an enemy
+    attempts to leave the vortex, winds will pull that enemy back to its center.
+    Usable in all shapeshift forms.
+  wowhead_id: "102793"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:56 -0700
+"106839":
+  name: Skull Bash
+  icon: https://render.worldofwarcraft.com/us/icons/56/236946.jpg
+  tooltip: You charge and bash the target's skull, interrupting spellcasting and
+    preventing any spell in that school from being cast for 5 sec.
+  wowhead_id: "106839"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:57 -0700
+"106898":
+  name: Stampeding Roar
+  icon: https://render.worldofwarcraft.com/us/icons/56/464343.jpg
+  tooltip: Shift into Bear Form and let loose a wild roar, increasing the movement
+    speed of all friendly players within 15 yards by 60% for 8 sec.
+  wowhead_id: "106898"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:26:54 -0700
+"107574":
+  name: Avatar
+  icon: https://render.worldofwarcraft.com/us/icons/56/613534.jpg
+  tooltip: Transform into a colossus, increasing all damage you deal by 20% and
+    reducing damage you take from area of effect attacks by 5% for 20 sec.
+  wowhead_id: "107574"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:19 -0700
+"109132":
+  name: Roll
+  icon: https://render.worldofwarcraft.com/us/icons/56/574574.jpg
+  tooltip: Roll a short distance.
+  wowhead_id: "109132"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:06 -0700
+"115181":
+  name: Breath of Fire
+  icon: https://render.worldofwarcraft.com/us/icons/56/615339.jpg
+  tooltip: "Breathe fire on targets in front of you, causing 34 Fire damage. Deals
+    reduced damage to secondary targets.\r
+
+    \r
+
+    Targets affected by Keg Smash will also burn, taking 23 Fire damage and
+    dealing 5% reduced damage to you for 12 sec."
+  wowhead_id: "115181"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:00 -0700
+"115203":
+  name: Fortifying Brew
+  icon: https://render.worldofwarcraft.com/us/icons/56/615341.jpg
+  tooltip: Turns your skin to stone for 15 sec.
+  wowhead_id: "115203"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:03 -0700
+"115315":
+  name: Summon Black Ox Statue
+  icon: https://render.worldofwarcraft.com/us/icons/56/627607.jpg
+  tooltip: "Summons a Black Ox Statue at the target location for 15 min, pulsing
+    threat to all enemies within 20 yards.\r
+
+    \r
+
+    You may cast Provoke on the statue to taunt all enemies near the statue."
+  wowhead_id: "115315"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:04 -0700
+"115546":
+  name: Provoke
+  icon: https://render.worldofwarcraft.com/us/icons/56/620830.jpg
+  tooltip: Taunts the target to attack you, and increases the threat you generate
+    against them by 800% for 6 sec.
+  wowhead_id: "115546"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:05 -0700
+"116705":
+  name: Spear Hand Strike
+  icon: https://render.worldofwarcraft.com/us/icons/56/608940.jpg
+  tooltip: Jabs the target in the throat, interrupting spellcasting and preventing
+    any spell from that school of magic from being cast for 5 sec.
+  wowhead_id: "116705"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:05 -0700
+"116847":
+  name: Rushing Jade Wind
+  icon: https://render.worldofwarcraft.com/us/icons/56/606549.jpg
+  tooltip: Summons a whirling tornado around you, causing 42 Physical damage over
+    5.4 sec to all enemies within 8 yards. Deals reduced damage beyond 5
+    targets.
+  wowhead_id: "116847"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:04 -0700
+"119582":
+  name: Purifying Brew
+  icon: https://render.worldofwarcraft.com/us/icons/56/133701.jpg
+  tooltip: Clears 50% of your Staggered damage, or a minimum of 8% of your maximum
+    health.
+  wowhead_id: "119582"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:02 -0700
+"121253":
+  name: Keg Smash
+  icon: https://render.worldofwarcraft.com/us/icons/56/594274.jpg
+  tooltip: Smash a keg of brew, dealing 99 Physical damage to your primary target
+    and 67 Physical damage to all other enemies within 8 yds, and reducing their
+    movement speed by 20% for 15 sec. Deals reduced damage beyond 5 targets.
+  wowhead_id: "121253"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:59 -0700
+"183752":
+  name: Disrupt
+  icon: https://render.worldofwarcraft.com/us/icons/56/7554162.jpg
+  tooltip: Interrupts the enemy's spellcasting and locks them from that school of
+    magic for 5 sec.
+  wowhead_id: "183752"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:48 -0700
+"185245":
+  name: Torment
+  icon: https://render.worldofwarcraft.com/us/icons/56/1344654.jpg
+  tooltip: Taunts the target to attack you, and increases the threat you generate
+    against them by 800% for 6 sec.
+  wowhead_id: "185245"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:49 -0700
+"187827":
+  name: Metamorphosis
+  icon: https://render.worldofwarcraft.com/us/icons/56/1247263.jpg
+  tooltip: Transform to demon form for 15 sec, increasing current health by 40%,
+    healing for that amount, and increasing Armor by 200%.
+  wowhead_id: "187827"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:43 -0700
+"189110":
+  name: Infernal Strike
+  icon: https://render.worldofwarcraft.com/us/icons/56/1344650.jpg
+  tooltip: Leap through the air toward a targeted location, dealing 21 Fire damage
+    to all enemies within 6 yards.
+  wowhead_id: "189110"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:49 -0700
+"190456":
+  name: Ignore Pain
+  icon: https://render.worldofwarcraft.com/us/icons/56/1377132.jpg
+  tooltip: Fight through the pain, ignoring 50% of damage taken for 12 sec sec or
+    until 564 damage has been prevented.
+  wowhead_id: "190456"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:20 -0700
+"190784":
+  name: Divine Steed
+  icon: https://render.worldofwarcraft.com/us/icons/56/1360759.jpg
+  tooltip: Leap atop your Charger for 3 sec, increasing movement speed by 100%.
+    Usable while indoors or in combat.
+  wowhead_id: "190784"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:33 -0700
+"192081":
+  name: Ironfur
+  icon: https://render.worldofwarcraft.com/us/icons/56/1378702.jpg
+  tooltip: Increases armor by 124 for 7 sec.
+  wowhead_id: "192081"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:54 -0700
+"195182":
+  name: Marrowrend
+  icon: https://render.worldofwarcraft.com/us/icons/56/1376745.jpg
+  tooltip: "Smash the target, dealing 76 Physical damage and generating 3 charges
+    of Bone Shield.\r
+
+    \r
+
+    \ Bone Shield\r
+
+    Surrounds you with a barrier of whirling bones, increasing Armor by 110.
+    Each melee attack against you consumes a charge. Lasts 30 sec or until all
+    charges are consumed."
+  wowhead_id: "195182"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:37 -0700
+"196718":
+  name: Darkness
+  icon: https://render.worldofwarcraft.com/us/icons/56/1305154.jpg
+  tooltip: "Summons darkness around you in an 8 yd radius, granting friendly
+    targets a 15% chance to avoid all damage from an attack. Lasts 8 sec.\r
+
+    \r
+
+    Chance to avoid damage increased by 100% when not in a raid."
+  wowhead_id: "196718"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:46 -0700
+"202137":
+  name: Sigil of Silence
+  icon: https://render.worldofwarcraft.com/us/icons/56/1418288.jpg
+  tooltip: "Place a Sigil of Silence at the target location that activates after 2
+    sec.\r
+
+    \r
+
+    Silences all enemies affected by the sigil for 2 sec."
+  wowhead_id: "202137"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:45 -0700
+"202138":
+  name: Sigil of Chains
+  icon: https://render.worldofwarcraft.com/us/icons/56/1418286.jpg
+  tooltip: "Place a Sigil of Chains at the target location that activates after 2
+    sec.\r
+
+    \r
+
+    All enemies affected by the sigil are pulled to its center and are snared,
+    reducing movement speed by 70% for 6 sec."
+  wowhead_id: "202138"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:47 -0700
+"202168":
+  name: Impending Victory
+  icon: https://render.worldofwarcraft.com/us/icons/56/589768.jpg
+  tooltip: "Instantly attack the target, causing 20 damage and healing you for 30%
+    of your maximum health.\r
+
+    \r
+
+    Killing an enemy that yields experience or honor resets the cooldown of
+    Impending Victory and makes it cost no Rage."
+  wowhead_id: "202168"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:19 -0700
+"203720":
+  name: Demon Spikes
+  icon: https://render.worldofwarcraft.com/us/icons/56/1344645.jpg
+  tooltip: Surge with fel power, increasing your Armor by 75.
+  wowhead_id: "203720"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:45 -0700
+"204021":
+  name: Fiery Brand
+  icon: https://render.worldofwarcraft.com/us/icons/56/1344647.jpg
+  tooltip: Brand yourself and an enemy target with demonic symbols, reducing the
+    damage you take by 40% and instantly dealing 146 Fire damage to the enemy.
+  wowhead_id: "204021"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:46 -0700
+"204596":
+  name: Sigil of Flame
+  icon: https://render.worldofwarcraft.com/us/icons/56/1344652.jpg
+  tooltip: "Place a Sigil of Flame at the target location that activates after 2
+    sec.\r
+
+    \r
+
+    Deals 27 Fire damage, and an additional 70 Fire damage over 8 sec, to all
+    enemies affected by the sigil.\r
+
+    \r
+
+    Generates 25 Fury."
+  wowhead_id: "204596"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:47 -0700
+"206930":
+  name: Heart Strike
+  icon: https://render.worldofwarcraft.com/us/icons/56/135675.jpg
+  tooltip: Instantly strike the target and 1 other nearby enemy, causing 67
+    Physical damage, and reducing enemies' movement speed by 20% for 8 sec.
+  wowhead_id: "206930"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:34 -0700
+"212084":
+  name: Fel Devastation
+  icon: https://render.worldofwarcraft.com/us/icons/56/1450143.jpg
+  tooltip: Unleash the fel within you, damaging enemies directly in front of you
+    for 163 Fire damage over 2 sec.
+  wowhead_id: "212084"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:44 -0700
+"213764":
+  name: Swipe
+  icon: https://render.worldofwarcraft.com/us/icons/56/134296.jpg
+  tooltip: Swipe nearby enemies, inflicting Physical damage. Damage varies by
+    shapeshift form.
+  wowhead_id: "213764"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:51 -0700
+"228477":
+  name: Soul Cleave
+  icon: https://render.worldofwarcraft.com/us/icons/56/1344653.jpg
+  tooltip: "Viciously strike an enemy and all other enemies in front of you for 71
+    Physical damage and heal yourself for 103. Deals reduced damage beyond 5
+    targets.\r
+
+    \r
+
+    Consumes up to 2 Soul Fragments, increasing damage by 20% per fragment
+    consumed."
+  wowhead_id: "228477"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:42 -0700
+"228920":
+  name: Ravager
+  icon: https://render.worldofwarcraft.com/us/icons/56/970854.jpg
+  tooltip: "Throws a whirling weapon at your target that chases nearby enemies,
+    inflicting 371 Physical damage to all enemies over 12 sec. Deals reduced
+    damage beyond 8 targets.\r
+
+    \r
+
+    Enemies damaged by Ravager take 50% additional damage from your Bleeds for
+    12 sec."
+  wowhead_id: "228920"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:23 -0700
+"247454":
+  name: Spirit Bomb
+  icon: https://render.worldofwarcraft.com/us/icons/56/1097742.jpg
+  tooltip: Consume up to 5 Soul Fragments then explode, dealing 70 Fire damage to
+    nearby enemies, increased by 20% per fragment consumed. Deals reduced damage
+    beyond 8 targets.
+  wowhead_id: "247454"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:44 -0700
+"258920":
+  name: Immolation Aura
+  icon: https://render.worldofwarcraft.com/us/icons/56/1344649.jpg
+  tooltip: Engulf yourself in flames, radiating 26 Fire damage over 6 sec.
+  wowhead_id: "258920"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:43 -0700
+"263642":
+  name: Fracture
+  icon: https://render.worldofwarcraft.com/us/icons/56/1388065.jpg
+  tooltip: "Rapidly slash your target for 41 Physical damage, and shatter 2 Lesser
+    Soul Fragments from them.\r
+
+    \r
+
+    Generates 25 Fury."
+  wowhead_id: "263642"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:42 -0700
+"274156":
+  name: Consumption
+  icon: https://render.worldofwarcraft.com/us/icons/56/1121487.jpg
+  tooltip: "Strikes all enemies in front of you with a hungering attack that deals
+    63 Physical damage and heals you for 150% of that damage. Deals reduced
+    damage beyond 8 targets.\r
+
+    \r
+
+    Causes your Blood Plague damage to occur 30% more quickly for 6 sec. \r
+
+    \r
+
+    Generates 2 Runes."
+  wowhead_id: "274156"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:38 -0700
+"304971":
+  name: Divine Toll
+  icon: https://render.worldofwarcraft.com/us/icons/56/3565448.jpg
+  tooltip: Instantly cast Holy Shock, Avenger's Shield, or Judgment on up to 5
+    targets within 30 yds (based on your current specialization).
+  wowhead_id: "304971"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:30 -0700
+"322101":
+  name: Expel Harm
+  icon: https://render.worldofwarcraft.com/us/icons/56/627486.jpg
+  tooltip: Expel negative chi from your body, healing for 449 and dealing 10% of
+    the amount healed as Nature damage to an enemy within 20 yards.
+  wowhead_id: "322101"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:01 -0700
+"322109":
+  name: Touch of Death
+  icon: https://render.worldofwarcraft.com/us/icons/56/606552.jpg
+  tooltip: "You exploit the enemy target's weakest point, instantly dealing damage
+    equal to 100% of your maximum health to them.\r
+
+    \r
+
+    Only usable on creatures that have less health than you."
+  wowhead_id: "322109"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:02 -0700
+"322507":
+  name: Celestial Brew
+  icon: https://render.worldofwarcraft.com/us/icons/56/1360979.jpg
+  tooltip: A swig of strong brew that coalesces purified chi escaping your body
+    into a celestial guard, absorbing 1,984 damage.
+  wowhead_id: "322507"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:25:03 -0700
+"385952":
+  name: Shield Charge
+  icon: https://render.worldofwarcraft.com/us/icons/56/4667427.jpg
+  tooltip: "Charge to an enemy with your shield, granting you Shield Block and
+    dealing 296 Physical damage to it and 93 Physical damage to all enemies
+    within 10 yards.\r
+
+    \r
+
+    Also stuns the primary target for 4 sec.\r
+
+    \r
+
+    Generates 20 Rage."
+  wowhead_id: "385952"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:25 -0700
+"432459":
+  name: Holy Bulwark
+  icon: https://render.worldofwarcraft.com/us/icons/56/5927636.jpg
+  tooltip: "Will the Light to coalesce and become manifest as a Holy Armament,
+    wielded by your friendly target.\r
+
+    \r
+
+    \ Holy Bulwark:\r
+
+    \r
+
+    While wielding a Holy Bulwark, gain an absorb shield for 15.0% of your max
+    health and an additional 2.0% every 2 sec. Lasts 20 sec.\r
+
+    \r
+
+    Becomes Sacred Weapon after use.\r
+
+    \r
+
+    Generates 3 Holy Power."
+  wowhead_id: "432459"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:32 -0700
+"1253799":
+  name: Sundering Roar
+  icon: https://render.worldofwarcraft.com/us/icons/56/1392548.jpg
+  tooltip: "Roar with earthshattering ferocity, dealing 98 Physical damage, and
+    resetting the cooldown of Thrash and allowing it to stack 5 additional times
+    for 12 sec. \r
+
+    \r
+
+    When Sundering Roar ends, any excess stacks of Thrash immediately deal their
+    remaining damage."
+  wowhead_id: "1253799"
+  source: blizzard_api
+  cached_at: 2026-08-14 21:24:55 -0700

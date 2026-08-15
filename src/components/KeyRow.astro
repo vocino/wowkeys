@@ -1,0 +1,29 @@
+---
+import AbilityCell from './AbilityCell.astro';
+import { getKeyPhilosophy } from '../lib/key-philosophy.ts';
+import { CLASS_ORDER } from '../consts.ts';
+import type { KeyDef, ClassData } from '../lib/types.ts';
+
+interface Props {
+	keyDef: KeyDef;
+	rowClass: string;
+	classes: Record<string, ClassData>;
+}
+
+const { keyDef, rowClass, classes } = Astro.props;
+const philosophy = getKeyPhilosophy(keyDef.id);
+---
+<tr class={rowClass}>
+	<td class="key-cell keybind-tooltip-trigger" data-keybind-tooltip={philosophy ? 'true' : undefined}>
+		<div class="key-label-cell">{keyDef.label}</div>
+		{philosophy && (
+			<div class="keybind-tooltip">
+				<div class="tooltip-title">Keybind Philosophy: {keyDef.label}</div>
+				<div class="tooltip-description">{philosophy}</div>
+			</div>
+		)}
+	</td>
+	{CLASS_ORDER.map((classSlug) => (
+		<AbilityCell ability={classes[classSlug]?.abilities?.[keyDef.id]} />
+	))}
+</tr>

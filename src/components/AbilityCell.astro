@@ -1,0 +1,30 @@
+---
+import type { Ability } from '../lib/types.ts';
+
+interface Props {
+	ability?: Ability;
+}
+
+const { ability } = Astro.props;
+const displayName = ability?.cached_name ?? ability?.name;
+---
+<td class="ability-cell">
+	{ability ? (
+		<div class="ability-display" data-tooltip={ability.tooltip ? 'true' : undefined}>
+			{ability.icon ? (
+				<div class="ability-icon-small" style={`background-image: url('${ability.icon}');`}></div>
+			) : (
+				<div class="ability-icon-small ability-icon-placeholder"></div>
+			)}
+			<div class="ability-name">{displayName}</div>
+			{ability.tooltip && (
+				<div class="ability-tooltip">
+					<div class="tooltip-title">{displayName}</div>
+					<div class="tooltip-description">{ability.tooltip}</div>
+				</div>
+			)}
+		</div>
+	) : (
+		<div class="ability-empty">—</div>
+	)}
+</td>

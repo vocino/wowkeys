@@ -1,0 +1,125 @@
+---
+import '../styles/spreadsheet.css';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR, TWITTER_USERNAME, SITE_LOCALE } from '../consts.ts';
+
+interface Props {
+	title?: string;
+	description?: string;
+	keywords?: string;
+}
+
+const { title, description = SITE_DESCRIPTION, keywords } = Astro.props;
+
+const pageTitle = title && title !== 'Home' ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = new URL(`${import.meta.env.BASE_URL}assets/images/og-image.png`, Astro.site);
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'WebApplication',
+	name: SITE_TITLE,
+	description,
+	url: Astro.site?.toString(),
+	applicationCategory: 'GameApplication',
+	operatingSystem: 'Web Browser',
+	author: {
+		'@type': 'Person',
+		name: SITE_AUTHOR,
+		url: 'https://vocino.com',
+	},
+	about: {
+		'@type': 'VideoGame',
+		name: 'World of Warcraft',
+		genre: 'MMORPG',
+	},
+	offers: {
+		'@type': 'Offer',
+		price: '0',
+		priceCurrency: 'USD',
+	},
+};
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Primary Meta Tags -->
+	<title>{pageTitle}</title>
+	<meta name="title" content={pageTitle}>
+	<meta name="description" content={description}>
+	<meta name="author" content={SITE_AUTHOR}>
+	{keywords && <meta name="keywords" content={keywords}>}
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href={canonicalURL}>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content={canonicalURL}>
+	<meta property="og:title" content={pageTitle}>
+	<meta property="og:description" content={description}>
+	<meta property="og:image" content={ogImageURL}>
+	<meta property="og:site_name" content={SITE_TITLE}>
+	<meta property="og:locale" content={SITE_LOCALE}>
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content={canonicalURL}>
+	<meta name="twitter:title" content={pageTitle}>
+	<meta name="twitter:description" content={description}>
+	<meta name="twitter:image" content={ogImageURL}>
+	<meta name="twitter:creator" content={`@${TWITTER_USERNAME}`}>
+
+	<!-- Additional SEO -->
+	<meta name="theme-color" content="#0D1117">
+	<meta name="application-name" content={SITE_TITLE}>
+
+	<!-- Structured Data (JSON-LD) -->
+	<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="fullscreen-app">
+	<header class="app-header">
+		<div class="topbar">
+			<span class="brand">wowkeys<span class="cursor" aria-hidden="true"></span></span>
+			<span class="topbar-sep" aria-hidden="true"></span>
+			<h1 class="header-title">{SITE_TITLE}</h1>
+			<nav class="topnav" aria-label="External links">
+				<a href="https://youtu.be/4bCzBstqlF0?si=Okeaoi9JyCeBl7zl">[guide]</a>
+				<a href="https://discord.gg/stratsco">[discord]</a>
+				<a href="https://github.com/vocino/wowkeys">[src]</a>
+			</nav>
+		</div>
+		<div class="header-meta">
+			<p class="header-subtitle comment">my personal universal tank keybind system based on <a href="https://youtu.be/4bCzBstqlF0?si=Okeaoi9JyCeBl7zl">quazii's keybind guide</a> and discussion in the <a href="https://discord.gg/stratsco">stratsco discord server</a>.</p>
+			<div class="tier-legend">
+				<span class="legend-item tier-s">s-tier</span>
+				<span class="legend-item tier-a">a-tier</span>
+				<span class="legend-item tier-b">b-tier</span>
+				<span class="legend-item tier-m">mouse</span>
+			</div>
+		</div>
+	</header>
+
+	<main class="app-main">
+		<slot />
+	</main>
+
+	<footer class="app-footer">
+		<div class="footer-content">
+			<p class="comment">made with &lt;3 by <a href="https://vocino.com">vocino</a> &middot; source on <a href="https://github.com/vocino/wowkeys">github</a></p>
+		</div>
+	</footer>
+
+	<script src="../scripts/tooltips.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "wowkeys",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "fetch-abilities": "node scripts/fetch-abilities.ts",
+    "preprocess-abilities": "node scripts/preprocess-abilities.ts",
+    "update-ids": "node scripts/update-ids.ts",
+    "import-ids": "node scripts/import-ids-from-csv.ts"
+  },
+  "dependencies": {
+    "astro": "^7.2.2",
+    "@astrojs/sitemap": "^3.7.3",
+    "yaml": "^2.9.0"
+  }
+}

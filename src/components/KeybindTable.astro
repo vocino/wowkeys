@@ -1,0 +1,40 @@
+---
+import KeyRow from './KeyRow.astro';
+import { CLASS_ORDER } from '../consts.ts';
+import type { KeybindsData } from '../lib/types.ts';
+
+interface Props {
+	data: KeybindsData;
+}
+
+const { data } = Astro.props;
+
+const rows = [
+	...data.keys.mouse.map((key) => ({ key, rowClass: 'key-row priority-s mouse-row' })),
+	...data.keys.s_tier.map((key) => ({ key, rowClass: 'key-row priority-s' })),
+	...data.keys.a_tier.map((key) => ({ key, rowClass: 'key-row priority-a' })),
+	...data.keys.b_tier.map((key) => ({ key, rowClass: 'key-row priority-b' })),
+];
+---
+<div class="box">
+	<div class="box-label">tank-keybinds --all-specs</div>
+	<div class="spreadsheet-container" role="region" aria-label="Tank Keybind Reference Chart">
+		<table class="keybinds-table" role="grid" aria-label="World of Warcraft tank class keybinds comparison">
+			<thead>
+				<tr>
+					<th class="key-column-header" scope="col" aria-label="Keybind">Key</th>
+					{CLASS_ORDER.map((classSlug) => (
+						<th class={`class-header class-${classSlug}`} scope="col">
+							{data.classes[classSlug]?.display_name}
+						</th>
+					))}
+				</tr>
+			</thead>
+			<tbody>
+				{rows.map(({ key, rowClass }) => (
+					<KeyRow keyDef={key} rowClass={rowClass} classes={data.classes} />
+				))}
+			</tbody>
+		</table>
+	</div>
+</div>

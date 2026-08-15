@@ -1,14 +1,17 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-vendor/
-bundle/
-Gemfile.lock
-*.gem
-.DS_Store
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
 
 # Blizzard API credentials
 .env
-_data/.blizzard_token
+.env.production
+src/data/.blizzard_token
 
+# macOS
+.DS_Store
