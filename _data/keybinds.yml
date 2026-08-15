@@ -38,6 +38,10 @@ keys:
   - id: v
     priority: a
     label: V
+  - id: g
+    priority: a
+    label: G
+    note: Primary movement ability
   - id: '5'
     priority: a
     label: '5'
@@ -51,9 +55,6 @@ keys:
   - id: t
     priority: b
     label: T
-  - id: g
-    priority: b
-    label: G
   - id: "y"
     priority: b
     label: "Y"
@@ -72,10 +73,6 @@ keys:
     priority: s
     label: M5
     note: Taunt (always instant, off-GCD)
-  - id: middle
-    priority: s
-    label: MM
-    note: Primary movement ability
 classes:
   warrior:
     name: Protection Warrior
@@ -205,9 +202,9 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/spell_nature_reincarnation.jpg
         tooltip: Taunts the target to attack you.
         cached_name: Taunt
-      middle:
+      g:
         name: Charge
-        keybind: MM
+        keybind: G
         wowhead_id: 100
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_warrior_charge.jpg
         tooltip: "Charge to an enemy, dealing 112 Physical damage, rooting it for
@@ -334,9 +331,9 @@ classes:
         tooltip: Commands the attention of an enemy target, forcing them to attack
           you.
         cached_name: Hand of Reckoning
-      middle:
+      g:
         name: Divine Steed
-        keybind: MM
+        keybind: G
         wowhead_id: 190784
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_paladin_divinesteed.jpg
         tooltip: Leap atop your Charger for 3 sec, increasing movement speed by 100%.
@@ -463,9 +460,9 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/spell_nature_shamanrage.jpg
         tooltip: Command the target to attack you.
         cached_name: Dark Command
-      middle:
+      g:
         name: Death's Advance
-        keybind: MM
+        keybind: G
         wowhead_id: 48265
         icon: https://render.worldofwarcraft.com/us/icons/56/spell_shadow_demonicempathy.jpg
         tooltip: "For 10 sec, your movement speed is increased by 35%, you cannot
@@ -593,9 +590,9 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_torment.jpg
         tooltip: Taunts the target to attack you.
         cached_name: Torment
-      middle:
+      g:
         name: Infernal Strike
-        keybind: MM
+        keybind: G
         wowhead_id: 189110
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_demonhunter_infernalstrike1.jpg
         tooltip: Leap through the air toward a targeted location, dealing 221 Fire
@@ -722,9 +719,9 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_physical_taunt.jpg
         tooltip: Taunts the target to attack you.
         cached_name: Growl
-      middle:
+      g:
         name: Wild Charge
-        keybind: MM
+        keybind: G
         wowhead_id: 102401
         icon: https://render.worldofwarcraft.com/us/icons/56/spell_druid_wildcharge.jpg
         tooltip: Fly to a nearby ally's position.
@@ -847,9 +844,9 @@ classes:
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_provoke.jpg
         tooltip: Taunts the target to attack you.
         cached_name: Provoke
-      middle:
+      g:
         name: Roll
-        keybind: MM
+        keybind: G
         wowhead_id: 109132
         icon: https://render.worldofwarcraft.com/us/icons/56/ability_monk_roll.jpg
         tooltip: Roll a short distance.
