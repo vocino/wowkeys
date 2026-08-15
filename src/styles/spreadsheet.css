@@ -648,6 +648,14 @@ a:focus-visible {
     display: none;
   }
 
+  .app-footer {
+    justify-content: center;
+  }
+
+  .footer-content {
+    display: none;
+  }
+
   .spreadsheet-container {
     -webkit-overflow-scrolling: touch;
   }
