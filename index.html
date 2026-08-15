@@ -28,8 +28,8 @@ keywords: "WoW keybinds, World of Warcraft tank, tank keybinds, WoW tanking guid
       {% for key in site.data.keybinds.keys.mouse %}
         {% assign key_philosophy = "" %}
         {% case key.id %}
-          {% when 'mouse4' %} {% assign key_philosophy = "Interrupt (Pummel, Rebuke, Mind Freeze, Disrupt, Skull Bash, Spear Hand Strike)" %}
-          {% when 'mouse5' %} {% assign key_philosophy = "Taunt (Taunt, Hand of Reckoning, Dark Command, Torment, Growl, Provoke)" %}
+          {% when 'mouse4' %} {% assign key_philosophy = "Interrupt (Mind Freeze, Disrupt, Skull Bash, Spear Hand Strike, Rebuke, Pummel)" %}
+          {% when 'mouse5' %} {% assign key_philosophy = "Taunt (Dark Command, Torment, Growl, Provoke, Hand of Reckoning, Taunt)" %}
         {% endcase %}
         <tr class="key-row priority-s mouse-row">
           <td class="key-cell keybind-tooltip-trigger" {% if key_philosophy != "" %}data-keybind-tooltip="true"{% endif %}>
@@ -73,14 +73,14 @@ keywords: "WoW keybinds, World of Warcraft tank, tank keybinds, WoW tanking guid
       {% for key in site.data.keybinds.keys.s_tier %}
         {% assign key_philosophy = "" %}
         {% case key.id %}
-          {% when 'q' %} {% assign key_philosophy = "Primary Active Mitigation (Shield Slam, SotR, Demon Spikes, Mangle, Keg Smash, Death Strike)" %}
-          {% when 'e' %} {% assign key_philosophy = "Secondary Attack/Generator (Revenge, Hammer, Heart Strike, Fracture, Thrash, Blackout Kick)" %}
-          {% when 'r' %} {% assign key_philosophy = "Basic Filler/Builder (Thunder Clap, Judgment, Blood Boil, Felblade, Swipe, Tiger Palm)" %}
-          {% when 'f' %} {% assign key_philosophy = "Major Offensive CD 20-30s (Avatar, Wings, DRW, Soul Cleave, Incarnation, Breath of Fire)" %}
-          {% when '1' %} {% assign key_philosophy = "Ranged/Pull OR Primary Utility (Demo Shout, Avenger's Shield, Marrowrend, Reaver's, Moonfire, SCK)" %}
-          {% when '2' %} {% assign key_philosophy = "Quick Mitigation/Utility (Ignore Pain, Eye of Tyr, AMS, The Hunt, Ironfur, RSK)" %}
-          {% when '3' %} {% assign key_philosophy = "Major Defensive/Utility (Shield Block, Divine Toll, Rune Tap, Fiery Brand, Frenzied Regen, Expel Harm)" %}
-          {% when '4' %} {% assign key_philosophy = "Heal/Utility/Alternate (Spell Reflect, WoG, AMZ, Spirit Bomb, Pulverize, Touch of Death)" %}
+          {% when 'q' %} {% assign key_philosophy = "Primary Active Mitigation (Heart Strike, Fracture, Mangle, Keg Smash, Judgment, Shield Slam)" %}
+          {% when 'e' %} {% assign key_philosophy = "Secondary Attack/Generator (Death Strike, Soul Cleave, Thrash, Blackout Kick, Hammer of the Righteous, Revenge)" %}
+          {% when 'r' %} {% assign key_philosophy = "Basic Filler/Builder (Blood Boil, Immolation Aura, Swipe, Tiger Palm, Avenger's Shield, Thunder Clap)" %}
+          {% when 'f' %} {% assign key_philosophy = "Major Offensive CD (Dancing Rune Weapon, Metamorphosis, Incarnation: Guardian of Ursoc, Breath of Fire, Avenging Wrath, Avatar)" %}
+          {% when '1' %} {% assign key_philosophy = "Heal/Recovery (Death Pact, Fel Devastation, Frenzied Regeneration, Expel Harm, Word of Glory, Impending Victory)" %}
+          {% when '2' %} {% assign key_philosophy = "Quick Mitigation/Utility (Anti-Magic Shell, Spirit Bomb, Moonfire, Spinning Crane Kick, Divine Shield, Ignore Pain)" %}
+          {% when '3' %} {% assign key_philosophy = "Major Defensive/Utility (Marrowrend, Demon Spikes, Ironfur, Purifying Brew, Shield of the Righteous, Shield Block)" %}
+          {% when '4' %} {% assign key_philosophy = "Heal/Utility/Alternate (Consumption, Sigil of Silence, Sundering Roar, Touch of Death, Divine Toll, Spell Reflection)" %}
         {% endcase %}
         <tr class="key-row priority-s">
           <td class="key-cell keybind-tooltip-trigger" {% if key_philosophy != "" %}data-keybind-tooltip="true"{% endif %}>
@@ -124,12 +124,12 @@ keywords: "WoW keybinds, World of Warcraft tank, tank keybinds, WoW tanking guid
       {% for key in site.data.keybinds.keys.a_tier %}
         {% assign key_philosophy = "" %}
         {% case key.id %}
-          {% when 'z' %} {% assign key_philosophy = "Emergency Button (Last Stand, GoAK, IBF, Meta, Survival Instincts, Fort Brew)" %}
-          {% when 'x' %} {% assign key_philosophy = "Ground-Targeted AoE (Ravager, Consecration, D&D, Sigil of Flame, Ursol's Vortex, RJW)" %}
-          {% when 'c' %} {% assign key_philosophy = "Major Defensive Wall (Shield Wall, Ardent Defender, Vampiric Blood, Fel Dev, Barkskin, Purifying Brew)" %}
-          {% when 'v' %} {% assign key_philosophy = "Group/Alternative Utility (Rallying Cry, Holy Bulwark, Consumption, Sigil Silence, RageOfSleeper, Celestial Brew)" %}
-          {% when 'g' %} {% assign key_philosophy = "Movement (Charge, Divine Steed, Death's Advance, Infernal Strike, Wild Charge, Roll)" %}
-          {% when '5' %} {% assign key_philosophy = "A-Tier utility key" %}
+          {% when 'z' %} {% assign key_philosophy = "Emergency Button (Icebound Fortitude, Fiery Brand, Survival Instincts, Fortifying Brew, Ardent Defender, Last Stand)" %}
+          {% when 'x' %} {% assign key_philosophy = "Ground-Targeted AoE (Death and Decay, Sigil of Flame, Ursol's Vortex, Rushing Jade Wind, Consecration, Ravager)" %}
+          {% when 'c' %} {% assign key_philosophy = "Major Defensive Wall (Vampiric Blood, Darkness, Barkskin, Celestial Brew, Guardian of Ancient Kings, Shield Wall)" %}
+          {% when 'v' %} {% assign key_philosophy = "Group/Alternative Utility (Anti-Magic Zone, Sigil of Chains, Stampeding Roar, Summon Black Ox Statue, Holy Bulwark, Rallying Cry)" %}
+          {% when 'g' %} {% assign key_philosophy = "Movement (Death's Advance, Infernal Strike, Wild Charge, Roll, Divine Steed, Charge)" %}
+          {% when '5' %} {% assign key_philosophy = "A-Tier utility key (Warrior: Shield Charge)" %}
           {% when 'tilde' %} {% assign key_philosophy = "A-Tier utility key" %}
         {% endcase %}
         <tr class="key-row priority-a">
@@ -173,6 +173,9 @@ keywords: "WoW keybinds, World of Warcraft tank, tank keybinds, WoW tanking guid
       {% comment %} B-Tier Keys {% endcomment %}
       {% for key in site.data.keybinds.keys.b_tier %}
         {% assign key_philosophy = "B-Tier utility key" %}
+        {% case key.id %}
+          {% when '6' %} {% assign key_philosophy = "B-Tier utility key (Warrior: Demoralizing Shout)" %}
+        {% endcase %}
         <tr class="key-row priority-b">
           <td class="key-cell keybind-tooltip-trigger" {% if key_philosophy != "" %}data-keybind-tooltip="true"{% endif %}>
             <div class="key-label-cell">{{ key.label }}</div>
