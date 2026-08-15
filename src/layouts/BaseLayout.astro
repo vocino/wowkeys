@@ -1,5 +1,6 @@
 ---
 import '../styles/spreadsheet.css';
+import snapCss from '../styles/snap.css?inline';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR, TWITTER_USERNAME, SITE_LOCALE, WOW_LAYOUT_IMPORT } from '../consts.ts';
 
 interface Props {
@@ -44,6 +45,9 @@ const jsonLd = {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
 
 	<!-- Primary Meta Tags -->
 	<title>{pageTitle}</title>
@@ -80,6 +84,9 @@ const jsonLd = {
 
 	<!-- Structured Data (JSON-LD) -->
 	<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+	<!-- Critical scroll-snap: inlined so cached stylesheets cannot mask it -->
+	<style set:html={snapCss} />
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">

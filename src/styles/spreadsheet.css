@@ -656,9 +656,7 @@ a:focus-visible {
     display: none;
   }
 
-  .spreadsheet-container {
-    -webkit-overflow-scrolling: touch;
-  }
+  /* no -webkit-overflow-scrolling: deprecated; also breaks scroll-snap on Safari iOS */
 
   .keybinds-table {
     font-size: 12px;

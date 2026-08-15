@@ -1,0 +1,16 @@
+/* Critical scroll-snap rules — inlined into every page's HTML by BaseLayout
+   so cached external stylesheets can never mask the behavior. */
+.spreadsheet-container {
+  scroll-snap-type: both mandatory;
+  scroll-padding-top: 34px;           /* sticky header height */
+  scroll-padding-left: var(--key-w);  /* keep key column clear of sticky cell */
+}
+
+.keybinds-table tbody tr {
+  scroll-snap-align: block start;
+}
+
+.class-header,
+.ability-cell {
+  scroll-snap-align: inline start;
+}
