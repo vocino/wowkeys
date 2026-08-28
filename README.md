@@ -120,8 +120,18 @@ When adding or changing abilities:
 - `src/layouts/BaseLayout.astro` — page shell (head/meta/header/footer)
 - `src/components/` — `KeybindTable.astro` / `KeyRow.astro` / `AbilityCell.astro`
 - `src/lib/key-philosophy.ts` — the per-key "philosophy" tooltip text
+- `src/lib/cooldown-manager.ts` — Luxthos Cooldown Manager export strings, one per tank spec
 - `src/styles/spreadsheet.css` — styling for the spreadsheet layout
 - `src/scripts/tooltips.js` — tooltip positioning behavior
+- `src/scripts/copy-buttons.js` — clipboard behavior for every `[data-copy-text]` button
+
+## Cooldown Manager Profiles
+
+Each class header carries a `[cdm]` button that copies that spec's [Luxthos Cooldown Manager](https://www.luxthos.com/cooldown-manager-profiles-world-of-warcraft-midnight/) export string. Paste it in-game via the Cooldown Manager's edit mode → Import.
+
+To refresh a profile after Luxthos updates it, replace the matching `code` in `src/lib/cooldown-manager.ts` — the buttons are generated from that file, keyed by class slug.
+
+Any element with a `data-copy-text` attribute becomes a copy button, so the same pattern powers the topbar's `[layout]` button (the WoW Edit Mode UI layout string in `src/consts.ts`).
 
 ## Deployment
 

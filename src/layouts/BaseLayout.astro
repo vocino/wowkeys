@@ -104,7 +104,7 @@ const jsonLd = {
 				<a href="https://youtu.be/4bCzBstqlF0?si=Okeaoi9JyCeBl7zl">[guide]</a>
 				<a href="https://discord.gg/stratsco">[discord]</a>
 				<a href="https://github.com/vocino/wowkeys">[src]</a>
-				<button type="button" id="copy-layout-btn" data-layout={WOW_LAYOUT_IMPORT} title="Copy my WoW Edit Mode UI layout import string">[layout]</button>
+				<button type="button" id="copy-layout-btn" data-copy-text={WOW_LAYOUT_IMPORT} title="Copy my WoW Edit Mode UI layout import string" aria-label="Copy my WoW Edit Mode UI layout import string">[layout]</button>
 			</nav>
 		</div>
 	</header>
@@ -115,7 +115,7 @@ const jsonLd = {
 
 	<footer class="app-footer">
 		<div class="footer-content">
-			<p class="comment">made with &lt;3 by <a href="https://vocino.com">vocino</a> &middot; source on <a href="https://github.com/vocino/wowkeys">github</a></p>
+			<p class="comment">made with &lt;3 by <a href="https://vocino.com">vocino</a> &middot; source on <a href="https://github.com/vocino/wowkeys">github</a> &middot; cdm profiles by <a href="https://www.luxthos.com/cooldown-manager-profiles-world-of-warcraft-midnight/">luxthos</a></p>
 		</div>
 		<div class="tier-legend">
 			<span class="legend-item tier-s">s-tier</span>
@@ -126,25 +126,6 @@ const jsonLd = {
 	</footer>
 
 	<script src="../scripts/tooltips.js"></script>
-	<script>
-		const copyLayoutBtn = document.getElementById('copy-layout-btn');
-
-		if (copyLayoutBtn) {
-			const layoutCode = copyLayoutBtn.dataset.layout ?? '';
-			const originalText = copyLayoutBtn.textContent;
-
-			copyLayoutBtn.addEventListener('click', async () => {
-				try {
-					await navigator.clipboard.writeText(layoutCode);
-					copyLayoutBtn.textContent = '[copied]';
-				} catch {
-					window.prompt('Copy this UI layout string:', layoutCode);
-				}
-				setTimeout(() => {
-					copyLayoutBtn.textContent = originalText;
-				}, 1500);
-			});
-		}
-	</script>
+	<script src="../scripts/copy-buttons.js"></script>
 </body>
 </html>

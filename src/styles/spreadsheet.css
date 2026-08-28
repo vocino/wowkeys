@@ -396,6 +396,50 @@ a:focus-visible {
   border-right: none;
 }
 
+/* Class name on the left, its cooldown manager import button on the right */
+.class-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.class-header-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cdm-copy-btn {
+  flex: none;
+  background: none;
+  border: none;
+  /* Padding buys a touch target; the negative margin keeps the layout unchanged */
+  padding: 6px 4px;
+  margin: -6px -4px;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--dim);
+  cursor: pointer;
+  text-transform: lowercase;
+  transition: color 0.15s ease;
+}
+
+/* Hover picks up the class color from the header cell */
+.cdm-copy-btn:hover {
+  color: inherit;
+}
+
+.cdm-copy-btn:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 2px;
+}
+
+.cdm-copy-btn.is-copied,
+.topnav button.is-copied {
+  color: var(--accent);
+}
+
 /* Class identity lives in the text color, not a filled block */
 .class-deathknight { color: var(--c-deathknight) !important; }
 .class-demonhunter { color: var(--c-demonhunter) !important; }

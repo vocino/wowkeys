@@ -1,6 +1,7 @@
 ---
 import KeyRow from './KeyRow.astro';
 import { CLASS_ORDER } from '../consts.ts';
+import { getCooldownManagerProfile } from '../lib/cooldown-manager.ts';
 import type { KeybindsData } from '../lib/types.ts';
 
 interface Props {
@@ -22,11 +23,25 @@ const rows = [
 			<thead>
 				<tr>
 					<th class="key-column-header" scope="col" aria-label="Keybind">Key</th>
-					{CLASS_ORDER.map((classSlug) => (
-						<th class={`class-header class-${classSlug}`} scope="col">
-							{data.classes[classSlug]?.display_name}
-						</th>
-					))}
+					{CLASS_ORDER.map((classSlug) => {
+						const cdm = getCooldownManagerProfile(classSlug);
+						return (
+							<th class={`class-header class-${classSlug}`} scope="col">
+								<div class="class-header-inner">
+									<span class="class-header-name">{data.classes[classSlug]?.display_name}</span>
+									{cdm && (
+										<button
+											type="button"
+											class="cdm-copy-btn"
+											data-copy-text={cdm.code}
+											title={`Copy the Luxthos ${cdm.spec} Cooldown Manager import string`}
+											aria-label={`Copy the Luxthos ${cdm.spec} Cooldown Manager import string`}
+										>[cdm]</button>
+									)}
+								</div>
+							</th>
+						);
+					})}
 				</tr>
 			</thead>
 			<tbody>
