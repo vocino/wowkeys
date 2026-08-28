@@ -83,7 +83,7 @@ classes:
         keybind: "1"
         wowhead_id: 202168
         icon: https://render.worldofwarcraft.com/us/icons/56/589768.jpg
-        tooltip: "Instantly attack the target, causing 20 damage and healing you for 30%
+        tooltip: "Instantly attack the target, causing 21 damage and healing you for 30%
           of your maximum health.\r
 
           \r
@@ -120,7 +120,7 @@ classes:
         wowhead_id: 385952
         icon: https://render.worldofwarcraft.com/us/icons/56/4667427.jpg
         tooltip: "Charge to an enemy with your shield, granting you Shield Block and
-          dealing 296 Physical damage to it and 93 Physical damage to all
+          dealing 292 Physical damage to it and 93 Physical damage to all
           enemies within 10 yards.\r
 
           \r
@@ -144,7 +144,7 @@ classes:
         keybind: Q
         wowhead_id: 23922
         icon: https://render.worldofwarcraft.com/us/icons/56/134951.jpg
-        tooltip: "Slams the target with your shield, causing 81 Physical damage.\r
+        tooltip: "Slams the target with your shield, causing 80 Physical damage.\r
 
           \r
 
@@ -155,7 +155,7 @@ classes:
         keybind: E
         wowhead_id: 6572
         icon: https://render.worldofwarcraft.com/us/icons/56/132353.jpg
-        tooltip: "Swing in a wide arc, dealing 97 Physical damage to all enemies in
+        tooltip: "Swing in a wide arc, dealing 98 Physical damage to all enemies in
           front of you. Deals reduced damage beyond 5 targets.\r
 
           \r
@@ -213,7 +213,7 @@ classes:
         wowhead_id: 228920
         icon: https://render.worldofwarcraft.com/us/icons/56/970854.jpg
         tooltip: "Throws a whirling weapon at your target that chases nearby enemies,
-          inflicting 371 Physical damage to all enemies over 12 sec. Deals
+          inflicting 375 Physical damage to all enemies over 12 sec. Deals
           reduced damage beyond 8 targets.\r
 
           \r
@@ -264,7 +264,7 @@ classes:
         keybind: "1"
         wowhead_id: 85673
         icon: https://render.worldofwarcraft.com/us/icons/56/133192.jpg
-        tooltip: Calls down the Light to heal a friendly target for 1,569.
+        tooltip: Calls down the Light to heal a friendly target for 1,589.
         cached_name: Word of Glory
       "2":
         name: Divine Shield
@@ -300,14 +300,14 @@ classes:
         keybind: Q
         wowhead_id: 20271
         icon: https://render.worldofwarcraft.com/us/icons/56/135959.jpg
-        tooltip: Judges the target, dealing 382 Holy damage.
+        tooltip: Judges the target, dealing 386 Holy damage.
         cached_name: Judgment
       e:
         name: Hammer of the Righteous
         keybind: E
         wowhead_id: 53595
         icon: https://render.worldofwarcraft.com/us/icons/56/236253.jpg
-        tooltip: "Hammers the current target for 70 Physical damage.\r
+        tooltip: "Hammers the current target for 69 Physical damage.\r
 
           \r
 
@@ -355,7 +355,7 @@ classes:
         keybind: X
         wowhead_id: 26573
         icon: https://render.worldofwarcraft.com/us/icons/56/135926.jpg
-        tooltip: Consecrates the land beneath you, causing 26 Holy damage over 12 sec to
+        tooltip: Consecrates the land beneath you, causing 25 Holy damage over 12 sec to
           enemies who enter the area. Limit 1.
         cached_name: Consecration
       v:
@@ -442,7 +442,7 @@ classes:
         keybind: "3"
         wowhead_id: 195182
         icon: https://render.worldofwarcraft.com/us/icons/56/1376745.jpg
-        tooltip: "Smash the target, dealing 76 Physical damage and generating 3 charges
+        tooltip: "Smash the target, dealing 78 Physical damage and generating 3 charges
           of Bone Shield.\r
 
           \r
@@ -476,7 +476,7 @@ classes:
         keybind: Q
         wowhead_id: 206930
         icon: https://render.worldofwarcraft.com/us/icons/56/135675.jpg
-        tooltip: Instantly strike the target and 1 other nearby enemy, causing 67
+        tooltip: Instantly strike the target and 1 other nearby enemy, causing 69
           Physical damage, and reducing enemies' movement speed by 20% for 8
           sec.
         cached_name: Heart Strike
@@ -494,7 +494,7 @@ classes:
         keybind: R
         wowhead_id: 50842
         icon: https://render.worldofwarcraft.com/us/icons/56/237513.jpg
-        tooltip: "Deals 58 Shadow damage and infects all enemies within 10 yds with
+        tooltip: "Deals 57 Shadow damage and infects all enemies within 10 yds with
           Blood Plague.\r
 
           \r
@@ -595,14 +595,14 @@ classes:
         wowhead_id: 212084
         icon: https://render.worldofwarcraft.com/us/icons/56/1450143.jpg
         tooltip: Unleash the fel within you, damaging enemies directly in front of you
-          for 163 Fire damage over 2 sec.
+          for 160 Fire damage over 2 sec.
         cached_name: Fel Devastation
       "2":
         name: Spirit Bomb
         keybind: "2"
         wowhead_id: 247454
         icon: https://render.worldofwarcraft.com/us/icons/56/1097742.jpg
-        tooltip: Consume up to 5 Soul Fragments then explode, dealing 70 Fire damage to
+        tooltip: Consume up to 5 Soul Fragments then explode, dealing 69 Fire damage to
           nearby enemies, increased by 20% per fragment consumed. Deals reduced
           damage beyond 8 targets.
         cached_name: Spirit Bomb
@@ -642,7 +642,7 @@ classes:
         keybind: E
         wowhead_id: 228477
         icon: https://render.worldofwarcraft.com/us/icons/56/1344653.jpg
-        tooltip: "Viciously strike an enemy and all other enemies in front of you for 71
+        tooltip: "Viciously strike an enemy and all other enemies in front of you for 73
           Physical damage and heal yourself for 103. Deals reduced damage beyond
           5 targets.\r
 
@@ -656,7 +656,7 @@ classes:
         keybind: R
         wowhead_id: 258920
         icon: https://render.worldofwarcraft.com/us/icons/56/1344649.jpg
-        tooltip: Engulf yourself in flames, radiating 26 Fire damage over 6 sec.
+        tooltip: Engulf yourself in flames, radiating 27 Fire damage over 6 sec.
         cached_name: Immolation Aura
       f:
         name: Metamorphosis
@@ -672,7 +672,7 @@ classes:
         wowhead_id: 204021
         icon: https://render.worldofwarcraft.com/us/icons/56/1344647.jpg
         tooltip: Brand yourself and an enemy target with demonic symbols, reducing the
-          damage you take by 40% and instantly dealing 146 Fire damage to the
+          damage you take by 40% and instantly dealing 145 Fire damage to the
           enemy.
         cached_name: Fiery Brand
       c:
@@ -711,7 +711,7 @@ classes:
 
           \r
 
-          Deals 27 Fire damage, and an additional 70 Fire damage over 8 sec, to
+          Deals 28 Fire damage, and an additional 70 Fire damage over 8 sec, to
           all enemies affected by the sigil.\r
 
           \r
@@ -739,7 +739,7 @@ classes:
         keybind: G
         wowhead_id: 189110
         icon: https://render.worldofwarcraft.com/us/icons/56/1344650.jpg
-        tooltip: Leap through the air toward a targeted location, dealing 21 Fire damage
+        tooltip: Leap through the air toward a targeted location, dealing 22 Fire damage
           to all enemies within 6 yards.
         cached_name: Infernal Strike
       h:
@@ -767,7 +767,7 @@ classes:
         keybind: "2"
         wowhead_id: 8921
         icon: https://render.worldofwarcraft.com/us/icons/56/136096.jpg
-        tooltip: "A quick beam of lunar light burns the enemy for 81 Arcane damage and
+        tooltip: "A quick beam of lunar light burns the enemy for 80 Arcane damage and
           then an additional 705 Arcane damage over 18 sec. "
         cached_name: Moonfire
       "3":
@@ -782,7 +782,7 @@ classes:
         keybind: "4"
         wowhead_id: 1253799
         icon: https://render.worldofwarcraft.com/us/icons/56/1392548.jpg
-        tooltip: "Roar with earthshattering ferocity, dealing 98 Physical damage, and
+        tooltip: "Roar with earthshattering ferocity, dealing 96 Physical damage, and
           resetting the cooldown of Thrash and allowing it to stack 5 additional
           times for 12 sec. \r
 
@@ -796,7 +796,7 @@ classes:
         keybind: Q
         wowhead_id: 33917
         icon: https://render.worldofwarcraft.com/us/icons/56/132135.jpg
-        tooltip: "Mangle the target for 70 Physical damage.\r
+        tooltip: "Mangle the target for 69 Physical damage.\r
 
           \r
 
@@ -915,7 +915,7 @@ classes:
         keybind: "1"
         wowhead_id: 322101
         icon: https://render.worldofwarcraft.com/us/icons/56/627486.jpg
-        tooltip: Expel negative chi from your body, healing for 449 and dealing 10% of
+        tooltip: Expel negative chi from your body, healing for 467 and dealing 10% of
           the amount healed as Nature damage to an enemy within 20 yards.
         cached_name: Expel Harm
       "2":
@@ -952,7 +952,7 @@ classes:
         wowhead_id: 121253
         icon: https://render.worldofwarcraft.com/us/icons/56/594274.jpg
         tooltip: Smash a keg of brew, dealing 99 Physical damage to your primary target
-          and 67 Physical damage to all other enemies within 8 yds, and reducing
+          and 66 Physical damage to all other enemies within 8 yds, and reducing
           their movement speed by 20% for 15 sec. Deals reduced damage beyond 5
           targets.
         cached_name: Keg Smash
@@ -961,21 +961,21 @@ classes:
         keybind: E
         wowhead_id: 100784
         icon: https://render.worldofwarcraft.com/us/icons/56/574575.jpg
-        tooltip: "Kick with a blast of Chi energy, dealing 30 Physical damage.\r\n"
+        tooltip: "Kick with a blast of Chi energy, dealing 29 Physical damage.\r\n"
         cached_name: Blackout Kick
       r:
         name: Tiger Palm
         keybind: R
         wowhead_id: 100780
         icon: https://render.worldofwarcraft.com/us/icons/56/606551.jpg
-        tooltip: Strike with the palm of your hand, dealing 31 Physical damage.
+        tooltip: Strike with the palm of your hand, dealing 32 Physical damage.
         cached_name: Tiger Palm
       f:
         name: Breath of Fire
         keybind: F
         wowhead_id: 115181
         icon: https://render.worldofwarcraft.com/us/icons/56/615339.jpg
-        tooltip: "Breathe fire on targets in front of you, causing 34 Fire damage. Deals
+        tooltip: "Breathe fire on targets in front of you, causing 35 Fire damage. Deals
           reduced damage to secondary targets.\r
 
           \r
@@ -996,7 +996,7 @@ classes:
         wowhead_id: 322507
         icon: https://render.worldofwarcraft.com/us/icons/56/1360979.jpg
         tooltip: A swig of strong brew that coalesces purified chi escaping your body
-          into a celestial guard, absorbing 1,984 damage.
+          into a celestial guard, absorbing 2,381 damage.
         cached_name: Celestial Brew
       v:
         name: Summon Black Ox Statue
